@@ -1,0 +1,91 @@
+Layout/AccessModifierIndentation:
+  Enabled: true
+  EnforcedStyle: indent
+  IndentationWidth: null
+
+Layout/AlignArray:
+  Enabled: true
+
+Layout/AlignHash:
+  Enabled: true
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+  EnforcedLastArgumentHashStyle: always_inspect
+
+Layout/AlignParameters:
+  Enabled: true
+  EnforcedStyle: with_first_parameter
+  IndentationWidth: null
+
+Layout/BlockAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: either
+
+Layout/BlockEndNewline:
+  Enabled: true
+
+Layout/CaseIndentation:
+  Enabled: true
+  EnforcedStyle: case
+  IndentationWidth: null
+  IndentOneStep: false
+
+Layout/ClassStructure:
+  Enabled: true
+  Categories:
+    module_inclusion:
+      - include
+      - prepend
+      - extend
+  ExpectedOrder:
+    - module_inclusion
+    - constants
+    - public_class_methods
+    - initializer
+    - public_methods
+    - protected_methods
+    - private_methods
+
+Layout/ClosingHeredocIndentation:
+  Enabled: true
+
+Layout/ClosingParenthesisIndentation:
+  Enabled: true
+
+Layout/CommentIndentation:
+  Enabled: true
+
+Layout/ConditionPosition:
+  Enabled: true
+
+Layout/DefEndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: start_of_line
+  Autocorrect: false
+  Severity: warning
+
+Layout/DotPosition:
+  Enabled: true
+  EnforcedStyle: leading
+
+Layout/ElseAlignment:
+  Enabled: true
+
+Layout/EmptyComment:
+  Enabled: true
+  AllowBorderComment: false
+  AllowMarginComment: false
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true
+
+Layout/EmptyLineBetweenDefs:
+  Enabled: true
+  NumberOfEmptyLines: 1
+  AllowAdjacentOneLineDefs: false
+
+Layout/EmptyLines:
+  Enabled: true
