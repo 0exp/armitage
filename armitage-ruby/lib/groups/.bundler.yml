@@ -1,0 +1,9 @@
+Bundler/DuplicatedGem:
+  Enabled: true
+
+Bundler/InsecureProtocolSource:
+  Enabled: true
+
+Bundler/OrderedGems:
+  Enabled: false
+  TreatCommentsAsGroupSeparators: true
