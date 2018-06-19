@@ -1,0 +1,9 @@
+Gemspec/DuplicatedAssignment:
+  Enabled: true
+
+Gemspec/OrderedDependencies:
+  Enabled: false
+  TreatCommentsAsGroupSeparators: true
+
+Gemspec/RequiredRubyVersion:
+  Enabled: false
