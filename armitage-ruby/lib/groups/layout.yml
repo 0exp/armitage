@@ -61,7 +61,7 @@ Layout/ConditionPosition:
 Layout/DefEndAlignment:
   Enabled: true
   EnforcedStyleAlignWith: start_of_line
-  Autocorrect: false
+  AutoCorrect: false
   Severity: warning
 
 Layout/DotPosition:
@@ -89,3 +89,72 @@ Layout/EmptyLineBetweenDefs:
 
 Layout/EmptyLines:
   Enabled: true
+
+Layout/EmptyLinesAroundAccessModifier:
+  Enabled: true
+
+Layout/EmptyLinesAroundArguments:
+  Enabled: true
+
+Layout/EmptyLinesAroundBeginBody:
+  Enabled: true
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: true
+  EnforcedStyle: no_empty_lines
+
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: no_empty_lines
+
+Layout/EmptyLinesAroundExceptionHandlingKeywords:
+  Enabled: true
+
+Layout/EmptyLinesAroundMethodBody:
+  Enabled: true
+
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: true
+  EnforcedStyle: no_empty_lines
+
+Layout/EndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: keyword
+  AutoCorrect: false
+  Severity: warning
+
+Layout/EndOfLine:
+  Enabled: true
+  EnforcedStyle: native
+
+Layout/ExtraSpacing:
+  Enabled: true
+  AllowForAlignment: true
+  ForceEqualSignAlignment: false
+
+Layout/FirstArrayElementLineBreak:
+  Enabled: false
+
+Layout/FirstHashElementLineBreak:
+  Enabled: false
+
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: false
+
+Layout/FirstMethodParameterLineBreak:
+  Enabled: false
+
+Layout/FirstParameterIndentation:
+  Enabled: true
+  EnforcedStyle: special_for_inner_method_call_in_parentheses
+  IndentationWidth: null
+
+Layout/IndentArray:
+  Enabled: true
+  EnforcedStyle: special_inside_parentheses
+  IndentationWidth: null
+
+Layout/IndentAssignment:
+  Enabled: true
+  IndentationWidth: null
+
+Layout/IndentHash:
