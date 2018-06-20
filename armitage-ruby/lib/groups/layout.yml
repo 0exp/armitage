@@ -306,7 +306,7 @@ Layout/SpaceInsideReferenceBrackets:
   EnforcedStyleForEmptyBrackets: no_space
 
 Layout/SpaceInsideStringInterpolation:
-  ENabled: true
+  Enabled: true
   EnforcedStyle: no_space
 
 Layout/Tab:
