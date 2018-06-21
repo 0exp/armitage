@@ -1,0 +1,401 @@
+Style/AccessModifierDeclarations:
+  Enabled: true
+  EnforcedStyle: group
+
+Style/Alias:
+  Enabled: true
+  EnforcedStyle: prefer_alias_method
+
+Style/AndOr:
+  Enabled: false
+  EnforcedStyle: always
+
+Style/ArrayJoin:
+  Enabled: true
+
+Style/AsciiComments:
+  Enabled: false
+  AllowedChars: []
+
+Style/Attr:
+  Enabled: true
+
+Style/AutoResourceCleanup:
+  Enabled: false
+
+Style/BarePercentLiterals:
+  Enabled: true
+  EnforcedStyle: bare_percent
+
+Style/BeginBlock:
+  Enabled: true
+
+Style/BlockComments:
+  Enabled: true
+
+Style/BlockDelimiters:
+  Enabled: true
+  EnforcedStyle: line_count_based
+
+Style/BracesAroundHashParameters:
+  Enabled: true
+  EnforcedStyle: no_braces
+
+Style/CaseEquality:
+  Enabled: true
+
+Style/CharacterLiteral:
+  Enabled: true
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/ClassCheck:
+  Enabled: true
+  EnforcedStyle: is_a?
+
+Style/ClassMethods:
+  Enabled: true
+
+Style/ClassVars:
+  Enabled: true
+
+Style/CollectionMethods:
+  Enabled: false
+
+Style/ColonMethodCall:
+  Enabled: true
+
+Style/ColonMethodDefinition:
+  Enabled: true
+
+Style/CommandLiteral:
+  Enabled: true
+  EnforcedStyle: backticks
+  AllowInnerBackticks: false
+
+Style/CommentAnnotation:
+  Enabled: false
+
+Style/CommentedKeyword:
+  Enabled: false
+
+Style/ConditionalAssignment:
+  Enabled: false
+
+Style/Copyright:
+  Enabled: false
+
+Style/DateTime:
+  Enabled: true
+
+Style/DefWithParentheses:
+  Enabled: true
+
+Style/Dir:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/DocumentationMethod:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/EachForSimpleLoop:
+  Enabled: false
+
+Style/EachWithObject:
+  Enabled: true
+
+Style/EmptyBlockParameter:
+  Enabled: true
+
+Style/EmptyCaseCondition:
+  Enabled: false
+
+Style/EmptyElse:
+  Enabled: true
+  EnforcedStyle: empty
+
+Style/EmptyLambdaParameter:
+  Enabled: true
+
+Style/EmptyLiteral:
+  Enabled: true
+
+Style/EmptyMethod:
+  Enabled: true
+  EnforcedStyle: compact
+
+Style/Encoding:
+  Enabled: false
+
+Style/EndBlock:
+  Enabled: true
+
+Style/EvalWithLocation:
+  Enabled: true
+
+Style/EvenOdd:
+  Enabled: true
+
+Style/ExpandPathArguments:
+  Enabled: true
+
+Style/FlipFlop:
+  Enabled: true
+
+Style/For:
+  Enabled: true
+  EnforcedStyle: each
+
+Style/FormatString:
+  Enabled: true
+  EnforcedStyle: format
+
+Style/FormatStringToken:
+  Enabled: true
+  EnforcedStyle: annotated
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: when_needed
+
+Style/GlobalVars:
+  Enabled: true
+  AllowedVariables: []
+
+Style/GuardClause:
+  Enabled: false
+  MinBodyLength: 1
+
+Style/HashSyntax:
+  Enabled: true
+  EnforcedStyle: ruby19
+  UseHashRocketsWithSymbolValues: false
+  PreferHashRocketsForNonAlnumEndingSymbols: false
+
+Style/IdenticalConditionalBranches:
+  Enabled: true
+
+Style/IfInsideElse:
+  Enabled: true
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/IfUnlessModifierOfIfUnless:
+  Enabled: true
+
+Style/IfWithSemicolon:
+  Enabled: true
+
+Style/ImplicitRuntimeError:
+  Enabled: false
+
+Style/InfiniteLoop:
+  Enabled: true
+
+Style/InlineComment:
+  Enabled: false
+
+Style/InverseMethods:
+  Enabled: true
+
+Style/Lambda:
+  Enabled: true
+  EnforcedStyle: line_count_dependent
+
+Style/LambdaCall:
+  Enabled: false
+
+Style/LineEndConcatenation:
+  Enabled: true
+
+Style/MethodCallWithArgsParentheses:
+  Enabled: true
+
+Style/MethodCallWithoutArgsParentheses:
+  Enabled: true
+
+Style/MethodCalledOnDoEndBlock:
+  Enabled: false
+
+Style/MethodDefParentheses:
+  Enabled: true
+  EnforcedStyle: require_parentheses
+
+Style/MethodMissingSuper:
+  Enabled: false
+
+Style/MinMax:
+  Enabled: true
+
+Style/MissingElse:
+  Enabled: false
+
+Style/MissingRespondToMissing:
+  Enabled: true
+
+Style/MixinGrouping:
+  Enabled: true
+  EnforcedStyle: separated
+
+Style/MixinUsage:
+  Enabled: true
+
+Style/ModuleFunction:
+  Enabled: false
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/MultilineIfModifier:
+  Enabled: false
+
+Style/MultilineIfThen:
+  Enabled: true
+
+Style/MultilineMemoization:
+  Enabled: true
+  EnforcedStyle: keyword
+
+Style/MultilineTernaryOperator:
+  Enabled: false
+
+Style/MultipleComparison:
+  Enabled: true
+
+Style/MutableConstant:
+  Enabled: true
+
+Style/NegatedIf:
+  Enabled: true
+  EnforcedStyle: both
+
+Style/NegatedWhile:
+  Enabled: true
+
+Style/NestedModifier:
+  Enabled: true
+
+Style/NestedParenthesizedCalls:
+  Enabled: true
+
+Style/NestedTernaryOperator:
+  Enabled: true
+
+Style/Next:
+  Enabled: true
+  EnforcedStyle: skip_modifier_ifs
+  MinBodyLength: 3
+
+Style/NilComparison:
+  Enabled: true
+
+Style/NonNilCheck:
+  Enabled: true
+  IncludeSemanticChanges: false
+
+Style/Not:
+  Enabled: true
+
+Style/NumericLiteralPrefix:
+  Enabled: true
+  EnforcedOctalStyle: zero_with_o
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: true
+  EnforcedStyle: predicate
+  AutoCorrect: false
+
+Style/OneLineConditional:
+  Enabled: true
+
+Style/OptionHash:
+  Enabled: false
+
+Style/OptionalArguments:
+  Enabled: true
+
+Style/OptionalArguments:
+  Enabled: true
+
+Style/ParallelAssignment:
+  Enabled: false
+
+Style/ParenthesesAroundCondition:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  Enabled: true
+
+Style/PercentQLiterals:
+  Enabled: true
+  EnforcedStyle: lower_case_q
+
+Style/PerlBackrefs:
+  Enabled: true
+
+Style/PreferredHashMethods:
+  Enabled: true
+  EnforcedStyle: short
+
+Style/Proc:
+  Enabled: true
+
+Style/RaiseArgs:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

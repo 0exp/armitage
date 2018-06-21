@@ -7,3 +7,4 @@ inherit_from:
   - ./lib/groups/naming.yml
   - ./lib/groups/performance.yml
   - ./lib/groups/security.yml
+  - ./lib/groups/style.yml
