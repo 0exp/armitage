@@ -5,3 +5,4 @@ inherit_from:
   - ./lib/groups/lint.yml
   - ./lib/groups/metrics.yml
   - ./lib/groups/naming.yml
+  - ./lib/groups/performance.yml
