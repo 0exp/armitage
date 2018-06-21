@@ -1,0 +1,107 @@
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/AsciiIdentifiers:
+  Enabled: true
+
+Naming/BinaryOperatorParameterName:
+  Enabled: false
+
+Naming/ClassAndModuleCamelCase:
+  Enabled: true
+
+Naming/ConstantName:
+  Enabled: true
+
+Naming/FileName:
+  Enabled: true
+  Exclude: []
+  ExpectMatchingDefinition: false
+  Regex: null
+  IgnoreExecutableScripts: true
+  AllowedAcronyms:
+    - CLI
+    - DSL
+    - ACL
+    - API
+    - ASCII
+    - CPU
+    - CSS
+    - DNS
+    - EOF
+    - GUID
+    - HTML
+    - HTTP
+    - HTTPS
+    - ID
+    - IP
+    - JSON
+    - LHS
+    - QPS
+    - RAM
+    - RHS
+    - RPC
+    - SLA
+    - SMTP
+    - SQL
+    - SSH
+    - TCP
+    - TLS
+    - TTL
+    - UDP
+    - UI
+    - UID
+    - UUID
+    - URI
+    - URL
+    - UTF8
+    - VM
+    - XML
+    - XMPP
+    - XSRF
+    - XSS
+
+Naming/HeredocDelimiterCase:
+  Enabled: true
+  EnforcedStyle: uppercase
+
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Naming/MethodName:
+  Enabled: true
+  EnforcedStyle: snake_case
+
+Naming/PredicateName:
+  Enabled: false
+
+Naming/UncommunicativeBlockParamName:
+  Enabled: true
+  MinNameLength: 1
+  AllowNamesEndingInNumbers: true
+  AllowedNames: []
+  ForbiddenNames: []
+
+Naming/UncommunicativeMethodParamName:
+  Enabled: true
+  MinNameLength: 3
+  AllowNamesEndingInNumbers: true
+  AllowedNames:
+    - 'io'
+    - 'id'
+    - 'to'
+    - 'by'
+    - 'on'
+    - 'in'
+    - 'at'
+
+Naming/VariableName:
+  Enabled: true
+  EnforcedStyle: snake_case
+
+Naming/VariableNumber:
+  Enabled: true
+  EnforcedStyle: snake_case
