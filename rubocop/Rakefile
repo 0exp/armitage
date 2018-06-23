@@ -1,8 +1,66 @@
 # frozen_string_literal: true
 
-require('bundler/gem_tasks')
-require('rspec/core/rake_task')
+require 'bundler/gem_tasks'
+require 'rubocop/rake_task'
+require 'yaml'
+require 'rubocop'
 
-RSpec::Core::RakeTask.new(:spec)
+RuboCop::RakeTask.new(:rubocop) do |t|
+  t.options = %w[--config ./lib/rubocop.general.yml]
+end
 
-task(default: :spec)
+namespace :armitage_cops_validation do
+  desc 'Checks that all defined cops can be used'
+  task :recognizable_cops do
+    yamls = Dir[Pathname.new(__FILE__).join('../lib/**/*.yml')]
+
+    # NOTE: strongly rubocop-related realization
+    #  - see https://github.com/rubocop-hq/rubocop/blob/master/lib/rubocop/config.rb
+    #  - see https://github.com/rubocop-hq/rubocop/blob/master/lib/rubocop/config_loader.rb
+    #  - RuboCop::Config#validate
+    #  - RuboCop::Config#warn_about_unrecognized_cops
+    #  - RuboCop::ConfigLoader.load_file
+    #  - RuboCop::ConfigLoader.default_configuration
+    rubocop_config = RuboCop::ConfigLoader.load_file(yamls.first)
+    invalid_cops = rubocop_config.keys.each_with_object([]) do |cop, acc|
+      next if RuboCop::ConfigLoader.default_configuration.key?(cop)
+      next if RuboCop::Cop::Cop.registry.contains_cop_matching?([cop])
+      next if cop == 'inherit_mode'
+      acc << "- \e[33m#{cop}\e[0m"
+    end
+
+    if invalid_cops.empty?
+      puts "[\e[32mCOP RECOGNITION CHECK\e[0m] => \e[1;33mall cops are recognizable!\e[0m"
+    else
+      invalid_cops_message = invalid_cops.join("\n")
+      abort "[\e[31mCOP RECOGNITION CHECK\e[0m] => some cops can not be recognized:\n" \
+            "#{invalid_cops_message}"
+    end
+  end
+
+  desc 'Checks that all *.yml files has the valid structure'
+  task :valid_yamls do
+    yamls = Dir[Pathname.new(__FILE__).join('../lib/**/*.yml')]
+
+    # NOTE: try to load without Psych exceptions
+    invalid_yamls = yamls.each_with_object([]) do |file_name, invalid_files|
+      # rubocop:disable Style/RedundantBegin
+      begin
+        YAML.load(File.read(file_name))
+      rescue StandardError
+        invalid_files << "- \e[33m#{file_name}\e[0m"
+      end
+      # rubocop:enable Style/RedundantBegin
+    end
+
+    if invalid_yamls.empty?
+      puts "[\e[32mYAML FILE VALIDATION\e[0m] => \e[1;33mall files has valid strucutre!\e[0m"
+    else
+      invalid_yamls_message = invalid_yamls.join("\n")
+      abort "[\e[31mYAML FILE VALIDATION\e[0m] => some files has invalid structure:\n" \
+            "#{invalid_yamls_message}"
+    end
+  end
+end
+
+task default: :rubocop
