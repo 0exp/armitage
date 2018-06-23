@@ -1,7 +1,7 @@
 Layout/AccessModifierIndentation:
   Enabled: true
   EnforcedStyle: indent
-  IndentationWidth: null
+  IndentationWidth: ~
 
 Layout/AlignArray:
   Enabled: true
@@ -15,7 +15,7 @@ Layout/AlignHash:
 Layout/AlignParameters:
   Enabled: true
   EnforcedStyle: with_first_parameter
-  IndentationWidth: null
+  IndentationWidth: ~
 
 Layout/BlockAlignment:
   Enabled: true
@@ -27,7 +27,7 @@ Layout/BlockEndNewline:
 Layout/CaseIndentation:
   Enabled: true
   EnforcedStyle: case
-  IndentationWidth: null
+  IndentationWidth: ~
   IndentOneStep: false
 
 Layout/ClassStructure:
@@ -146,21 +146,21 @@ Layout/FirstMethodParameterLineBreak:
 Layout/FirstParameterIndentation:
   Enabled: true
   EnforcedStyle: consistent
-  IndentationWidth: null
+  IndentationWidth: ~
 
 Layout/IndentArray:
   Enabled: true
   EnforcedStyle: consistent
-  IndentationWidth: null
+  IndentationWidth: ~
 
 Layout/IndentAssignment:
   Enabled: true
-  IndentationWidth: null
+  IndentationWidth: ~
 
 Layout/IndentHash:
   Enabled: true
   EnforcedStyle: consistent
-  IndentationWidth: null
+  IndentationWidth: ~
 
 Layout/IndentHeredoc:
   Enabled: true
@@ -205,7 +205,7 @@ Layout/MultilineMethodCallBraceLayout:
 Layout/MultilineMethodCallIndentation:
   Enabled: false
   EnforcedStyle: aligned
-  IndentationWidth: null
+  IndentationWidth: ~
 
 Layout/MultilineMethodDefinitionBraceLayout:
   Enabled: true
@@ -214,7 +214,7 @@ Layout/MultilineMethodDefinitionBraceLayout:
 Layout/MultilineOperationIndentation:
   Enabled: true
   EnforcedStyle: aligned
-  IndentationWidth: null
+  IndentationWidth: ~
 
 Layout/RescueEnsureAlignment:
   Enabled: true
@@ -311,7 +311,7 @@ Layout/SpaceInsideStringInterpolation:
 
 Layout/Tab:
   Enabled: true
-  IndentationWidth: null
+  IndentationWidth: ~
 
 Layout/TrailingBlankLines:
   Enabled: true

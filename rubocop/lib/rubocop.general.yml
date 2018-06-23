@@ -1,0 +1,18 @@
+inherit_from:
+  - ./general/bundler.yml
+  - ./general/gemspec.yml
+  - ./general/layout.yml
+  - ./general/lint.yml
+  - ./general/metrics.yml
+  - ./general/naming.yml
+  - ./general/performance.yml
+  - ./general/security.yml
+  - ./general/style.yml
+
+AllCops:
+  DefaultFormatter: progress
+  DisplayCopNames: true
+  DisplayStyleGuide: false
+  ExtraDetails: true
+  UseCache: false
+  TargetRubyVersion: ~
