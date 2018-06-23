@@ -205,6 +205,9 @@ Style/InlineComment:
 Style/InverseMethods:
   Enabled: true
 
+Style/IpAddresses:
+  Enabled: false
+
 Style/Lambda:
   Enabled: true
   EnforcedStyle: line_count_dependent
@@ -351,51 +354,183 @@ Style/Proc:
   Enabled: true
 
 Style/RaiseArgs:
+  Enabled: true
+  EnforcedStyle: exploded
 
+Style/RandomWithOffset:
+  Enabled: true
 
+Style/RedundantBegin:
+  Enabled: true
 
+Style/RedundantConditional:
+  Enabled: true
 
+Style/RedundantException:
+  Enabled: false
 
+Style/RedundantFreeze:
+  Enabled: true
 
+Style/RedundantParentheses:
+  Enabled: true
 
+Style/RedundantReturn:
+  Enabled: true
+  AllowMultipleReturnValues: false
 
+Style/RedundantSelf:
+  Enabled: true
 
+Style/RegexpLiteral:
+  Enabled: true
+  EnforcedStyle: mixed
+  AllowInnerSlashes: true
 
+Style/RescueModifier:
+  Enabled: false
 
+Style/RescueStandardError:
+  Enabled: false
 
+Style/ReturnNil:
+  Enabled: false
 
+Style/SafeNavigation:
+  Enabled: true
 
+Style/SelfAssignment:
+  Enabled: true
 
+Style/Semicolon:
+  Enabled: true
+  AllowAsExpressionSeparator: false
 
+Style/Send:
+  Enabled: false
 
+Style/SignalException:
+  Enabled: true
+  EnforcedStyle: only_raise
 
+Style/SingleLineBlockParams:
+  Enabled: false
 
+Style/SingleLineMethods:
+  Enabled: true
+  AllowIfMethodIsEmpty: true
 
+Style/SpecialGlobalVars:
+  Enabled: true
 
+Style/StabbyLambdaParentheses:
+  Enabled: true
+  EnforcedStyle: require_parentheses
 
+Style/StderrPuts:
+  Enabled: true
 
+Style/StringHashKeys:
+  Enabled: false
 
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+  ConsistentQuotesInMultiline: true
 
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: single_quotes
 
+Style/StringMethods:
+  Enabled: false
 
+Style/StructInheritance:
+  Enabled: true
 
+Style/SymbolArray:
+  Enabled: true
+  EnforcedStyle: percent
 
+Style/SymbolLiteral:
+  Enabled: true
 
+Style/SymbolProc:
+  Enabled: true
 
+Style/TernaryParentheses:
+  Enabled: true
+  EnforcedStyle: require_parentheses_when_complex
+  AllowSafeAssignment: true
 
+Style/TrailingBodyOnClass:
+  Enabled: true
 
+Style/TrailingBodyOnMethodDefinition:
+  Enabled: true
 
+Style/TrailingBodyOnModule:
+  Enabled: true
 
+Style/TrailingCommaInArguments:
+  Enabled: true
+  EnforcedStyleForMultiline: no_comma
 
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: no_comma
 
+Style/TrailingCommaInHashLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: no_comma
 
+Style/TrailingMethodEndStatement:
+  Enabled: true
 
+Style/TrailingUnderscoreVariable:
+  Enabled: true
+  AllowNamedUnderscoreVariables: true
 
+Style/TrivialAccessors:
+  Enabled: false
 
+Style/UnlessElse:
+  Enabled: false
 
+Style/UnneededCapitalW:
+  Enabled: true
 
+Style/UnneededCondition:
+  Enabled: true
 
+Style/UnneededInterpolation:
+  Enabled: true
 
+Style/UnneededPercentQ:
+  Enabled: true
 
+Style/UnpackFirst:
+  Enabled: true
 
+Style/VariableInterpolation:
+  Enabled: true
 
+Style/WhenThen:
+  Enabled: true
+
+Style/WhileUntilDo:
+  Enabled: true
+
+Style/WhileUntilModifier:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: true
+  EnforcedStyle: percent
+  MinSize: 2
+
+Style/YodaCondition:
+  Enabled: false
+
+Style/ZeroLengthPredicate:
+  Enabled: true
