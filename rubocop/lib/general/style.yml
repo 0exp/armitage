@@ -218,6 +218,9 @@ Style/LineEndConcatenation:
 
 Style/MethodCallWithArgsParentheses:
   Enabled: true
+  Exclude:
+    - Gemfile
+    - '*.gemspec'
 
 Style/MethodCallWithoutArgsParentheses:
   Enabled: true
@@ -381,9 +384,7 @@ Style/RedundantSelf:
   Enabled: true
 
 Style/RegexpLiteral:
-  Enabled: true
-  EnforcedStyle: mixed
-  AllowInnerSlashes: true
+  Enabled: false
 
 Style/RescueModifier:
   Enabled: false
