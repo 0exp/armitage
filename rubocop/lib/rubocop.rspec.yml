@@ -2,6 +2,7 @@ require: rubocop-rspec
 
 inherit_from:
   - ./rspec/capybara.yml
+  - ./rspec/factory_bot.yml
 
 AllCops:
   Rspec:
