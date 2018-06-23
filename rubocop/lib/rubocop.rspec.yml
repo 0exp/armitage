@@ -1,0 +1,9 @@
+require: rubocop-rspec
+
+inherit_from:
+  - ./rspec/capybara.yml
+
+AllCops:
+  Rspec:
+    Patterns:
+      - '_spec.rb'
