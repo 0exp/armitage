@@ -1,10 +1,2 @@
 inherit_from:
-  - ./lib/groups/bundler.yml
-  - ./lib/groups/gemspec.yml
-  - ./lib/groups/layout.yml
-  - ./lib/groups/lint.yml
-  - ./lib/groups/metrics.yml
-  - ./lib/groups/naming.yml
-  - ./lib/groups/performance.yml
-  - ./lib/groups/security.yml
-  - ./lib/groups/style.yml
+  - ./lib/rubocop.general.yml
