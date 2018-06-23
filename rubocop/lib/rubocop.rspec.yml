@@ -4,6 +4,7 @@ inherit_from:
   - ./rspec/capybara.yml
   - ./rspec/factory_bot.yml
   - ./rspec/rails.yml
+  - ./rspec/rspec.yml
 
 AllCops:
   Rspec:
