@@ -32,16 +32,16 @@ namespace :armitage_rubocop do
       end
     end
 
+    result_message = results.each_pair.map do |(result_type, result_status)|
+      type = "- \e[1;33m#{result_type}\e[0m\t=> "
+      desc = result_status.zero? ? "\e[32msuccess\e[0m" : "\e[31mfail\e[0m"
+
+      "#{type} #{desc}"
+    end.join("\n")
+
     if results.values.all?(&:zero?)
-      puts "[\e[32mARMITAGE_RUBOCOP BUILD\e[0m] => \e[1;33mSuccessful!\e[0m"
+      puts "[\e[32mARMITAGE_RUBOCOP BUILD\e[0m] => \e[1;33mSuccessful!\e[0m\n#{result_message}"
     else
-      result_message = results.each_pair.map do |(result_type, result_status)|
-        type = "- \e[1;33m#{result_type}\e[0m\t=> "
-        desc = result_status.zero? ? "\e[32msuccess\e[0m" : "\e[31mfail\e[0m"
-
-        "#{type} #{desc}"
-      end.join("\n")
-
       abort "[\e[31mARMITAGE_RUBOCOP BUILD\e[0m] => FAILED!\n#{result_message}"
     end
   end
