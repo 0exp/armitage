@@ -154,8 +154,9 @@ RSpec/PredicateMatcher:
 RSpec/ReceiveCounts:
   Enabled: false
 
-RSpec/ReceiveNever:
-  Enabled: true
+# TODO: enable when it will be supported by rubocop-rspec
+# RSpec/ReceiveNever:
+#   Enabled: true
 
 RSpec/RepeatedDescription:
   Enabled: true

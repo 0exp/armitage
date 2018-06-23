@@ -203,7 +203,7 @@ Style/InlineComment:
 Style/InverseMethods:
   Enabled: true
 
-# TODO: enalbed when it will be supported by rubocop
+# TODO: enalbe when it will be supported by rubocop
 # Style/IpAddresses:
 #   Enabled: false
 
