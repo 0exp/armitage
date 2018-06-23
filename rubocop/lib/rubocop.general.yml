@@ -8,6 +8,7 @@ inherit_from:
   - ./general/performance.yml
   - ./general/security.yml
   - ./general/style.yml
+  - ./general/rails.yml
 
 AllCops:
   DefaultFormatter: progress
