@@ -1,3 +1,2 @@
 inherit_from:
-  - ./lib/rubocop.general.yml
-  - ./lib/rubocop.rspec.yml
+  - ./lib/rubocop.rails.yml
