@@ -5,7 +5,7 @@ lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name        = 'armitage-rubocop-config'
+  spec.name        = 'armitage-rubocop'
   spec.version     = '0.0.0'
   spec.license     = 'MIT'
   spec.authors     = ['Rustam Ibragimov']
@@ -21,8 +21,9 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
 
+  spec.add_dependency 'rubocop', '= 0.57.2'
+  spec.add_dependency 'rubocop-rspec', '= 1.27.0'
+
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'rubocop', '~> 0.57'
-  spec.add_development_dependency 'rubocop-rspec', '~> 1.27'
 end
