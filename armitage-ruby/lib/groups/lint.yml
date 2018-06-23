@@ -155,21 +155,9 @@ Lint/ReturnInVoidContext:
 
 Lint/SafeNavigationChain:
   Enabled: true
-  Whitelist:
-    - present?
-    - blank?
-    - presence
-    - try
-    - try!
 
 Lint/SafeNavigationConsistency:
   Enabled: true
-  Whitelist:
-    - present?
-    - blank?
-    - presence
-    - try
-    - try!
 
 Lint/ScriptPermission:
   Enabled: true
@@ -229,8 +217,6 @@ Lint/UriRegexp:
 
 Lint/UselessAccessModifier:
   Enabled: true
-  ContextCreatingMethods: []
-  MethodCreatingMethods: []
 
 Lint/UselessAssignment:
   Enabled: true
@@ -247,4 +233,3 @@ Lint/UselessSetterCall:
 Lint/Void:
   Enabled: true
   CheckForMethodsWithNoSideEffects: false
-

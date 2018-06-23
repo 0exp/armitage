@@ -70,9 +70,7 @@ Style/ColonMethodDefinition:
   Enabled: true
 
 Style/CommandLiteral:
-  Enabled: true
-  EnforcedStyle: backticks
-  AllowInnerBackticks: false
+  Enabled: false
 
 Style/CommentAnnotation:
   Enabled: false

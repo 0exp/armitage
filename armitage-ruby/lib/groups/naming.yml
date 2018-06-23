@@ -15,51 +15,8 @@ Naming/ConstantName:
 
 Naming/FileName:
   Enabled: true
-  Exclude: []
   ExpectMatchingDefinition: false
-  Regex: null
   IgnoreExecutableScripts: true
-  AllowedAcronyms:
-    - CLI
-    - DSL
-    - ACL
-    - API
-    - ASCII
-    - CPU
-    - CSS
-    - DNS
-    - EOF
-    - GUID
-    - HTML
-    - HTTP
-    - HTTPS
-    - ID
-    - IP
-    - JSON
-    - LHS
-    - QPS
-    - RAM
-    - RHS
-    - RPC
-    - SLA
-    - SMTP
-    - SQL
-    - SSH
-    - TCP
-    - TLS
-    - TTL
-    - UDP
-    - UI
-    - UID
-    - UUID
-    - URI
-    - URL
-    - UTF8
-    - VM
-    - XML
-    - XMPP
-    - XSRF
-    - XSS
 
 Naming/HeredocDelimiterCase:
   Enabled: true
@@ -89,14 +46,6 @@ Naming/UncommunicativeMethodParamName:
   Enabled: true
   MinNameLength: 3
   AllowNamesEndingInNumbers: true
-  AllowedNames:
-    - 'io'
-    - 'id'
-    - 'to'
-    - 'by'
-    - 'on'
-    - 'in'
-    - 'at'
 
 Naming/VariableName:
   Enabled: true
