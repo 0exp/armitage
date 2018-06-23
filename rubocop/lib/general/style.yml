@@ -217,10 +217,7 @@ Style/LineEndConcatenation:
   Enabled: true
 
 Style/MethodCallWithArgsParentheses:
-  Enabled: true
-  Exclude:
-    - Gemfile
-    - '*.gemspec'
+  Enabled: false
 
 Style/MethodCallWithoutArgsParentheses:
   Enabled: true
