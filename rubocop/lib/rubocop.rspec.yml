@@ -7,6 +7,12 @@ inherit_from:
   - ./rspec/rspec.yml
 
 AllCops:
-  Rspec:
+  RSpec:
     Patterns:
-      - '_spec.rb'
+      - _spec.rb
+      - "(?:^|/)spec/"
+  RSpec/FactoryBot:
+    Patterns:
+      - spec/factories.rb
+      - spec/factories/**/*.rb
+      - features/support/factories/**/*.rb
