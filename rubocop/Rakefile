@@ -33,7 +33,7 @@ namespace :armitage_rubocop do
     end
 
     if results.values.all?(&:zero?)
-      puts "[\e[32mARMITAGE_RUBOCOP BUILD\e[0m] => \e[1;33mDONE!\e[0m"
+      puts "[\e[32mARMITAGE_RUBOCOP BUILD\e[0m] => \e[1;33mSuccessful!\e[0m"
     else
       result_message = results.each_pair.map do |(result_type, result_status)|
         type = "- \e[1;33m#{result_type}\e[0m\t=> "
@@ -74,6 +74,7 @@ namespace :armitage_rubocop do
     desc 'Checks that all defined cops can be used'
     task :recognizable_cops do
       yamls = Dir[Pathname.new(__FILE__).join('../lib/**/*.yml')]
+      invalid_cops = Set.new
 
       # NOTE: strongly rubocop-related realization
       #  - see https://github.com/rubocop-hq/rubocop/blob/master/lib/rubocop/config.rb
@@ -82,18 +83,21 @@ namespace :armitage_rubocop do
       #  - RuboCop::Config#warn_about_unrecognized_cops
       #  - RuboCop::ConfigLoader.load_file
       #  - RuboCop::ConfigLoader.default_configuration
-      rubocop_config = RuboCop::ConfigLoader.load_file(yamls.first)
-      invalid_cops = rubocop_config.keys.each_with_object([]) do |cop, acc|
-        next if RuboCop::ConfigLoader.default_configuration.key?(cop)
-        next if RuboCop::Cop::Cop.registry.contains_cop_matching?([cop])
-        next if cop == 'inherit_mode'
-        acc << "- \e[33m#{cop}\e[0m"
+      yamls.each do |yaml_file|
+        rubocop_config = RuboCop::ConfigLoader.load_file(yaml_file)
+
+        rubocop_config.keys.each_with_object([]) do |cop, acc|
+          next if RuboCop::ConfigLoader.default_configuration.key?(cop)
+          next if RuboCop::Cop::Cop.registry.contains_cop_matching?([cop])
+          next if cop == 'inherit_mode'
+          invalid_cops << "- \e[33m#{cop}\e[0m"
+        end
       end
 
       if invalid_cops.empty?
         puts "[\e[32mCOP RECOGNITION CHECK\e[0m] => \e[1;33mall cops are recognizable!\e[0m"
       else
-        invalid_cops_message = invalid_cops.join("\n")
+        invalid_cops_message = invalid_cops.to_a.join("\n")
         abort "[\e[31mCOP RECOGNITION CHECK\e[0m] => some cops can not be recognized:\n" \
               "#{invalid_cops_message}"
       end
