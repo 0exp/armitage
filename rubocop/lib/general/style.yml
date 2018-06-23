@@ -203,8 +203,9 @@ Style/InlineComment:
 Style/InverseMethods:
   Enabled: true
 
-Style/IpAddresses:
-  Enabled: false
+# TODO: enalbed when it will be supported by rubocop
+# Style/IpAddresses:
+#   Enabled: false
 
 Style/Lambda:
   Enabled: true

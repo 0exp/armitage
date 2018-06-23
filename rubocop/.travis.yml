@@ -10,6 +10,4 @@ sudo: false
 before_install: gem install bundler
 cache: bundler
 script:
-  - bundle exec rake rubocop
-  - bundle exec rake armitage_cops_validation:valid_yamls
-  - bundle exec rake armitage_cops_validation:recognizable_cops
+  - bundle exec rake armitage_rubocop:build
