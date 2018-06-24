@@ -416,6 +416,8 @@ Style/SingleLineBlockParams:
 Style/SingleLineMethods:
   Enabled: true
   AllowIfMethodIsEmpty: true
+  Exclude:
+    - spec/**/*
 
 Style/SpecialGlobalVars:
   Enabled: true
