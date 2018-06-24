@@ -6,8 +6,9 @@ Layout/AccessModifierIndentation:
 Layout/AlignArray:
   Enabled: true
 
+# NOTE: sometimes - good, sometimes - bad. readability depends on case by case.
 Layout/AlignHash:
-  Enabled: true
+  Enabled: false
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
   EnforcedLastArgumentHashStyle: always_inspect
