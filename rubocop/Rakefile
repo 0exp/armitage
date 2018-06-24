@@ -2,12 +2,14 @@
 
 require 'bundler/gem_tasks'
 require 'rubocop/rake_task'
+require 'open3'
 require 'yaml'
 require 'rubocop'
-require 'open3'
+require 'rubocop-rspec'
 
 RuboCop::RakeTask.new(:rubocop) do |t|
   t.options = %w[--config ./lib/rubocop.general.yml]
+  t.requires << 'rubocop-rspec'
 end
 
 namespace :armitage_rubocop do
@@ -26,7 +28,7 @@ namespace :armitage_rubocop do
     # NOTE: results structure { type => exit_code }
     results = {}.tap do |result_data|
       build_processes.each_pair do |build_type, build_process|
-        # NOTE: build_process => [stdin, stdout, stderr, whtr]
+        # NOTE: build_process => [stdin, stdout, stderr, wtr]
         build_result = build_process[3].value.exitstatus
         result_data[build_type] = build_result
       end
