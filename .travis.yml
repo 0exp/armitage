@@ -4,10 +4,11 @@ matrix:
       rvm: 2.5.1
       sudo: false
       cache: bundler
-      before_install:
+      before_script:
         - cd rubocop
-      install:
         - gem install bundler
         - bundle install --path vendor/bundle
       script:
-        - bundle exec rake armitage_rubocop:build
+        - bundle exec rake rubocop
+        - bundle exec rake armitage_rubocop:validation:valid_yamls
+        - bundle exec rake armitage_rubocop:validation:recognizable_cops
