@@ -9,6 +9,7 @@ Metrics/BlockLength:
   ExcludedMethods: []
   Exclude:
     - Rakefile
+    - spec/**/*
 
 Metrics/BlockNesting:
   Enabled: true
