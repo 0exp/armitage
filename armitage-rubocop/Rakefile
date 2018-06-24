@@ -14,7 +14,6 @@ end
 
 namespace :armitage_rubocop do
   task :build do
-    # rubocop:disable Layout/AlignHash
     build_processes = {
       code_style_check:
         Open3.popen3('bundle exec rake rubocop'),
@@ -23,7 +22,6 @@ namespace :armitage_rubocop do
       yaml_validation:
         Open3.popen3('bundle exec rake armitage_rubocop:validation:valid_yamls')
     }
-    # rubocop:enable Layout/AlignHash
 
     # NOTE: results structure { type => exit_code }
     results = {}.tap do |result_data|
