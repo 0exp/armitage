@@ -9,6 +9,4 @@ matrix:
         - gem install bundler
         - bundle install --path vendor/bundle
       script:
-        - bundle exec rake rubocop
-        - bundle exec rake armitage_rubocop:validation:valid_yamls
-        - bundle exec rake armitage_rubocop:validation:recognizable_cops
+        - bundle exec rake armitage_rubocop:build
