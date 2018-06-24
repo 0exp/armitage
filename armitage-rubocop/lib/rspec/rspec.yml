@@ -81,8 +81,7 @@ RSpec/Focus:
   Enabled: true
 
 RSpec/HookArgument:
-  Enabled: true
-  EnforcedStyle: implicit
+  Enabled: false
 
 RSpec/ImplicitExpect:
   Enabled: true
