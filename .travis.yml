@@ -3,7 +3,6 @@ matrix:
     - language: ruby
       rvm: 2.5.1
       sudo: false
-      cache: bundler
       before_script:
         - cd rubocop
         - gem install bundler
