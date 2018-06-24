@@ -44,7 +44,7 @@ Naming/UncommunicativeBlockParamName:
 
 Naming/UncommunicativeMethodParamName:
   Enabled: true
-  MinNameLength: 3
+  MinNameLength: 1
   AllowNamesEndingInNumbers: true
 
 Naming/VariableName:
