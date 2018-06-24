@@ -1,6 +1,6 @@
 Metrics/AbcSize:
   Enabled: true
-  Max: 15
+  Max: 19
 
 Metrics/BlockLength:
   Enabled: true
