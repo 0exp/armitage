@@ -4,7 +4,7 @@ matrix:
       rvm: 2.5.1
       sudo: false
       before_script:
-        - cd rubocop
+        - cd armitage-rubocop
         - gem install bundler
         - bundle install --path vendor/bundle
       script:
