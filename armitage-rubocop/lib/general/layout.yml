@@ -73,8 +73,8 @@ Layout/ElseAlignment:
 
 Layout/EmptyComment:
   Enabled: true
-  AllowBorderComment: false
-  AllowMarginComment: false
+  AllowBorderComment: true
+  AllowMarginComment: true
 
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
