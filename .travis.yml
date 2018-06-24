@@ -1,0 +1,13 @@
+matrix:
+  include:
+    - language: ruby
+      rvm: 2.5.1
+      sudo: false
+      cache: bundler
+      before_install:
+        - cd rubocop
+      install:
+        - gem install bundler
+        - bundle install --path vendor/bundle
+      script:
+        - bundle exec rake armitage_rubocop:build
