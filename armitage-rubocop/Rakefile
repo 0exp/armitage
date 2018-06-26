@@ -85,13 +85,13 @@ namespace :armitage_rubocop do
           next if RuboCop::ConfigLoader.default_configuration.key?(cop)
           next if RuboCop::Cop::Cop.registry.contains_cop_matching?([cop])
           next if cop == 'inherit_mode'
-          invalid_cops[cop] << "\e[31mBAD COP\e[0m"
+          invalid_cops[cop] = "\e[31mBAD COP\e[0m"
         end
 
         # NOTE: validate cop params
         rubocop_config.keys.each do |cop|
           next if invalid_cops.key?(cop)
-          invalid_params = []
+          invalid_params = Set.new
 
           rubocop_config[cop].each_key do |cop_param|
             next if RuboCop::Config::COMMON_PARAMS.include?(cop_param)
@@ -100,7 +100,7 @@ namespace :armitage_rubocop do
           end
 
           next if invalid_params.empty?
-          invalid_cops[cop] = "\e[31mBAD PARAMS\e[0m: #{invalid_params.join(', ')}"
+          invalid_cops[cop] = "\e[31mBAD PARAMS\e[0m: #{invalid_params.to_a.join(', ')}"
         end
       end
 
