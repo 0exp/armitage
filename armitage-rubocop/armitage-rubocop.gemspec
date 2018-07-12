@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
 
-  spec.add_dependency 'rubocop', '= 0.57.2'
+  spec.add_dependency 'rubocop', '= 0.58.1'
   spec.add_dependency 'rubocop-rspec', '= 1.27.0'
 
   spec.add_development_dependency 'bundler'
