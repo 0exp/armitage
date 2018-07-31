@@ -1,4 +1,4 @@
-# armitage-rubocop
+# armitage-rubocop &middot; [![Gem Version](https://badge.fury.io/rb/armitage-rubocop.svg)](https://badge.fury.io/rb/armitage-rubocop)
 
 - [Installation](#installation)
 - [Usage](#usage)
