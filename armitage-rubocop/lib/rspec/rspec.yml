@@ -122,6 +122,9 @@ RSpec/MessageExpectation:
 RSpec/MessageSpies:
   Enabled: false
 
+RSpec/MissingExampleGroupArgument:
+  Enabled: true
+
 RSpec/MultipleDescribes:
   Enabled: true
 
@@ -153,9 +156,8 @@ RSpec/PredicateMatcher:
 RSpec/ReceiveCounts:
   Enabled: false
 
-# TODO: enable when it will be supported by rubocop-rspec
-# RSpec/ReceiveNever:
-#   Enabled: true
+RSpec/ReceiveNever:
+  Enabled: true
 
 RSpec/RepeatedDescription:
   Enabled: true

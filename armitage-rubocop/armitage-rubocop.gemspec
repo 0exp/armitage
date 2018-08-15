@@ -6,7 +6,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name        = 'armitage-rubocop'
-  spec.version     = '0.5.0'
+  spec.version     = '0.6.0'
   spec.license     = 'MIT'
   spec.authors     = ['Rustam Ibragimov']
   spec.email       = ['iamdaiver@icloud.com']
@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_dependency 'rubocop', '= 0.58.2'
-  spec.add_dependency 'rubocop-rspec', '= 1.27.0'
+  spec.add_dependency 'rubocop-rspec', '= 1.28.0'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
