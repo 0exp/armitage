@@ -83,9 +83,16 @@ RSpec/Focus:
 RSpec/HookArgument:
   Enabled: false
 
+RSpec/HooksBeforeExamples:
+  Enabled: true
+
 RSpec/ImplicitExpect:
   Enabled: true
   EnforcedStyle: is_expected
+
+RSpec/ImplicitSubject:
+  Enabled: true
+  EnforcedStyle: single_line_only
 
 RSpec/InstanceSpy:
   Enabled: true
