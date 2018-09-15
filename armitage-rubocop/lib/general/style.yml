@@ -86,6 +86,7 @@ Style/Copyright:
 
 Style/DateTime:
   Enabled: true
+  AllowCoercion: false
 
 Style/DefWithParentheses:
   Enabled: true
@@ -149,6 +150,7 @@ Style/FlipFlop:
 Style/For:
   Enabled: true
   EnforcedStyle: each
+  AutoCorrect: true
 
 Style/FormatString:
   Enabled: true
@@ -264,6 +266,9 @@ Style/MultilineMemoization:
   Enabled: true
   EnforcedStyle: keyword
 
+Style/MultilineMethodSignature:
+  Enabled: false
+
 Style/MultilineTernaryOperator:
   Enabled: false
 
@@ -296,6 +301,7 @@ Style/Next:
 
 Style/NilComparison:
   Enabled: true
+  EnforcedStyle: predicate
 
 Style/NonNilCheck:
   Enabled: true
@@ -315,6 +321,7 @@ Style/NumericPredicate:
   Enabled: true
   EnforcedStyle: predicate
   AutoCorrect: false
+  IgnoredMethods: []
 
 Style/OneLineConditional:
   Enabled: true

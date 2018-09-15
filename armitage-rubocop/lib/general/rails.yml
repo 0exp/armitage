@@ -106,6 +106,7 @@ Rails/RefuteMethods:
 
 Rails/RelativeDateConstant:
   Enabled: true
+  AutoCorrect: false
 
 Rails/RequestReferer:
   Enabled: true
@@ -119,6 +120,7 @@ Rails/SafeNavigation:
 
 Rails/SaveBang:
   Enabled: true
+  AllowImplicitReturn: true
 
 Rails/ScopeArgs:
   Enabled: true
