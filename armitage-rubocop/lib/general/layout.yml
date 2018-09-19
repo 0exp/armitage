@@ -105,6 +105,7 @@ Layout/EmptyLinesAroundBlockBody:
   EnforcedStyle: no_empty_lines
 
 Layout/EmptyLinesAroundClassBody:
+  Enabled: true
   EnforcedStyle: no_empty_lines
 
 Layout/EmptyLinesAroundExceptionHandlingKeywords:

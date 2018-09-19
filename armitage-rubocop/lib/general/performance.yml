@@ -3,8 +3,12 @@ Performance/Caller:
 
 Performance/CaseWhenSplat:
   Enabled: true
+  AutoCorrect: true
 
 Performance/Casecmp:
+  Enabled: false
+
+Performance/ChainArrayAllocation:
   Enabled: false
 
 Performance/CompareWithBlock:
