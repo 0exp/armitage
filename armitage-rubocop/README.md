@@ -37,7 +37,7 @@ inherit_gem:
 
 ```yaml
 # --- rails ---
-inheit_gem:
+inherit_gem:
   # rails-specific cops + general + rspec
   armitage-rubocop: lib/rubocop.rails.yml
 ```
