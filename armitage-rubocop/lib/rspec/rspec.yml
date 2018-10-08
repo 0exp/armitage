@@ -194,8 +194,12 @@ RSpec/SingleArgumentMessageChain:
 RSpec/SubjectStub:
   Enabled: true
 
+RSpec/UnspecifiedException:
+  Enabled: true
+
 RSpec/VerifiedDoubles:
   Enabled: false
+  IgnoreNameless: true
   IgnoreSymbolicNames: false
 
 RSpec/VoidExpect:
