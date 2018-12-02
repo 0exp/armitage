@@ -6,7 +6,7 @@ Security/JSONLoad:
   AutoCorrect: false
 
 Security/MarshalLoad:
-  Enabled: true
+  Enabled: false
 
 Security/Open:
   Enabled: true
