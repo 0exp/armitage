@@ -43,6 +43,9 @@ Performance/InefficientHashSearch:
 Performance/LstripRstrip:
   Enabled: true
 
+Performance/OpenStruct:
+  Enabled: true
+
 Performance/RangeInclude:
   Enabled: true
 
