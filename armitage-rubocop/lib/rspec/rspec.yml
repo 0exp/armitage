@@ -143,6 +143,7 @@ RSpec/MultipleSubjects:
 
 RSpec/NamedSubject:
   Enabled: true
+  IgnoreSharedExamples: true
 
 RSpec/NestedGroups:
   Enabled: false
