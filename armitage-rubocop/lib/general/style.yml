@@ -144,9 +144,6 @@ Style/EvenOdd:
 Style/ExpandPathArguments:
   Enabled: true
 
-Style/FlipFlop:
-  Enabled: true
-
 Style/For:
   Enabled: true
   EnforcedStyle: each
@@ -536,6 +533,7 @@ Style/WordArray:
 
 Style/YodaCondition:
   Enabled: false
+  EnforcedStyle: forbid_for_all_comparison_operators
 
 Style/ZeroLengthPredicate:
   Enabled: true

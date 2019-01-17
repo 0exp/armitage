@@ -17,6 +17,9 @@ Rails/ApplicationRecord:
 Rails/AssertNot:
   Enabled: true
 
+Rails/BelongsTo:
+  Enabled: true
+
 Rails/Blank:
   Enabled: false
 
@@ -70,6 +73,9 @@ Rails/HttpPositionalArguments:
 
 Rails/HttpStatus:
   Enabled: false
+
+Rails/IgnoredSkipActionFilterOption:
+  Enabled: true
 
 Rails/InverseOf:
   Enabled: true
