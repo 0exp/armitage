@@ -1,7 +1,7 @@
 matrix:
   include:
   - language: ruby
-    rvm: 2.6.0
+    rvm: 2.6.1
     sudo: false
     before_script:
     - cd armitage-rubocop
