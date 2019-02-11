@@ -110,6 +110,9 @@ Rails/ReadWriteAttribute:
 Rails/RedundantReceiverInWithOptions:
   Enabled: true
 
+Rails/ReflectionClassName:
+  Enabled: true
+
 Rails/RefuteMethods:
   Enabled: true
 
