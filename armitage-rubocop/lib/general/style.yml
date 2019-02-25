@@ -329,9 +329,6 @@ Style/OptionHash:
 Style/OptionalArguments:
   Enabled: true
 
-Style/OptionalArguments:
-  Enabled: true
-
 Style/ParallelAssignment:
   Enabled: false
 
