@@ -132,6 +132,7 @@ Layout/ExtraSpacing:
   Enabled: true
   AllowForAlignment: true
   ForceEqualSignAlignment: false
+  AllowBeforeTrailingComments: false
 
 Layout/FirstArrayElementLineBreak:
   Enabled: false

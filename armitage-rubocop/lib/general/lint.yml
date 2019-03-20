@@ -162,6 +162,9 @@ Lint/SafeNavigationChain:
 Lint/SafeNavigationConsistency:
   Enabled: true
 
+Lint/SafeNavigationWithEmpty:
+  Enabled: true
+
 Lint/ScriptPermission:
   Enabled: true
 
@@ -179,6 +182,9 @@ Lint/StringConversionInInterpolation:
   Enabled: true
 
 Lint/Syntax:
+  Enabled: true
+
+Lint/ToJSON:
   Enabled: true
 
 Lint/UnderscorePrefixedVariableName:
