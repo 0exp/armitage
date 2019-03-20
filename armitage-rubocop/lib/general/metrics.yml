@@ -36,6 +36,8 @@ Metrics/LineLength:
     - https
   IgnoreCopDirectives: false
   IgnoredPatterns: []
+  Exclude:
+    - Gemfile
 
 Metrics/MethodLength:
   Enabled: true
