@@ -35,6 +35,10 @@ Naming/MethodName:
 Naming/PredicateName:
   Enabled: false
 
+Naming/RescuedExceptionsVariableName:
+  Enabled: true
+  PreferredName: error
+
 Naming/UncommunicativeBlockParamName:
   Enabled: true
   MinNameLength: 1

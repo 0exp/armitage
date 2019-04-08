@@ -5,6 +5,11 @@ Rails/ActionFilter:
 Rails/ActiveRecordAliases:
   Enabled: true
 
+Rails/ActiveRecordOverride:
+  Enabled: true
+  Include:
+    - app/models/**/*.rb
+
 Rails/ActiveSupportAliases:
   Enabled: true
 
@@ -106,6 +111,11 @@ Rails/Present:
 
 Rails/ReadWriteAttribute:
   Enabled: true
+
+Rails/RedundantAllowNil:
+  Enabled: true
+  Include:
+    - app/models/**/*.rb
 
 Rails/RedundantReceiverInWithOptions:
   Enabled: true

@@ -219,6 +219,15 @@ Layout/MultilineOperationIndentation:
   EnforcedStyle: aligned
   IndentationWidth: ~
 
+Layout/MultilineHashKeyLineBreaks:
+  Enabled: false
+
+Layout/MultilineMethodArgumentLineBreaks:
+  Enabled: false
+
+Layout/MultilineArrayLineBreaks:
+  Enabled: false
+
 Layout/RescueEnsureAlignment:
   Enabled: true
 
