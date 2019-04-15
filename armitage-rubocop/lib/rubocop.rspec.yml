@@ -15,4 +15,7 @@ AllCops:
     Patterns:
       - spec/factories.rb
       - spec/factories/**/*.rb
+      - spec/support/factories.rb
+      - spec/support/factories/**/*.rb
+      - features/support/factires.rb
       - features/support/factories/**/*.rb
