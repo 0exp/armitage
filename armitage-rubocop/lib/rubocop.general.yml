@@ -1,3 +1,5 @@
+require: rubocop-performance
+
 inherit_from:
   - ./general/bundler.yml
   - ./general/gemspec.yml
