@@ -8,8 +8,9 @@ require 'rubocop'
 require 'rubocop-rspec'
 
 RuboCop::RakeTask.new(:rubocop) do |t|
-  t.options = %w[--config ./lib/rubocop.general.yml]
+  t.options = %w[--config ./lib/rubocop.rails.yml]
   t.requires << 'rubocop-rspec'
+  t.requires << 'rubocop-performance'
 end
 
 namespace :armitage_rubocop do
