@@ -146,12 +146,20 @@ Layout/FirstMethodArgumentLineBreak:
 Layout/FirstMethodParameterLineBreak:
   Enabled: false
 
-Layout/FirstParameterIndentation:
+Layout/IndentFirstArgument:
   Enabled: true
   EnforcedStyle: consistent
   IndentationWidth: ~
 
-Layout/IndentArray:
+Layout/IndentFirstParameter:
+  Enabled: true
+  EnforcedStyle: consistent
+  IndentationWidth: ~
+
+Layout/HeredocArgumentClosingParenthesis:
+  Enabled: true
+
+Layout/IndentFirstArrayElement:
   Enabled: true
   EnforcedStyle: consistent
   IndentationWidth: ~
@@ -160,7 +168,7 @@ Layout/IndentAssignment:
   Enabled: true
   IndentationWidth: ~
 
-Layout/IndentHash:
+Layout/IndentFirstHashElement:
   Enabled: true
   EnforcedStyle: consistent
   IndentationWidth: ~

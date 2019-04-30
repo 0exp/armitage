@@ -75,6 +75,9 @@ Lint/FormatParameterMismatch:
 Lint/HandleExceptions:
   Enabled: false
 
+Lint/HeredocMethodCallPosition:
+  Enabled: true
+
 Lint/ImplicitStringConcatenation:
   Enabled: true
 
