@@ -8,7 +8,7 @@ matrix:
     - gem install bundler
     - bundle install --path vendor/bundle
     script:
-    - bundle exec rake armitage_rubocop:build
+    - bundle exec rake armitage_rubocop:validation:recognizable_cops
 notifications:
   slack:
     secure: CvmZgPDUbFp7TsOsOSivEyCIdH6v8Bcr7XK09SEJwMyhWKxLSuygYeUDLbqtNQY2T5Me8x/qarXlzYFPJx1zGdZ3lfs15v3NHhAxtgdQrHZ7kLdRH2nR2oMpBLVWSoD8+hvx0evP6l25q+/lTanB/vPCqwye8YbBB6o2HJZbjuhKwhLrHdSAJxJjTQPxLMKCw9ZAmHevE61vUzAkkYSKynPpO8V4M0CRIlRhW46Hw/JKkUwOhImj65VIY86oe2lW84d/R2nIoVSeEZc2O+WwfCHvjVYBZRjLs2M7sja9IdjcRLy5eUIW2x4QoYsgImdi+d8l/gf+O7Lobt10s3zxEqyGJyVKof1q7yPSZJfUme/YbkoR7Kj21uMXgnS4uZHklG1LbzIChJAkKdAwFdmsz4qAyIFcoirSZFTyI6snj2UwUV1T/TfP8O4OZYDz2OLwdDUSoTR2Ldb23GIlgFH2OcK0Eq1pnQQINBvNsDNEsZG8+0kfppxp/omEYeiNWZGTIcSN8CT5FE5FsoIxEjY7mW/E1L0NrlFFDwCG8F220djkehe5zBOalYErsuONBxT9cs8rmXhb+pSfbv+cNbE1q2NmbwQMTwnBlJtofGv4ALxwqFuCQrbmKXKun45ASgzP0ADLDW4/A+i+ZdvZIMiDk51VmBFW47lP21t8shLdNgs=
