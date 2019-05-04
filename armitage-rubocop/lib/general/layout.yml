@@ -3,6 +3,10 @@ Layout/AccessModifierIndentation:
   EnforcedStyle: indent
   IndentationWidth: ~
 
+Layout/AlignArguments:
+  Enabled: true
+  IndentationWidth: ~
+
 Layout/AlignArray:
   Enabled: true
 
