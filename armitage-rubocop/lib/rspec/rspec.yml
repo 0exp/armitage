@@ -22,6 +22,10 @@ RSpec/BeforeAfterAll:
 RSpec/ContextWording:
   Enabled: false
 
+RSpec/Dialect:
+  Enabled: true
+  PreferredMethods: {}
+
 RSpec/DescribeClass:
   Enabled: false
 
