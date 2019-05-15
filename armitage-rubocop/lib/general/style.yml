@@ -163,7 +163,7 @@ Style/FormatStringToken:
 
 Style/FrozenStringLiteralComment:
   Enabled: true
-  EnforcedStyle: when_needed
+  EnforcedStyle: always
 
 Style/GlobalVars:
   Enabled: true
@@ -281,6 +281,10 @@ Style/MutableConstant:
 
 Style/NegatedIf:
   Enabled: true
+  EnforcedStyle: both
+
+Style/NegatedUnless:
+  Enabled: false
   EnforcedStyle: both
 
 Style/NegatedWhile:
