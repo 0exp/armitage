@@ -54,7 +54,7 @@ Performance/RedundantMatch:
 
 Performance/RedundantMerge:
   Enabled: true
-  MaxKeyValuePairs: 2
+  MaxKeyValuePairs: 1
 
 Performance/RegexpMatch:
   Enabled: true
