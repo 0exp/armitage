@@ -4,10 +4,13 @@
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
+# NOTE: ci-specific version number
+gem_version = '0.33.0'
+release_version = ENV['TRAVIS'] ? "#{gem_version}.#{ENV['TRAVIS_BUILD_NUMBER']}" : gem_version
+
 Gem::Specification.new do |spec|
   spec.name        = 'armitage-rubocop'
-  spec.version     = '0.33.0'
-  spec.version     = "#{spec.version}.tb#{ENV['TRAVIS_BUILD_NUMBER']}" if ENV['TRAVIS']
+  spec.version     = release_version
   spec.license     = 'MIT'
   spec.authors     = ['Rustam Ibragimov']
   spec.email       = ['iamdaiver@icloud.com']
