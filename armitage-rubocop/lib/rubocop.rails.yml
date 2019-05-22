@@ -1,6 +1,9 @@
+require: rubocop-rails
+
 inherit_from:
   - ./rubocop.general.yml
   - ./rubocop.rspec.yml
+  - ./common/rails.yml
 
 AllCops:
   TargetRailsVersion: ~

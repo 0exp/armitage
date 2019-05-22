@@ -4,13 +4,9 @@
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-# NOTE: ci-specfic
-gem_version = '0.70.0' # NOTE: based on rubocop version
-release_version = ENV['TRAVIS'] ? "#{gem_version}.#{ENV['TRAVIS_BUILD_NUMBER']}" : gem_version
-
 Gem::Specification.new do |spec|
   spec.name        = 'armitage-rubocop'
-  spec.version     = release_version
+  spec.version     = '0.34.0'
   spec.license     = 'MIT'
   spec.authors     = ['Rustam Ibragimov']
   spec.email       = ['iamdaiver@icloud.com']
@@ -28,6 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rubocop',             '= 0.70.0'
   spec.add_dependency 'rubocop-performance', '= 1.3.0'
   spec.add_dependency 'rubocop-rspec',       '= 1.33.0'
+  spec.add_dependency 'rubocop-rails',       '= 2.0.0'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'

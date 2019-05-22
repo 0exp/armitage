@@ -1,16 +1,15 @@
 require: rubocop-performance
 
 inherit_from:
-  - ./general/bundler.yml
-  - ./general/gemspec.yml
-  - ./general/layout.yml
-  - ./general/lint.yml
-  - ./general/metrics.yml
-  - ./general/naming.yml
-  - ./general/performance.yml
-  - ./general/security.yml
-  - ./general/style.yml
-  - ./general/rails.yml
+  - ./common/bundler.yml
+  - ./common/gemspec.yml
+  - ./common/layout.yml
+  - ./common/lint.yml
+  - ./common/metrics.yml
+  - ./common/naming.yml
+  - ./common/performance.yml
+  - ./common/security.yml
+  - ./common/style.yml
 
 AllCops:
   DefaultFormatter: progress
