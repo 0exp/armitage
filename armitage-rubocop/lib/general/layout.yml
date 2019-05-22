@@ -97,6 +97,7 @@ Layout/EmptyLines:
 
 Layout/EmptyLinesAroundAccessModifier:
   Enabled: true
+  EnforcedStyle: around
 
 Layout/EmptyLinesAroundArguments:
   Enabled: true

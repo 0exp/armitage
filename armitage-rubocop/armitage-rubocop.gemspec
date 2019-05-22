@@ -4,8 +4,8 @@
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-# NOTE: ci-specific version number
-gem_version = '0.33.0'
+# NOTE: ci-specfic
+gem_version = '0.70.0' # NOTE: based on rubocop version
 release_version = ENV['TRAVIS'] ? "#{gem_version}.#{ENV['TRAVIS_BUILD_NUMBER']}" : gem_version
 
 Gem::Specification.new do |spec|
@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
 
-  spec.add_dependency 'rubocop',             '= 0.69.0'
+  spec.add_dependency 'rubocop',             '= 0.70.0'
   spec.add_dependency 'rubocop-performance', '= 1.3.0'
   spec.add_dependency 'rubocop-rspec',       '= 1.33.0'
 
