@@ -6,7 +6,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name        = 'armitage-rubocop'
-  spec.version     = '0.33.0rc2'
+  spec.version     = '0.33.0'
+  spec.version     = "#{spec.version}.tb#{ENV['TRAVIS_BUILD_NUMBER']}" if ENV['TRAVIS']
   spec.license     = 'MIT'
   spec.authors     = ['Rustam Ibragimov']
   spec.email       = ['iamdaiver@icloud.com']
