@@ -148,6 +148,9 @@ Style/EvenOdd:
 Style/ExpandPathArguments:
   Enabled: true
 
+Style/FloatDivision:
+  Enabled: false
+
 Style/For:
   Enabled: true
   EnforcedStyle: each
@@ -184,6 +187,7 @@ Style/IdenticalConditionalBranches:
 
 Style/IfInsideElse:
   Enabled: true
+  AllowIfModifier: true
 
 Style/IfUnlessModifier:
   Enabled: false

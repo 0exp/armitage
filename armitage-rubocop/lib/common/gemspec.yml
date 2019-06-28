@@ -7,3 +7,6 @@ Gemspec/OrderedDependencies:
 
 Gemspec/RequiredRubyVersion:
   Enabled: false
+
+Gemspec/RubyVersionGlobalsUsage:
+  Enabled: true
