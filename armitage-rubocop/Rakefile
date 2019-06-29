@@ -5,6 +5,7 @@ require 'rubocop/rake_task'
 require 'open3'
 require 'yaml'
 require 'rubocop'
+require 'rubocop-rails'
 require 'rubocop-performance'
 require 'rubocop-rspec'
 
@@ -14,6 +15,8 @@ RuboCop::RakeTask.new(:rubocop) do |t|
   t.requires << 'rubocop-performance'
   t.requires << 'rubocop-rails'
 end
+
+NON_CHECKABLE_COPS = %w[Rails].freeze # NOTE: Global Rails cop has only `Enabled` option
 
 namespace :armitage_rubocop do
   task :build do
@@ -56,7 +59,9 @@ namespace :armitage_rubocop do
 
       # NOTE: try to load without Psych exceptions
       invalid_yamls = yamls.each_with_object([]) do |file_name, invalid_files|
-        YAML.load(File.read(file_name)) rescue (invalid_files << "- \e[33m#{file_name}\e[0m")
+        YAML.safe_load(File.read(file_name))
+      rescue StandardError
+        (invalid_files << "- \e[33m#{file_name}\e[0m")
       end
 
       if invalid_yamls.empty?
@@ -88,21 +93,26 @@ namespace :armitage_rubocop do
           next if RuboCop::ConfigLoader.default_configuration.key?(cop)
           next if RuboCop::Cop::Cop.registry.contains_cop_matching?([cop])
           next if cop == 'inherit_mode'
+
           invalid_cops[cop] = "\e[31mBAD COP\e[0m"
         end
 
         # NOTE: validate cop params
         rubocop_config.keys.each do |cop|
           next if invalid_cops.key?(cop)
+
           invalid_params = Set.new
 
           rubocop_config[cop].each_key do |cop_param|
             next if RuboCop::Config::COMMON_PARAMS.include?(cop_param)
+            next if NON_CHECKABLE_COPS.include?(cop)
             next if RuboCop::ConfigLoader.default_configuration[cop].key?(cop_param)
+
             invalid_params << "\e[35m#{cop_param}\e[0m"
           end
 
           next if invalid_params.empty?
+
           invalid_cops[cop] = "\e[31mBAD PARAMS\e[0m: #{invalid_params.to_a.join(', ')}"
         end
       end

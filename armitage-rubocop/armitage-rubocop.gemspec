@@ -1,4 +1,3 @@
-# coding: utf-8
 # frozen_string_literal: true
 
 lib = File.expand_path('lib', __dir__)
@@ -26,8 +25,8 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'rubocop',             '= 0.72.0'
   spec.add_dependency 'rubocop-performance', '= 1.4.0'
+  spec.add_dependency 'rubocop-rails',       '= 2.2.0'
   spec.add_dependency 'rubocop-rspec',       '= 1.33.0'
-  spec.add_dependency 'rubocop-rails',       '= 2.1.0'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'

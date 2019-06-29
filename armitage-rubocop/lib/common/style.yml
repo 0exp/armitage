@@ -410,6 +410,7 @@ Style/ReturnNil:
 
 Style/SafeNavigation:
   Enabled: true
+  ConvertCodeThatCanStartToReturnNil: false
 
 Style/Sample:
   Enabled: true

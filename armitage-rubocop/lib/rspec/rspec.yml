@@ -22,10 +22,6 @@ RSpec/BeforeAfterAll:
 RSpec/ContextWording:
   Enabled: false
 
-RSpec/Dialect:
-  Enabled: true
-  PreferredMethods: {}
-
 RSpec/DescribeClass:
   Enabled: false
 
@@ -39,6 +35,10 @@ RSpec/DescribedClass:
   Enabled: true
   SkipBlocks: false
   EnforcedStyle: described_class
+
+RSpec/Dialect:
+  Enabled: true
+  PreferredMethods: {}
 
 RSpec/EmptyExampleGroup:
   Enabled: true
@@ -117,6 +117,10 @@ RSpec/IteratedExpectation:
 
 RSpec/LeadingSubject:
   Enabled: true
+
+# NOTE: will be introduced in next release
+# RSpec/LeakyConstantDeclaration:
+#   Enabled: true
 
 RSpec/LetBeforeExamples:
   Enabled: true
