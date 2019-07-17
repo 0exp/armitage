@@ -277,6 +277,9 @@ Style/MultilineMethodSignature:
 Style/MultilineTernaryOperator:
   Enabled: false
 
+Style/MultilineWhenThen:
+  Enabled: true
+
 Style/MultipleComparison:
   Enabled: true
 
