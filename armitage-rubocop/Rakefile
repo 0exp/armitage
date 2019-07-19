@@ -33,7 +33,6 @@ namespace :armitage_rubocop do
     results = {}.tap do |result_data|
       build_processes.each_pair do |build_type, build_process|
         # NOTE: build_process => [stdin, stdout, stderr, wtr]
-        puts build_process[1].read
         build_result = build_process[3].value.exitstatus
         result_data[build_type] = build_result
       end
