@@ -59,11 +59,13 @@ namespace :armitage_rubocop do
 
       # NOTE: try to load without Psych exceptions
       invalid_yamls = yamls.each_with_object([]) do |file_name, invalid_files|
+        # rubocop:disable Style/RedundantBegin
         begin
           YAML.safe_load(File.read(file_name))
         rescue StandardError
           (invalid_files << "- \e[33m#{file_name}\e[0m")
         end
+        # rubocop:enable Style/RedundantBegin
       end
 
       if invalid_yamls.empty?
@@ -106,7 +108,7 @@ namespace :armitage_rubocop do
           invalid_params = Set.new
 
           rubocop_config[cop].each_key do |cop_param|
-            next if RuboCop::Config::COMMON_PARAMS.include?(cop_param)
+            next if RuboCop::ConfigValidator::COMMON_PARAMS.include?(cop_param)
             next if NON_CHECKABLE_COPS.include?(cop)
             next if RuboCop::ConfigLoader.default_configuration[cop].key?(cop_param)
 
