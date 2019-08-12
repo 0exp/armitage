@@ -90,6 +90,9 @@ RSpec/HookArgument:
 RSpec/HooksBeforeExamples:
   Enabled: true
 
+RSpec/ImplicitBlockExpectation:
+  Enabled: false
+
 RSpec/ImplicitExpect:
   Enabled: true
   EnforcedStyle: is_expected
@@ -118,9 +121,8 @@ RSpec/IteratedExpectation:
 RSpec/LeadingSubject:
   Enabled: true
 
-# NOTE: will be introduced in next release
-# RSpec/LeakyConstantDeclaration:
-#   Enabled: true
+RSpec/LeakyConstantDeclaration:
+  Enabled: true
 
 RSpec/LetBeforeExamples:
   Enabled: true
