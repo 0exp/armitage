@@ -48,6 +48,11 @@ Rails/DelegateAllowBlank:
 Rails/DynamicFindBy:
   Enabled: true
 
+Rails/EnumHash:
+  Enabled: true
+  Include:
+    - app/models/**/*.rb
+
 Rails/EnumUniqueness:
   Enabled: true
 
