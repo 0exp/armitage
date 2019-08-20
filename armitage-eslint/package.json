@@ -1,0 +1,25 @@
+{
+  "name": "armitage-eslint",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "armitage-eslint - coming soon...",
+  "homepage": "https://github.com/0exp/armitage/armitage-eslint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0exp/armitage/armitage-eslint"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Rustam Ibragimov",
+    "email": "iamdaiver@gmail.com"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "armitage",
+    "armitage-eslint"
+  ],
+  "dependencies": {
+    "eslint": "^6.2.0"
+  }
+}
