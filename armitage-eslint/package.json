@@ -19,7 +19,11 @@
     "armitage",
     "armitage-eslint"
   ],
-  "dependencies": {
-    "eslint": "^6.2.0"
+  "peerDependencies": {
+    "eslint": "~6.2.0",
+    "eslint-plugin-import": "~2.18.2"
+  },
+  "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js"
   }
 }
