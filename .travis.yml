@@ -6,10 +6,9 @@ matrix:
     cache: bundler
     before_script:
     - cd armitage-rubocop
-    - gem install bundler
-    - bundle install --path vendor/bundle
+    - gem install bundler -v 2.0.2
+    - bundle install
     script:
-    - cd armitage-rubocop
     - bundle exec rake armitage_rubocop:build
     deploy:
       api_key:
