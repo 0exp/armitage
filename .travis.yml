@@ -9,6 +9,7 @@ matrix:
     - gem install bundler
     - bundle install --path vendor/bundle
     script:
+    - cd armitage-rubocop
     - bundle exec rake armitage_rubocop:build
     deploy:
       api_key:
