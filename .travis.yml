@@ -9,7 +9,7 @@ matrix:
     - gem install bundler
     - bundle install --path vendor/bundle
     script:
-    - bundle exec rake armitage:build
+    - bundle exec rake armitage_rubocop:build
     deploy:
       api_key:
         secure: wSgfApAcQPUWsFCXzzRGgfTDRF/ui6KcPS9Pw5fUmS8pOM9mZGWo4JfsYxfyNMcXedaPbY3jX3qhmVfjCG8gjWZO7hPhY1QHjNkBT+TlhwC7L5vtZHu/zDXY0jDotFC3JrtciydppThxzBD5ahfmrApjJzwhYrdMTGMiU3W+iOfnvUhxWrzDYx0ifwJa6FKIBCW07kpOGuxfuINMoF4AnX/t2GY7UgyZ6LzmOD3SfQEPNQlG3G18/pIs0+9AcO6jU3PYOVsuijChD+iP0RFqZFJ6Y45aOgUp3lNqF7pwR/1Pku3E5LbPJEkiv3MDvTESnywYj+g52HdcrYi6i4nAwzkC1yK+Li28YE8YO5tJaLSlhMQnuYIrS80llH6+xvODKQ8GjQ9ulz4eQoIHsnEXI4S1GWJfwVrE4jYKdEVbURwCoc8cSdXm75KfQQ0s0n6tyPQI6Ecr931MtxnGQ389foNDxpVr2qcP9VdZIaZtJwBOe07rNXSDEQamBPA+tWmTMK70CUvqniuLNx8KrKzu6sHH7PF/XHfJKtFUpWv78YsIEescGsgunntO7E6OK78I6BPKMyBAEpCUy4mvvm02Lj1MHHrjW4VXCWbonnx+d1w/JrO5WYcyjxD3N/0wyHrHcmvBJ343LgckrnAvy9SwpoOjZ0Y/3E6D0Mu5odyXTVA=
