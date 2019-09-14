@@ -5,5 +5,5 @@
 
 #### Usage
 
-- **a**) copy `.ansible-lint` to your
-- **b**) copy `.ansible-lint` anywhere and run `ansible-lint -c /path/to/.ansibl-lint`
+- **a**) copy `.ansible-lint` to your project and use `ansible-lint *.yml`;
+- **b**) copy `.ansible-lint` anywhere and run `ansible-lint -c /path/to/.ansible-lint`
