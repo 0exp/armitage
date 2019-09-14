@@ -10,6 +10,15 @@ matrix:
     - bundle install
     script:
     - bundle exec rake armitage_rubocop:build
+  - langugage: python # armitage-rubocop (yaml linting)
+    python:
+    - "3.7.4"
+    install:
+    - pip install yamllint
+    before_script:
+    - cd armitage-rubocop
+    script:
+    - yamllint --strict $(git ls-files '*.yaml' '*.yml')
   - language: python # armitage-yamllint
     python:
     - "3.7.4"
