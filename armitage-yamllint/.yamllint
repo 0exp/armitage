@@ -32,7 +32,7 @@ rules:
   hyphens:
     max-spaces-after: 1
   indentation:
-    spaces: 1
+    spaces: 2
     indent-sequences: whatever
     check-multi-line-strings: true
   key-duplicates: {}
@@ -45,7 +45,6 @@ rules:
     type: unix
   octal-values:
     forbid-explicit-octal: true
-  quoted-strings:
-    quote-type: any
+  quoted-strings: disable
   trailing-spaces: {}
   truthy: {}
