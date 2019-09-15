@@ -13,9 +13,11 @@
 ### Usage
 
 - **a**) copy `.yamllint` to your project and run:
+
   – `yamllint *.yml`;
   - or `yamllint file.yml another_file.yml`;
 - **b**) copy `.yamllint` anywhere and run:
+
   - `yamllint -c /path/to/.yamllint file.yml another_file.yml`;
   - or `yamllint -c /path/to/.yamllint *.yml`;
 
