@@ -47,4 +47,9 @@ rules:
     forbid-explicit-octal: true
   quoted-strings: disable
   trailing-spaces: {}
-  truthy: {}
+  truthy:
+    allowed-values:
+      - 'yes'
+      - 'no'
+      - 'true'
+      - 'false'
