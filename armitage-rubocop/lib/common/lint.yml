@@ -172,6 +172,9 @@ Lint/SafeNavigationWithEmpty:
 Lint/ScriptPermission:
   Enabled: true
 
+Lint/SendWithMixinArgument:
+  Enabled: true
+
 Lint/ShadowedArgument:
   Enabled: true
   IgnoreImplicitReferences: false
