@@ -225,6 +225,7 @@ Style/LineEndConcatenation:
 
 Style/MethodCallWithArgsParentheses:
   Enabled: false
+  IgnoredMethods: []
 
 Style/MethodCallWithoutArgsParentheses:
   Enabled: true
