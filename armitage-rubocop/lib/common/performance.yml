@@ -16,11 +16,11 @@ Performance/CompareWithBlock:
 
 Performance/Count:
   Enabled: true
-  SafeMode: true
+  SafeAutoCorrect: false
 
 Performance/Detect:
   Enabled: true
-  SafeMode: true
+  SafeAutoCorrect: false
 
 Performance/DoubleStartEndWith:
   Enabled: true
