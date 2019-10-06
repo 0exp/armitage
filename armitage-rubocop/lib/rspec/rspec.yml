@@ -19,6 +19,9 @@ RSpec/BeEql:
 RSpec/BeforeAfterAll:
   Enabled: false
 
+RSpec/ContextMethod:
+  Enabled: false
+
 RSpec/ContextWording:
   Enabled: false
 
@@ -44,6 +47,9 @@ RSpec/EmptyExampleGroup:
   Enabled: true
 
 RSpec/EmptyLineAfterExampleGroup:
+  Enabled: true
+
+RSpec/EmptyLineAfterExample:
   Enabled: true
 
 RSpec/EmptyLineAfterFinalLet:
