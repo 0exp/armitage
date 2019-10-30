@@ -50,6 +50,18 @@ Naming/UncommunicativeMethodParamName:
   Enabled: true
   MinNameLength: 1
   AllowNamesEndingInNumbers: true
+  AllowedNames:
+    - 'io'
+    - 'id'
+    - 'to'
+    - 'by'
+    - 'on'
+    - 'in'
+    - 'at'
+    - 'ip'
+    - 'db'
+    - 'os'
+  ForbiddenNames: []
 
 Naming/VariableName:
   Enabled: true
