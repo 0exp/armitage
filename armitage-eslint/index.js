@@ -14,7 +14,10 @@ module.exports = {
     './rules/imports'
   ].map(require.resolve),
 
-  globals: { 'Atomics': 'readonly', 'SharedArrayBuffer': 'readonly' },
+  globals: {
+    'Atomics': 'readonly',
+    'SharedArrayBuffer': 'readonly'
+  },
 
   parserOptions: {
     ecmaVersion: 2019,
