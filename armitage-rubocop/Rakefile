@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'pry'
 require 'bundler/gem_tasks'
 require 'rubocop/rake_task'
 require 'open3'
@@ -9,17 +8,20 @@ require 'rubocop'
 require 'rubocop-rails'
 require 'rubocop-performance'
 require 'rubocop-rspec'
+require 'rubocop-rake'
 
 RuboCop::RakeTask.new(:rubocop) do |t|
   t.options = %w[--config ./lib/rubocop.rails.yml]
   t.requires << 'rubocop-rspec'
   t.requires << 'rubocop-performance'
   t.requires << 'rubocop-rails'
+  t.requires << 'rubocop-rake'
 end
 
 NON_CHECKABLE_COPS = %w[Rails].freeze # NOTE: Global Rails cop has only `Enabled` option
 
 namespace :armitage_rubocop do
+  desc 'Full armitage-rubocop build (code style, cops validation, yaml validation)'
   task :build do
     build_processes = {
       code_style_check:
@@ -131,5 +133,3 @@ namespace :armitage_rubocop do
 end
 
 task default: :rubocop
-
-binding.pry
