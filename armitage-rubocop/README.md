@@ -9,22 +9,22 @@
 Configured rules:
 
 - **Common** (`.rubocop.general.yml`) (`.rubocop.rails.yml`)
-  - `Bundler`
-  - `Rake`
-  - `Gemspec`
-  - `Layout`
-  - `Lint`
-  - `Metrics`
-  - `Naming`
-  - `Performance`
-  - `Rails` (❌ `.rubocop.general.yml`)
-  - `Security`
-  - `Style`
+  - Bundler
+  - Rake
+  - Gemspec
+  - Layout
+  - Lint
+  - Metrics
+  - Naming
+  - Performance
+  - Rails (isn't included in `.rubocop.general.yml`)
+  - Security
+  - Style
 - **RSpec** (`.rubocop.rspec.yml`) (`.rubocop.rails.yml`)
-  - `Capybara`
-  - `FactoryBot`
-  - `Rails`
-  - `RSpec`
+  - Capybara
+  - FactoryBot
+  - Rails
+  - RSpec
 
 ---
 
