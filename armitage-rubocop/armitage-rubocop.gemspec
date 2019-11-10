@@ -4,12 +4,14 @@ lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name        = 'armitage-rubocop'
   spec.version     = '0.76.0.1'
+
+  spec.name        = 'armitage-rubocop'
   spec.license     = 'MIT'
   spec.authors     = ['Rustam Ibragimov']
   spec.email       = ['iamdaiver@icloud.com']
   spec.homepage    = 'https://github.com/0exp/armitage'
+
   spec.summary     = 'A set of rubocop settings'
   spec.description = 'A set of rubocop settings used in my own projects.' \
                      'Support for: vanilla ruby, rspec, rails.'
