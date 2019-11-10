@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'pry'
 require 'bundler/gem_tasks'
 require 'rubocop/rake_task'
 require 'open3'
@@ -130,3 +131,5 @@ namespace :armitage_rubocop do
 end
 
 task default: :rubocop
+
+binding.pry

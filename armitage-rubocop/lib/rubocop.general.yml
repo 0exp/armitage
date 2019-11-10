@@ -10,6 +10,7 @@ inherit_from:
   - ./common/performance.yml
   - ./common/security.yml
   - ./common/style.yml
+  - ./common/rake.yml
 
 AllCops:
   DefaultFormatter: progress
