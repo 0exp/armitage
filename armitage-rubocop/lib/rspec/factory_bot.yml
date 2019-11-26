@@ -4,3 +4,6 @@ FactoryBot/AttributeDefinedStatically:
 FactoryBot/CreateList:
   Enabled: true
   EnforcedStyle: create_list
+
+FactoryBot/FactoryClassName:
+  Enabled: true

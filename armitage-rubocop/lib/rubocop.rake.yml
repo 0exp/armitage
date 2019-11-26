@@ -1,0 +1,10 @@
+require: rubocop-rake
+
+inherit_from:
+  - ./common/rake.yml
+
+Rake:
+  Enabled: true
+  Include:
+    - 'Rakefile'
+    - '**/*.rake'

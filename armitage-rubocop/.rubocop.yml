@@ -1,4 +1,6 @@
-inherit_from: ./lib/rubocop.general.yml
+inherit_from:
+  - ./lib/rubocop.general.yml
+  - ./lib/rubocop.rake.yml
 
 AllCops:
   TargetRubyVersion: 2.6.5

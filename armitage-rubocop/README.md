@@ -8,7 +8,7 @@
 
 Configured rules:
 
-- **Common** (`.rubocop.general.yml`) (`.rubocop.rails.yml`)
+- **Common** (`.rubocop.general.yml`) (`.rubocop.rails.yml`) (`.rubocop.rake.yml`)
   - Bundler
   - Rake
   - Gemspec
@@ -20,6 +20,7 @@ Configured rules:
   - Rails (isn't included in `.rubocop.general.yml`)
   - Security
   - Style
+  - Rake (isn't included in `.rubocop.general.yml`)
 - **RSpec** (`.rubocop.rspec.yml`) (`.rubocop.rails.yml`)
   - Capybara
   - FactoryBot
@@ -55,6 +56,7 @@ inherit_gem:
   armitage-rubocop:
     - lib/rubocop.general.yml
     - lib/rubocop.rspec.yml
+    - lib/rubocop.rake.yml
 ```
 
 ```yaml

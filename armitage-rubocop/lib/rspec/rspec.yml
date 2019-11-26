@@ -39,6 +39,9 @@ RSpec/DescribedClass:
   SkipBlocks: false
   EnforcedStyle: described_class
 
+RSpec/DescribedClassModuleWrapping:
+  Enabled: true
+
 RSpec/Dialect:
   Enabled: true
   PreferredMethods: {}
@@ -175,7 +178,10 @@ RSpec/Pending:
   Enabled: false
 
 RSpec/PredicateMatcher:
-  Enabled: false
+  Enabled: true
+  Strict: true
+  EnforcedStyle: explicit
+  AllowedExplicitMatchers: []
 
 RSpec/ReceiveCounts:
   Enabled: false
