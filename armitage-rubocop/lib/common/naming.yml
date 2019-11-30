@@ -39,14 +39,14 @@ Naming/RescuedExceptionsVariableName:
   Enabled: true
   PreferredName: error
 
-Naming/UncommunicativeBlockParamName:
+Naming/BlockParameterName:
   Enabled: true
   MinNameLength: 1
   AllowNamesEndingInNumbers: true
   AllowedNames: []
   ForbiddenNames: []
 
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   Enabled: true
   MinNameLength: 1
   AllowNamesEndingInNumbers: true

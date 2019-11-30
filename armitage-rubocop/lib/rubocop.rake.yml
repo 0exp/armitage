@@ -6,5 +6,5 @@ inherit_from:
 Rake:
   Enabled: true
   Include:
-    - 'Rakefile'
+    - Rakefile
     - '**/*.rake'

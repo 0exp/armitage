@@ -3,21 +3,21 @@ Layout/AccessModifierIndentation:
   EnforcedStyle: indent
   IndentationWidth: ~
 
-Layout/AlignArguments:
+Layout/ArgumentAlignment:
   Enabled: true
   IndentationWidth: ~
 
-Layout/AlignArray:
+Layout/ArrayAlignment:
   Enabled: true
 
 # NOTE: sometimes - good, sometimes - bad. readability depends on case by case.
-Layout/AlignHash:
+Layout/HashAlignment:
   Enabled: false
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
   EnforcedLastArgumentHashStyle: always_inspect
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   Enabled: true
   EnforcedStyle: with_first_parameter
   IndentationWidth: ~
@@ -151,12 +151,12 @@ Layout/FirstMethodArgumentLineBreak:
 Layout/FirstMethodParameterLineBreak:
   Enabled: false
 
-Layout/IndentFirstArgument:
+Layout/FirstArgumentIndentation:
   Enabled: true
   EnforcedStyle: consistent
   IndentationWidth: ~
 
-Layout/IndentFirstParameter:
+Layout/FirstParameterIndentation:
   Enabled: true
   EnforcedStyle: consistent
   IndentationWidth: ~
@@ -164,21 +164,21 @@ Layout/IndentFirstParameter:
 Layout/HeredocArgumentClosingParenthesis:
   Enabled: true
 
-Layout/IndentFirstArrayElement:
+Layout/FirstArrayElementIndentation:
   Enabled: true
   EnforcedStyle: consistent
   IndentationWidth: ~
 
-Layout/IndentAssignment:
+Layout/AssignmentIndentation:
   Enabled: true
   IndentationWidth: ~
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   Enabled: true
   EnforcedStyle: consistent
   IndentationWidth: ~
 
-Layout/IndentHeredoc:
+Layout/HeredocIndentation:
   Enabled: true
   EnforcedStyle: squiggly
 
@@ -194,7 +194,7 @@ Layout/IndentationWidth:
 Layout/InitialIndentation:
   Enabled: true
 
-Layout/LeadingBlankLines:
+Layout/LeadingEmptyLines:
   Enabled: true
 
 Layout/LeadingCommentSpace:
@@ -339,7 +339,7 @@ Layout/Tab:
   Enabled: true
   IndentationWidth: ~
 
-Layout/TrailingBlankLines:
+Layout/TrailingEmptyLines:
   Enabled: true
   EnforcedStyle: final_newline
 
