@@ -4,7 +4,7 @@ lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.version     = '0.77.0'
+  spec.version     = '0.78.0'
 
   spec.name        = 'armitage-rubocop'
   spec.license     = 'MIT'
