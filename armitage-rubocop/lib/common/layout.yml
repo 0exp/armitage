@@ -201,6 +201,20 @@ Layout/LeadingCommentSpace:
   Enabled: true
   AllowDoxygenCommentStyle: false
 
+Layout/LineLength:
+  Enabled: true
+  AutoCorrect: true
+  Max: 100
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+  IgnoreCopDirectives: false
+  IgnoredPatterns: []
+  Exclude:
+    - Gemfile
+
 Layout/MultilineArrayBraceLayout:
   Enabled: true
   EnforcedStyle: symmetrical
@@ -274,6 +288,7 @@ Layout/SpaceAroundKeyword:
 Layout/SpaceAroundOperators:
   Enabled: true
   AllowForAlignment: true
+  EnforcedStyleForExponentOperator: no_space
 
 Layout/SpaceBeforeBlockBraces:
   Enabled: true

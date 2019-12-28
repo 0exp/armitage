@@ -26,20 +26,6 @@ Metrics/CyclomaticComplexity:
   Enabled: true
   Max: 10
 
-Metrics/LineLength:
-  Enabled: true
-  AutoCorrect: true
-  Max: 100
-  AllowHeredoc: true
-  AllowURI: true
-  URISchemes:
-    - http
-    - https
-  IgnoreCopDirectives: false
-  IgnoredPatterns: []
-  Exclude:
-    - Gemfile
-
 Metrics/MethodLength:
   Enabled: true
   Max: 25
