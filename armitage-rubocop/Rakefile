@@ -21,12 +21,13 @@ end
 
 NON_CHECKABLE_COPS = %w[Rails].freeze # NOTE: Global "Rails" cop has only `Enabled` option
 
+# rubocop:disable Rails/RakeEnvironment
 namespace :armitage_rubocop do
   desc 'Full armitage-rubocop build (code style, cops validation, yaml validation)'
   task :build do
     build_processes = {
       code_style_check:
-        Open3.popen3('bundle exec rubocop'),
+        Open3.popen3('bundle exec rake rubocop'),
       cops_validation:
         Open3.popen3('bundle exec rake armitage_rubocop:validation:recognizable_cops'),
       yaml_validation:
@@ -134,3 +135,4 @@ namespace :armitage_rubocop do
 end
 
 task default: :rubocop
+# rubocop:enable Rails/RakeEnvironment
