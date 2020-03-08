@@ -195,6 +195,12 @@ RSpec/RepeatedDescription:
 RSpec/RepeatedExample:
   Enabled: true
 
+RSpec/RepeatedExampleGroupBody:
+  Enabled: true
+
+RSpec/RepeatedExampleGroupDescription:
+  Enabled: true
+
 RSpec/ReturnFromStub:
   Enabled: true
   EnforcedStyle: and_return

@@ -92,7 +92,7 @@ namespace :armitage_rubocop do
         rubocop_config = RuboCop::ConfigLoader.load_file(yaml_file)
 
         # NOTE: validate cop existence
-        rubocop_config.keys.each do |cop|
+        rubocop_config.each_key do |cop|
           next if RuboCop::ConfigLoader.default_configuration.key?(cop)
           next if RuboCop::Cop::Cop.registry.contains_cop_matching?([cop])
           next if cop == 'inherit_mode'
@@ -101,7 +101,7 @@ namespace :armitage_rubocop do
         end
 
         # NOTE: validate cop params
-        rubocop_config.keys.each do |cop|
+        rubocop_config.each_key do |cop|
           next if invalid_cops.key?(cop)
 
           invalid_params = Set.new
@@ -133,6 +133,6 @@ namespace :armitage_rubocop do
     end
   end
 end
+# rubocop:enable Rails/RakeEnvironment
 
 task default: :rubocop
-# rubocop:enable Rails/RakeEnvironment

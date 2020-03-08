@@ -22,11 +22,11 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
 
-  spec.add_dependency 'rubocop',             '= 0.79.0'
+  spec.add_dependency 'rubocop',             '= 0.80.1'
   spec.add_dependency 'rubocop-performance', '= 1.5.2'
   spec.add_dependency 'rubocop-rails',       '= 2.4.2'
-  spec.add_dependency 'rubocop-rspec',       '= 1.37.1'
-  spec.add_dependency 'rubocop-rake',        '= 0.5.0'
+  spec.add_dependency 'rubocop-rspec',       '= 1.38.1'
+  spec.add_dependency 'rubocop-rake',        '= 0.5.1'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
