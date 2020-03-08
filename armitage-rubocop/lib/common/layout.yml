@@ -200,6 +200,7 @@ Layout/LeadingEmptyLines:
 Layout/LeadingCommentSpace:
   Enabled: true
   AllowDoxygenCommentStyle: false
+  AllowGemfileRubyComment: true
 
 Layout/LineLength:
   Enabled: true
