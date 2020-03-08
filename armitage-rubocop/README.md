@@ -15,6 +15,7 @@ Configured rules:
   - Layout
   - Lint
   - Metrics
+  - Migration
   - Naming
   - Performance
   - Rails (isn't included in `.rubocop.general.yml`)
