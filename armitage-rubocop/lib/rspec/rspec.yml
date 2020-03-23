@@ -181,7 +181,9 @@ RSpec/PredicateMatcher:
   Enabled: true
   Strict: true
   EnforcedStyle: explicit
-  AllowedExplicitMatchers: [be_a]
+  AllowedExplicitMatchers:
+    - be_a
+    - be_empty
 
 RSpec/ReceiveCounts:
   Enabled: false
