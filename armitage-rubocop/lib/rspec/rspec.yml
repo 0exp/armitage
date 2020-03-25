@@ -184,6 +184,7 @@ RSpec/PredicateMatcher:
   AllowedExplicitMatchers:
     - be_a
     - be_empty
+    - have_http_status
 
 RSpec/ReceiveCounts:
   Enabled: false
