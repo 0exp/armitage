@@ -185,6 +185,7 @@ RSpec/PredicateMatcher:
     - be_a
     - be_empty
     - have_http_status
+    - have_been_made
 
 RSpec/ReceiveCounts:
   Enabled: false
