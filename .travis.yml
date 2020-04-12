@@ -1,8 +1,9 @@
-matrix:
+os: linux
+dist: xenial
+jobs:
   include:
   - language: ruby # armitage-rubocop
     rvm: 2.7.0
-    sudo: false
     cache: bundler
     before_script:
     - cd armitage-rubocop
