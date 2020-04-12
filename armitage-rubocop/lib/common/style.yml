@@ -1,6 +1,7 @@
 Style/AccessModifierDeclarations:
   Enabled: true
   EnforcedStyle: group
+  AllowModifiersOnSymbols: true
 
 Style/Alias:
   Enabled: true
@@ -95,6 +96,10 @@ Style/DefWithParentheses:
 Style/Dir:
   Enabled: true
 
+# NOTE: Broken in 0.81.0
+# Style/DisableCopsWithinSourceCodeDirective:
+#   Enabled: false
+
 Style/Documentation:
   Enabled: false
 
@@ -135,6 +140,7 @@ Style/Encoding:
 
 Style/EndBlock:
   Enabled: true
+  AutoCorrect: true
 
 Style/EvalWithLocation:
   Enabled: true
@@ -510,6 +516,9 @@ Style/TrailingCommaInArguments:
 Style/TrailingCommaInArrayLiteral:
   Enabled: true
   EnforcedStyleForMultiline: no_comma
+
+Style/TrailingCommaInBlockArgs:
+  Enabled: false
 
 Style/TrailingCommaInHashLiteral:
   Enabled: true

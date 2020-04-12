@@ -9,6 +9,8 @@ Layout/ArgumentAlignment:
 
 Layout/ArrayAlignment:
   Enabled: true
+  EnforcedStyle: with_first_element
+  IndentationWidth: ~
 
 # NOTE: sometimes - good, sometimes - bad. readability depends on case by case.
 Layout/HashAlignment:

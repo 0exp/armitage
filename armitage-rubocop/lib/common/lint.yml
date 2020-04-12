@@ -54,9 +54,6 @@ Lint/EmptyInterpolation:
 Lint/EmptyWhen:
   Enabled: false
 
-Lint/EndInMethod:
-  Enabled: true
-
 Lint/EnsureReturn:
   Enabled: true
 
@@ -71,6 +68,9 @@ Lint/FloatOutOfRange:
   Enabled: true
 
 Lint/FormatParameterMismatch:
+  Enabled: true
+
+Lint/StructNewOverride:
   Enabled: true
 
 Lint/SuppressedException:
@@ -137,6 +137,9 @@ Lint/PercentStringArray:
   Enabled: true
 
 Lint/PercentSymbolArray:
+  Enabled: true
+
+Lint/RaiseException:
   Enabled: true
 
 Lint/RandOne:
@@ -227,6 +230,7 @@ Lint/UnusedMethodArgument:
   Enabled: false
   AllowUnusedKeywordArguments: false
   IgnoreEmptyMethods: true
+  IgnoreNotImplementedMethods: true
 
 Lint/UriEscapeUnescape:
   Enabled: false

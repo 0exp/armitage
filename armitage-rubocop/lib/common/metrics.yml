@@ -1,6 +1,7 @@
 Metrics/AbcSize:
   Enabled: true
   Max: 19
+  IgnoredMethods: []
 
 Metrics/BlockLength:
   Enabled: true
@@ -25,6 +26,7 @@ Metrics/ClassLength:
 Metrics/CyclomaticComplexity:
   Enabled: true
   Max: 10
+  IgnoredMethods: []
 
 Metrics/MethodLength:
   Enabled: true
@@ -44,3 +46,4 @@ Metrics/ParameterLists:
 Metrics/PerceivedComplexity:
   Enabled: true
   Max: 10
+  IgnoredMethods: []

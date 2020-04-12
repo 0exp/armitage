@@ -96,6 +96,12 @@ Rails/HttpStatus:
 Rails/IgnoredSkipActionFilterOption:
   Enabled: true
 
+Rails/IndexBy:
+  Enabled: true
+
+Rails/IndexWith:
+  Enabled: true
+
 Rails/InverseOf:
   Enabled: true
 
@@ -139,6 +145,10 @@ Rails/ReflectionClassName:
 
 Rails/RefuteMethods:
   Enabled: true
+  EnforcedStyle: assert_not
+  Include:
+    - 'test/**/*'
+    - 'spec/**/*'
 
 Rails/RelativeDateConstant:
   Enabled: true
@@ -174,6 +184,11 @@ Rails/TimeZone:
 Rails/UniqBeforePluck:
   Enabled: true
   EnforcedStyle: conservative
+
+Rails/UniqueValidationWithoutIndex:
+  Enabled: true
+  Include:
+    - app/models/**/*.rb
 
 Rails/UnknownEnv:
   Enabled: true
