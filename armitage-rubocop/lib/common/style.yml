@@ -96,9 +96,8 @@ Style/DefWithParentheses:
 Style/Dir:
   Enabled: true
 
-# NOTE: Broken in 0.81.0
-# Style/DisableCopsWithinSourceCodeDirective:
-#   Enabled: false
+Style/DisableCopsWithinSourceCodeDirective:
+  Enabled: false
 
 Style/Documentation:
   Enabled: false
@@ -150,6 +149,10 @@ Style/EvenOdd:
 
 Style/ExpandPathArguments:
   Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: true
+  EnforcedStyle: scientific
 
 Style/FloatDivision:
   Enabled: false

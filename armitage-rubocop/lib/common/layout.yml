@@ -353,9 +353,10 @@ Layout/SpaceInsideStringInterpolation:
   Enabled: true
   EnforcedStyle: no_space
 
-Layout/Tab:
+Layout/IndentationStyle:
   Enabled: true
-  IndentationWidth: ~
+  EnforcedStyle: spaces
+  IndentationWidth: 2
 
 Layout/TrailingEmptyLines:
   Enabled: true
