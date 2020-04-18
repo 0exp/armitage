@@ -3,17 +3,17 @@ dist: xenial
 jobs:
   include:
   - language: ruby # armitage-rubocop
-    rvm: 2.7.0
+    rvm: 2.7.1
     cache: bundler
     before_script:
     - cd armitage-rubocop
-    - gem install bundler -v 2.1.2
+    - gem install bundler -v 2.1.4
     - bundle install
     script:
     - bundle exec rake armitage_rubocop:build
   - langugage: python # armitage-rubocop (yaml linting)
     python:
-    - '3.8.0'
+    - '3.8.2'
     before_script:
     - pip install yamllint
     - cd armitage-rubocop
@@ -21,7 +21,7 @@ jobs:
     - yamllint --strict $(git ls-files '*.yaml' '*.yml')
   - language: python # armitage-yamllint
     python:
-    - '3.8.0'
+    - '3.8.2'
     install:
     - pip install yamllint
     before_script:
@@ -30,7 +30,7 @@ jobs:
     - yamllint -c ./.yamllint --strict .yamllint
   - language: python # armitage-ansible
     python:
-    - '3.8.0'
+    - '3.8.2'
     install:
     - pip install yamllint
     before_script:
