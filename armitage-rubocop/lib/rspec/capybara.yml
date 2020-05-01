@@ -3,3 +3,6 @@ Capybara/CurrentPathExpectation:
 
 Capybara/FeatureMethods:
   Enabled: false
+
+Capybara/VisibilityMatcher:
+  Enabled: true

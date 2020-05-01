@@ -49,6 +49,9 @@ RSpec/Dialect:
 RSpec/EmptyExampleGroup:
   Enabled: true
 
+RSpec/EmptyHook:
+  Enabled: true
+
 RSpec/EmptyLineAfterExampleGroup:
   Enabled: true
 
