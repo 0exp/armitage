@@ -53,9 +53,11 @@ Lint/EmptyInterpolation:
 
 Lint/EmptyWhen:
   Enabled: false
+  AllowComments: true
 
 Lint/EnsureReturn:
   Enabled: true
+  AutoCorrect: false
 
 Lint/ErbNewArguments:
   Enabled: true
@@ -131,10 +133,9 @@ Lint/NumberConversion:
 Lint/OrderedMagicComments:
   Enabled: true
 
-# WARNING!!!
 Lint/ParenthesesAsGroupedExpression:
-  Enabled: false
-# WARNING!!!
+  Enabled: true
+  AutoCorrect: true
 
 Lint/PercentStringArray:
   Enabled: true
@@ -243,6 +244,12 @@ Lint/UriRegexp:
 
 Lint/UselessAccessModifier:
   Enabled: true
+  ContextCreatingMethods: []
+  MethodCreatingMethods:
+    - delegate
+    - def_delegator
+    - def_delegators
+  AutoCorrect: true
 
 Lint/UselessAssignment:
   Enabled: true

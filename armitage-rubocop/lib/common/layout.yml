@@ -64,6 +64,7 @@ Layout/CommentIndentation:
 
 Layout/ConditionPosition:
   Enabled: true
+  AutoCorrect: true
 
 Layout/DefEndAlignment:
   Enabled: true
@@ -88,6 +89,10 @@ Layout/EmptyLineAfterGuardClause:
 
 Layout/EmptyLineAfterMagicComment:
   Enabled: true
+
+# NOTE: coming soon
+# Layout/EmptyLineAroundAttributeAccessor:
+#   Enabled: true
 
 Layout/EmptyLineBetweenDefs:
   Enabled: true

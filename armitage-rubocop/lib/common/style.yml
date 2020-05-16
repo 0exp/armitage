@@ -212,6 +212,7 @@ Style/IfUnlessModifierOfIfUnless:
 
 Style/IfWithSemicolon:
   Enabled: true
+  AutoCorrect: true
 
 Style/ImplicitRuntimeError:
   Enabled: false
@@ -456,6 +457,9 @@ Style/SingleLineMethods:
   AllowIfMethodIsEmpty: true
   Exclude:
     - spec/**/*
+
+Style/SlicingWithRange:
+  Enabled: true
 
 Style/SpecialGlobalVars:
   Enabled: true
