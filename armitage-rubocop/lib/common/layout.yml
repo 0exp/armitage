@@ -90,9 +90,8 @@ Layout/EmptyLineAfterGuardClause:
 Layout/EmptyLineAfterMagicComment:
   Enabled: true
 
-# NOTE: coming soon
-# Layout/EmptyLineAroundAttributeAccessor:
-#   Enabled: true
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
 
 Layout/EmptyLineBetweenDefs:
   Enabled: true
