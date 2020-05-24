@@ -92,6 +92,12 @@ Layout/EmptyLineAfterMagicComment:
 
 Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: true
+  AllowAliasSyntax: true
+  AllowedMethods:
+    - alias_method
+    - public
+    - protected
+    - private
 
 Layout/EmptyLineBetweenDefs:
   Enabled: true

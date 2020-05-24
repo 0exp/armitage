@@ -26,6 +26,9 @@ Lint/Debugger:
 Lint/DeprecatedClassMethods:
   Enabled: true
 
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
 Lint/DuplicateCaseCondition:
   Enabled: true
 

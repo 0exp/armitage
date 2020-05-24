@@ -107,6 +107,7 @@ Style/DocumentationMethod:
 
 Style/DoubleNegation:
   Enabled: false
+  EnforcedStyle: allowed_in_returns
 
 Style/EachForSimpleLoop:
   Enabled: false
