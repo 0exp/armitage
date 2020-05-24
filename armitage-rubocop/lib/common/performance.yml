@@ -1,3 +1,6 @@
+Performance/BindCall:
+  Enabled: true
+
 Performance/Caller:
   Enabled: true
 
@@ -17,6 +20,12 @@ Performance/CompareWithBlock:
 Performance/Count:
   Enabled: true
   SafeAutoCorrect: false
+
+Performance/DeletePrefix:
+  Enabled: true
+
+Performance/DeleteSuffix:
+  Enabled: true
 
 Performance/Detect:
   Enabled: true
