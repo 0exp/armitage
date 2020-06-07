@@ -22,8 +22,8 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
 
-  spec.add_dependency 'rubocop',             '= 0.84.0'
-  spec.add_dependency 'rubocop-performance', '= 1.6.0'
+  spec.add_dependency 'rubocop',             '= 0.85.0'
+  spec.add_dependency 'rubocop-performance', '= 1.6.1'
   spec.add_dependency 'rubocop-rails',       '= 2.5.2'
   spec.add_dependency 'rubocop-rspec',       '= 1.39.0'
   spec.add_dependency 'rubocop-rake',        '= 0.5.1'
