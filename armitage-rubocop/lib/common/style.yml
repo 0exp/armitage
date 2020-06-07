@@ -398,6 +398,12 @@ Style/RedundantBegin:
 Style/RedundantConditional:
   Enabled: true
 
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+
+Style/RedundantRegexpEscape:
+  Enabled: true
+
 Style/RedundantException:
   Enabled: false
 

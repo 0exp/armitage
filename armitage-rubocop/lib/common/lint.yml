@@ -112,6 +112,10 @@ Lint/Loop:
 Lint/MissingCopEnableDirective:
   Enabled: true
 
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+  # NOTE: if you use named captures - numbered captures will be ignored. it is bad. validate it.
+
 Lint/MultipleComparison:
   Enabled: true
 

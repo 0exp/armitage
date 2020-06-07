@@ -9,6 +9,7 @@ Naming/BinaryOperatorParameterName:
 
 Naming/ClassAndModuleCamelCase:
   Enabled: true
+  AllowedNames: []
 
 Naming/ConstantName:
   Enabled: true
@@ -17,6 +18,7 @@ Naming/FileName:
   Enabled: true
   ExpectMatchingDefinition: false
   IgnoreExecutableScripts: true
+  CheckDefinitionPathHierarchy: false
 
 Naming/HeredocDelimiterCase:
   Enabled: true
