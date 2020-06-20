@@ -233,6 +233,14 @@ RSpec/SubjectStub:
 RSpec/UnspecifiedException:
   Enabled: true
 
+RSpec/VariableDefinition:
+  Enabled: true
+  EnforcedStyle: symbols
+
+RSpec/VariableName:
+  Enabled: true
+  EnforcedStyle: snake_case
+
 RSpec/VerifiedDoubles:
   Enabled: false
   IgnoreNameless: true
