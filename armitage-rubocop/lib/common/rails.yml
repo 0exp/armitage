@@ -27,6 +27,7 @@ Rails/ApplicationMailer:
 
 Rails/RakeEnvironment:
   Enabled: true
+  AutoCorrect: true
 
 Rails/AssertNot:
   Enabled: true
@@ -44,6 +45,9 @@ Rails/BulkChangeTable:
 Rails/CreateTableWithTimestamps:
   Enabled: false
 
+Rails/ContentTag:
+  Enabled: true
+
 Rails/Date:
   Enabled: true
   EnforcedStyle: flexible
@@ -56,6 +60,12 @@ Rails/DelegateAllowBlank:
 
 Rails/DynamicFindBy:
   Enabled: true
+  Whitelist:
+    - find_by_sql
+  AllowedMethods:
+    - find_by_sql
+  AllowedReceivers:
+    - Gem::Specification
 
 Rails/EnumHash:
   Enabled: true
@@ -120,6 +130,9 @@ Rails/Output:
 Rails/OutputSafety:
   Enabled: false
 
+Rails/Pick:
+  Enabled: true
+
 Rails/PluralizationGrammar:
   Enabled: true
 
@@ -136,6 +149,9 @@ Rails/RedundantAllowNil:
   Enabled: true
   Include:
     - app/models/**/*.rb
+
+Rails/RedundantForeignKey:
+  Enabled: false
 
 Rails/RedundantReceiverInWithOptions:
   Enabled: true
