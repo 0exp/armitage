@@ -4,6 +4,9 @@ Performance/AncestorsInclude:
 Performance/BindCall:
   Enabled: true
 
+Performance/BigDecimalWithNumericArgument:
+  Enabled: true
+
 Performance/Caller:
   Enabled: true
 
