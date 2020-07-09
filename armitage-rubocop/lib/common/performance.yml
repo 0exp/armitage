@@ -1,3 +1,6 @@
+Performance/AncestorsInclude:
+  Enabled: true
+
 Performance/BindCall:
   Enabled: true
 
@@ -49,13 +52,22 @@ Performance/FlatMap:
 Performance/InefficientHashSearch:
   Enabled: true
 
+Performance/IoReadlines:
+  Enabled: true
+
 Performance/OpenStruct:
   Enabled: true
 
 Performance/RangeInclude:
   Enabled: true
 
+Performance/RedundantSortBlock:
+  Enabled: true
+
 Performance/RedundantBlockCall:
+  Enabled: true
+
+Performance/RedundantStringChars:
   Enabled: true
 
 Performance/RedundantMatch:
@@ -71,12 +83,24 @@ Performance/RegexpMatch:
 Performance/ReverseEach:
   Enabled: true
 
+Performance/ReverseFirst:
+  Enabled: true
+
 Performance/Size:
+  Enabled: true
+
+Performance/SortReverse:
+  Enabled: true
+
+Performance/Squeeze:
   Enabled: true
 
 Performance/StartWith:
   Enabled: true
   AutoCorrect: false
+
+Performance/StringInclude:
+  Enabled: true
 
 Performance/StringReplacement:
   Enabled: true

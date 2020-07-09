@@ -3,6 +3,7 @@ Naming/AccessorMethodName:
 
 Naming/AsciiIdentifiers:
   Enabled: true
+  AsciiConstants: true
 
 Naming/BinaryOperatorParameterName:
   Enabled: false

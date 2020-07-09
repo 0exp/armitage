@@ -1,3 +1,7 @@
+Style/AccessorGrouping:
+  Enabled: true
+  EnforcedStyle: separated
+
 Style/AccessModifierDeclarations:
   Enabled: true
   EnforcedStyle: group
@@ -29,6 +33,9 @@ Style/BarePercentLiterals:
   EnforcedStyle: bare_percent
 
 Style/BeginBlock:
+  Enabled: true
+
+Style/BisectedAttrAccessor:
   Enabled: true
 
 Style/BlockComments:
@@ -210,6 +217,7 @@ Style/IfUnlessModifier:
 
 Style/IfUnlessModifierOfIfUnless:
   Enabled: true
+  AutoCorrect: true
 
 Style/IfWithSemicolon:
   Enabled: true
@@ -294,6 +302,7 @@ Style/MultilineMethodSignature:
 
 Style/MultilineTernaryOperator:
   Enabled: false
+  AutoCorrect: true
 
 Style/MultilineWhenThen:
   Enabled: true
@@ -323,6 +332,7 @@ Style/NestedParenthesizedCalls:
 
 Style/NestedTernaryOperator:
   Enabled: true
+  AutoCorrect: true
 
 Style/Next:
   Enabled: true
@@ -392,11 +402,18 @@ Style/RaiseArgs:
 Style/RandomWithOffset:
   Enabled: true
 
+Style/RedundantAssignment:
+  Enabled: true
+
 Style/RedundantBegin:
   Enabled: true
 
 Style/RedundantConditional:
   Enabled: true
+
+Style/RedundantFetchBlock:
+  Enabled: true
+  SafeForConstants: true
 
 Style/RedundantRegexpCharacterClass:
   Enabled: true
@@ -498,6 +515,7 @@ Style/Strip:
 
 Style/StructInheritance:
   Enabled: true
+  AutoCorrect: true
 
 Style/SymbolArray:
   Enabled: true

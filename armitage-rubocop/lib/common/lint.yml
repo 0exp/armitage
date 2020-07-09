@@ -20,6 +20,11 @@ Lint/BooleanSymbol:
 Lint/CircularArgumentReference:
   Enabled: true
 
+Lint/ConstantResolution:
+  Enabled: false
+  Only: []
+  Ignore: []
+
 Lint/Debugger:
   Enabled: true
 
@@ -99,6 +104,7 @@ Lint/InheritException:
 
 Lint/InterpolationCheck:
   Enabled: true
+  AutoCorrect: true
 
 Lint/LiteralAsCondition:
   Enabled: true
@@ -152,6 +158,9 @@ Lint/PercentSymbolArray:
 
 Lint/RaiseException:
   Enabled: true
+  AutoCorrect: false
+  AllowedImplicitNamespaces:
+    - Gem
 
 Lint/RandOne:
   Enabled: true
@@ -164,6 +173,7 @@ Lint/RedundantWithObject:
 
 Lint/RegexpAsCondition:
   Enabled: true
+  AutoCorrect: true
 
 Lint/RequireParentheses:
   Enabled: true
@@ -185,6 +195,7 @@ Lint/SafeNavigationConsistency:
 
 Lint/SafeNavigationWithEmpty:
   Enabled: true
+  AutoCorrect: true
 
 Lint/ScriptPermission:
   Enabled: true
