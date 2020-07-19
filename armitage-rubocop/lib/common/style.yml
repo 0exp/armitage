@@ -11,6 +11,9 @@ Style/Alias:
   Enabled: true
   EnforcedStyle: prefer_alias_method
 
+Style/ArrayCoercion:
+  Enabled: true
+
 Style/AndOr:
   Enabled: false
   EnforcedStyle: always
@@ -49,6 +52,10 @@ Style/BlockDelimiters:
 
 Style/CaseEquality:
   Enabled: true
+
+Style/CaseLikeIf:
+  Enabled: true
+  AutoCorrect: true
 
 Style/CharacterLiteral:
   Enabled: true
@@ -189,6 +196,15 @@ Style/GlobalVars:
 Style/GuardClause:
   Enabled: false
   MinBodyLength: 1
+
+Style/HashAsLastArrayItem:
+  Enabled: true
+  EnforcedStyle: braces
+  AutoCorrect: true
+
+Style/HashLikeCase:
+  Enabled: false
+  MinBranchesCount: 4
 
 Style/HashEachMethods:
   Enabled: true
@@ -409,6 +425,9 @@ Style/RedundantBegin:
   Enabled: true
 
 Style/RedundantConditional:
+  Enabled: true
+
+Style/RedundantFileExtensionInRequire:
   Enabled: true
 
 Style/RedundantFetchBlock:

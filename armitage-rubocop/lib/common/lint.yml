@@ -34,6 +34,10 @@ Lint/DeprecatedClassMethods:
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 
+Lint/DisjunctiveAssignmentInConstructor:
+  Enabled: true
+  AutoCorrect: false
+
 Lint/DuplicateCaseCondition:
   Enabled: true
 
@@ -41,6 +45,9 @@ Lint/DuplicateMethods:
   Enabled: true
 
 Lint/DuplicateHashKey:
+  Enabled: true
+
+Lint/DuplicateElsifCondition:
   Enabled: true
 
 Lint/EachWithObjectArgument:
