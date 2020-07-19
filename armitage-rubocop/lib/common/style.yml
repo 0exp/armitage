@@ -555,6 +555,7 @@ Style/TrailingCommaInBlockArgs:
 Style/TrailingCommaInHashLiteral:
   Enabled: true
   EnforcedStyleForMultiline: no_comma
+  AutoCorrect: true
 
 Style/TrailingMethodEndStatement:
   Enabled: true
