@@ -357,7 +357,7 @@ Style/Next:
 
 Style/NilComparison:
   Enabled: true
-  EnforcedStyle: predicate
+  EnforcedStyle: comparison
 
 Style/NonNilCheck:
   Enabled: true
@@ -375,8 +375,8 @@ Style/NumericLiterals:
 
 Style/NumericPredicate:
   Enabled: true
-  EnforcedStyle: predicate
-  AutoCorrect: false
+  EnforcedStyle: comparison
+  AutoCorrect: true
   IgnoredMethods: []
 
 Style/OneLineConditional:
