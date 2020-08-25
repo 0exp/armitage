@@ -374,7 +374,7 @@ Style/NumericLiterals:
   Enabled: false
 
 Style/NumericPredicate:
-  Enabled: false
+  Enabled: false # strongly situative cop
   EnforcedStyle: comparison
   AutoCorrect: true
   IgnoredMethods: []
