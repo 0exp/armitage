@@ -52,6 +52,8 @@ Style/BlockDelimiters:
 
 Style/CaseEquality:
   Enabled: true
+  AllowOnConstant: false
+  AutoCorrect: true
 
 Style/CaseLikeIf:
   Enabled: true
@@ -169,6 +171,9 @@ Style/ExponentialNotation:
   Enabled: true
   EnforcedStyle: scientific
 
+Style/ExplicitBlockArgument:
+  Enabled: true
+
 Style/FloatDivision:
   Enabled: false
 
@@ -192,6 +197,9 @@ Style/FrozenStringLiteralComment:
 Style/GlobalVars:
   Enabled: true
   AllowedVariables: []
+
+Style/GlobalStdStream:
+  Enabled: false
 
 Style/GuardClause:
   Enabled: false
@@ -277,9 +285,6 @@ Style/MethodCalledOnDoEndBlock:
 Style/MethodDefParentheses:
   Enabled: true
   EnforcedStyle: require_parentheses
-
-Style/MethodMissingSuper:
-  Enabled: false
 
 Style/MinMax:
   Enabled: true
@@ -388,6 +393,9 @@ Style/OptionHash:
 Style/OptionalArguments:
   Enabled: true
 
+Style/OptionalBooleanParameter:
+  Enabled: false
+
 Style/ParallelAssignment:
   Enabled: false
 
@@ -492,6 +500,9 @@ Style/SignalException:
   Enabled: true
   EnforcedStyle: only_raise
 
+Style/SingleArgumentDig:
+  Enabled: true
+
 Style/SingleLineBlockParams:
   Enabled: false
 
@@ -512,6 +523,9 @@ Style/StabbyLambdaParentheses:
   EnforcedStyle: require_parentheses
 
 Style/StderrPuts:
+  Enabled: true
+
+Style/StringConcatenation:
   Enabled: true
 
 Style/StringHashKeys:

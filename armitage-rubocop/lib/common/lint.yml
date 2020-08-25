@@ -14,6 +14,9 @@ Lint/AssignmentInCondition:
 Lint/BigDecimalNew:
   Enabled: true
 
+Lint/BinaryOperatorWithIdenticalOperands:
+  Enabled: true
+
 Lint/BooleanSymbol:
   Enabled: false
 
@@ -53,8 +56,15 @@ Lint/DuplicateElsifCondition:
 Lint/EachWithObjectArgument:
   Enabled: true
 
+Lint/DuplicateRescueException:
+  Enabled: true
+
 Lint/ElseLayout:
   Enabled: true
+
+Lint/EmptyConditionalBody:
+  Enabled: true
+  AllowComments: true
 
 Lint/EmptyEnsure:
   Enabled: true
@@ -72,7 +82,6 @@ Lint/EmptyWhen:
 
 Lint/EnsureReturn:
   Enabled: true
-  AutoCorrect: false
 
 Lint/ErbNewArguments:
   Enabled: true
@@ -84,10 +93,13 @@ Lint/FlipFlop:
 Lint/FloatOutOfRange:
   Enabled: true
 
+Lint/FloatComparison:
+  Enabled: false
+
 Lint/FormatParameterMismatch:
   Enabled: true
 
-Layout/SpaceAroundMethodCallOperator:
+Lint/SelfAssignment:
   Enabled: true
 
 Lint/StructNewOverride:
@@ -121,6 +133,7 @@ Lint/LiteralInInterpolation:
 
 Lint/Loop:
   Enabled: true
+  AutoCorrect: true
 
 Lint/MissingCopEnableDirective:
   Enabled: true
@@ -128,6 +141,9 @@ Lint/MissingCopEnableDirective:
 Lint/MixedRegexpCaptureTypes:
   Enabled: true
   # NOTE: if you use named captures - numbered captures will be ignored. it is bad. validate it.
+
+Lint/MissingSuper:
+  Enabled: false
 
 Lint/MultipleComparison:
   Enabled: true
@@ -151,6 +167,9 @@ Lint/NumberConversion:
   Enabled: false
 
 Lint/OrderedMagicComments:
+  Enabled: true
+
+Lint/OutOfRangeRegexpRef:
   Enabled: true
 
 Lint/ParenthesesAsGroupedExpression:
@@ -229,10 +248,16 @@ Lint/Syntax:
 Lint/ToJSON:
   Enabled: true
 
+Lint/TopLevelReturnWithArgument:
+  Enabled: true
+
 Lint/UnderscorePrefixedVariableName:
   Enabled: false
 
 Lint/UnifiedInteger:
+  Enabled: true
+
+Lint/UnreachableLoop:
   Enabled: true
 
 Lint/RedundantCopDisableDirective:
@@ -277,9 +302,6 @@ Lint/UselessAccessModifier:
   AutoCorrect: true
 
 Lint/UselessAssignment:
-  Enabled: true
-
-Lint/UselessComparison:
   Enabled: true
 
 Lint/UselessElseWithoutRescue:

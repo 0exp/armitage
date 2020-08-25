@@ -367,6 +367,9 @@ Layout/IndentationStyle:
   EnforcedStyle: spaces
   IndentationWidth: 2
 
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
 Layout/TrailingEmptyLines:
   Enabled: true
   EnforcedStyle: final_newline
