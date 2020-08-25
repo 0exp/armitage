@@ -374,7 +374,7 @@ Style/NumericLiterals:
   Enabled: false
 
 Style/NumericPredicate:
-  Enabled: true
+  Enabled: false
   EnforcedStyle: comparison
   AutoCorrect: true
   IgnoredMethods: []

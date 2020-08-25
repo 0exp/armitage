@@ -5,6 +5,11 @@ Rails/ActionFilter:
 Rails/ActiveRecordAliases:
   Enabled: true
 
+Rails/ActiveRecordCallbacksOrder:
+  Enabled: true
+  Include:
+    - app/models/**/*.rb
+
 Rails/ActiveRecordOverride:
   Enabled: true
   Include:
@@ -52,6 +57,9 @@ Rails/Date:
   Enabled: true
   EnforcedStyle: flexible
 
+Rails/DefaultScope:
+  Enabled: false
+
 Rails/Delegate:
   Enabled: false
 
@@ -88,6 +96,9 @@ Rails/FilePath:
 Rails/FindBy:
   Enabled: true
 
+Rails/FindById:
+  Enabled: true
+
 Rails/FindEach:
   Enabled: true
 
@@ -112,6 +123,9 @@ Rails/IndexBy:
 Rails/IndexWith:
   Enabled: true
 
+Rails/Inquiry:
+  Enabled: false
+
 Rails/InverseOf:
   Enabled: true
 
@@ -119,6 +133,16 @@ Rails/LexicallyScopedActionFilter:
   Enabled: true
 
 Rails/LinkToBlank:
+  Enabled: true
+
+Rails/MailerName:
+  Enabled: true
+  # mailer views are mapped to the mailer class with Mailer postfix in the name of a class
+
+Rails/MatchRoute:
+  Enabled: true
+
+Rails/NegateInclude:
   Enabled: true
 
 Rails/NotNullColumn:
@@ -131,6 +155,15 @@ Rails/OutputSafety:
   Enabled: false
 
 Rails/Pick:
+  Enabled: true
+
+Rails/Pluck:
+  Enabled: true
+
+Rails/PluckId:
+  Enabled: false
+
+Rails/PluckInWhere:
   Enabled: true
 
 Rails/PluralizationGrammar:
@@ -170,6 +203,13 @@ Rails/RelativeDateConstant:
   Enabled: true
   AutoCorrect: false
 
+Rails/RenderInline:
+  Enabled: false
+
+Rails/RenderPlainText:
+  Enabled: true
+  ContentTypeCompatibility: true
+
 Rails/RequestReferer:
   Enabled: true
   EnforcedStyle: referer
@@ -189,6 +229,10 @@ Rails/SaveBang:
 
 Rails/ScopeArgs:
   Enabled: true
+
+Rails/ShortI18n:
+  Enabled: true
+  EnforcedStyle: conservative
 
 Rails/SkipsModelValidations:
   Enabled: false
@@ -216,3 +260,6 @@ Rails/UnknownEnv:
 
 Rails/Validation:
   Enabled: true
+
+Rails/WhereExists:
+  Enabled: false
