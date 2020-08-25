@@ -160,6 +160,9 @@ RSpec/MultipleDescribes:
 RSpec/MultipleExpectations:
   Enabled: false
 
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
 RSpec/MultipleSubjects:
   Enabled: true
 
@@ -240,6 +243,7 @@ RSpec/VariableDefinition:
 RSpec/VariableName:
   Enabled: true
   EnforcedStyle: snake_case
+  IgnoredPatterns: []
 
 RSpec/VerifiedDoubles:
   Enabled: false
