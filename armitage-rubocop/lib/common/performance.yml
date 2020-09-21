@@ -23,6 +23,10 @@ Performance/ChainArrayAllocation:
 Performance/CompareWithBlock:
   Enabled: true
 
+Performance/CollectionLiteralInLoop:
+  Enabled: true
+  MinSize: 1
+
 Performance/Count:
   Enabled: true
   SafeAutoCorrect: false
