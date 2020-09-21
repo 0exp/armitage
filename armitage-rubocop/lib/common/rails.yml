@@ -18,6 +18,9 @@ Rails/ActiveRecordOverride:
 Rails/ActiveSupportAliases:
   Enabled: true
 
+Rails/AfterCommitOverride:
+  Enabled: true
+
 Rails/ApplicationJob:
   Enabled: true
 
@@ -148,6 +151,9 @@ Rails/NegateInclude:
 Rails/NotNullColumn:
   Enabled: true
 
+Rails/OrderById:
+  Enabled: false
+
 Rails/Output:
   Enabled: true
 
@@ -165,6 +171,7 @@ Rails/PluckId:
 
 Rails/PluckInWhere:
   Enabled: true
+  EnforcedStyle: conservative
 
 Rails/PluralizationGrammar:
   Enabled: true
@@ -237,6 +244,9 @@ Rails/ShortI18n:
 Rails/SkipsModelValidations:
   Enabled: false
 
+Rails/SquishedSQLHeredocs:
+  Enabled: true
+
 Rails/TimeZone:
   Enabled: true
   EnforcedStyle: flexible
@@ -262,4 +272,8 @@ Rails/Validation:
   Enabled: true
 
 Rails/WhereExists:
+  Enabled: false
+  EnforcedStyle: exists
+
+Rails/WhereNot:
   Enabled: false

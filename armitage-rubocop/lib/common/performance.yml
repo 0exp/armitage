@@ -112,6 +112,9 @@ Performance/StringInclude:
 Performance/StringReplacement:
   Enabled: true
 
+Performance/Sum:
+  Enabled: true
+
 Performance/TimesMap:
   Enabled: true
   AutoCorrect: false
