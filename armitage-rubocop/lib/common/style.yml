@@ -72,6 +72,10 @@ Style/ClassCheck:
 Style/ClassMethods:
   Enabled: true
 
+Style/ClassMethodsDefinitions:
+  Enabled: true
+  EnforcedStyle: self_class
+
 Style/ClassVars:
   Enabled: true
 
@@ -83,6 +87,9 @@ Style/ColonMethodCall:
 
 Style/ColonMethodDefinition:
   Enabled: true
+
+Style/CombinableLoops:
+  Enabled: false
 
 Style/CommandLiteral:
   Enabled: false
@@ -260,6 +267,9 @@ Style/InverseMethods:
   Enabled: true
 
 Style/IpAddresses:
+  Enabled: false
+
+Style/KeywordParametersOrder:
   Enabled: false
 
 Style/Lambda:
@@ -464,6 +474,9 @@ Style/RedundantReturn:
 Style/RedundantSelf:
   Enabled: true
 
+Style/RedundantSelfAssignment:
+  Enabled: false
+
 Style/RedundantSortBy:
   Enabled: true
 
@@ -617,6 +630,10 @@ Style/RedundantPercentQ:
 
 Style/RedundantSort:
   Enabled: true
+
+Style/SoleNestedConditional:
+  Enabled: true
+  AllowModifier: true
 
 Style/UnpackFirst:
   Enabled: true

@@ -24,6 +24,11 @@ Layout/ParameterAlignment:
   EnforcedStyle: with_first_parameter
   IndentationWidth: ~
 
+Layout/BeginEndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: start_of_line
+  Severity: warning
+
 Layout/BlockAlignment:
   Enabled: true
   EnforcedStyleAlignWith: either
@@ -89,6 +94,9 @@ Layout/EmptyLineAfterGuardClause:
 
 Layout/EmptyLineAfterMagicComment:
   Enabled: true
+
+Layout/EmptyLineAfterMultilineCondition:
+  Enabled: false
 
 Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: true

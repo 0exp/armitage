@@ -23,6 +23,9 @@ Lint/BooleanSymbol:
 Lint/CircularArgumentReference:
   Enabled: true
 
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
+
 Lint/ConstantResolution:
   Enabled: false
   Only: []
@@ -53,6 +56,9 @@ Lint/DuplicateHashKey:
 Lint/DuplicateElsifCondition:
   Enabled: true
 
+Lint/DuplicateRequire:
+  Enabled: true
+
 Lint/EachWithObjectArgument:
   Enabled: true
 
@@ -72,6 +78,10 @@ Lint/EmptyEnsure:
 
 Lint/EmptyExpression:
   Enabled: true
+
+Lint/EmptyFile:
+  Enabled: true
+  AllowComments: true
 
 Lint/EmptyInterpolation:
   Enabled: true
@@ -110,6 +120,9 @@ Lint/SuppressedException:
 
 Lint/HeredocMethodCallPosition:
   Enabled: true
+
+Lint/IdentityComparison:
+  Enabled: false
 
 Lint/ImplicitStringConcatenation:
   Enabled: true
@@ -251,6 +264,9 @@ Lint/ToJSON:
 Lint/TopLevelReturnWithArgument:
   Enabled: true
 
+Lint/TrailingCommaInAttributeDeclaration:
+  Enabled: true
+
 Lint/UnderscorePrefixedVariableName:
   Enabled: false
 
@@ -307,7 +323,14 @@ Lint/UselessAssignment:
 Lint/UselessElseWithoutRescue:
   Enabled: true
 
+Lint/UselessMethodDefinition:
+  Enabled: true
+  AllowComments: true
+
 Lint/UselessSetterCall:
+  Enabled: true
+
+Lint/UselessTimes:
   Enabled: true
 
 Lint/Void:
