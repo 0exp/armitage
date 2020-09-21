@@ -73,7 +73,7 @@ Style/ClassMethods:
   Enabled: true
 
 Style/ClassMethodsDefinitions:
-  Enabled: true
+  Enabled: false
   EnforcedStyle: self_class
 
 Style/ClassVars:
