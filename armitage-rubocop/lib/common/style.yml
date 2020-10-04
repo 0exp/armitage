@@ -112,6 +112,7 @@ Style/Copyright:
 Style/DateTime:
   Enabled: false
   AllowCoercion: false
+  AutoCorrect: false
 
 Style/DefWithParentheses:
   Enabled: true
@@ -405,6 +406,8 @@ Style/OptionalArguments:
 
 Style/OptionalBooleanParameter:
   Enabled: false
+  AllowedMethods:
+    - respond_to_missing?
 
 Style/ParallelAssignment:
   Enabled: false
