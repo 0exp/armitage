@@ -118,6 +118,9 @@ Lint/StructNewOverride:
 Lint/SuppressedException:
   Enabled: false
 
+Lint/HashCompareByIdentity:
+  Enabled: false
+
 Lint/HeredocMethodCallPosition:
   Enabled: true
 
@@ -203,6 +206,16 @@ Lint/RaiseException:
 
 Lint/RandOne:
   Enabled: true
+
+Lint/RedundantSafeNavigation:
+  Enabled: true
+  AllowedMethods:
+    - instance_of?
+    - kind_of?
+    - is_a?
+    - eql?
+    - respond_to?
+    - equal?
 
 Lint/RedundantWithIndex:
   Enabled: true
