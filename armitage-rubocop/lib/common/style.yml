@@ -203,6 +203,7 @@ Style/FormatString:
 
 Style/FormatStringToken:
   Enabled: true
+  MaxUnannotatedPlaceholdersAllowed: 1
   EnforcedStyle: annotated
 
 Style/FrozenStringLiteralComment:
