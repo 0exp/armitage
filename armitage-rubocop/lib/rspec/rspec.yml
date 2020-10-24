@@ -211,6 +211,9 @@ RSpec/RepeatedExampleGroupBody:
 RSpec/RepeatedExampleGroupDescription:
   Enabled: true
 
+RSpec/RepeatedIncludeExample:
+  Enabled: true
+
 RSpec/ReturnFromStub:
   Enabled: true
   EnforcedStyle: and_return
@@ -231,6 +234,9 @@ RSpec/SingleArgumentMessageChain:
   Enabled: true
 
 RSpec/SubjectStub:
+  Enabled: true
+
+RSpec/StubbedMock:
   Enabled: true
 
 RSpec/UnspecifiedException:
