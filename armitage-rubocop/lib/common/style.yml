@@ -348,7 +348,7 @@ Style/MultilineWhenThen:
   Enabled: true
 
 Style/MultipleComparison:
-  Enabled: true
+  Enabled: false
 
 Style/MutableConstant:
   Enabled: true
