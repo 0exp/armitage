@@ -1,9 +1,9 @@
-FactoryBot/AttributeDefinedStatically:
+RSpec/FactoryBot/AttributeDefinedStatically:
   Enabled: false
 
-FactoryBot/CreateList:
+RSpec/FactoryBot/CreateList:
   Enabled: true
   EnforcedStyle: create_list
 
-FactoryBot/FactoryClassName:
+RSpec/FactoryBot/FactoryClassName:
   Enabled: true

@@ -6,16 +6,16 @@ inherit_from:
   - ./rspec/rails.yml
   - ./rspec/rspec.yml
 
-AllCops:
-  RSpec:
-    Patterns:
-      - _spec.rb
-      - "(?:^|/)spec/"
-  RSpec/FactoryBot:
-    Patterns:
-      - spec/factories.rb
-      - spec/factories/**/*.rb
-      - spec/support/factories.rb
-      - spec/support/factories/**/*.rb
-      - features/support/factires.rb
-      - features/support/factories/**/*.rb
+RSpec:
+  Include:
+    - _spec.rb
+    - "(?:^|/)spec/"
+  
+RSpec/FactoryBot:
+  Include:
+    - spec/factories.rb
+    - spec/factories/**/*.rb
+    - spec/support/factories.rb
+    - spec/support/factories/**/*.rb
+    - features/support/factires.rb
+    - features/support/factories/**/*.rb

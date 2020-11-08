@@ -120,9 +120,6 @@ RSpec/InstanceVariable:
   Enabled: true
   AssignmentOnly: false
 
-RSpec/InvalidPredicateMatcher:
-  Enabled: true
-
 RSpec/ItBehavesLike:
   Enabled: true
   EnforcedStyle: it_behaves_like

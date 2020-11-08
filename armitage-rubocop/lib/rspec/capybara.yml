@@ -1,8 +1,8 @@
-Capybara/CurrentPathExpectation:
+RSpec/Capybara/CurrentPathExpectation:
   Enabled: true
 
-Capybara/FeatureMethods:
+RSpec/Capybara/FeatureMethods:
   Enabled: false
 
-Capybara/VisibilityMatcher:
+RSpec/Capybara/VisibilityMatcher:
   Enabled: true

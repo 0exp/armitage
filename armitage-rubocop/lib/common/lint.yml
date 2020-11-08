@@ -59,6 +59,9 @@ Lint/DuplicateElsifCondition:
 Lint/DuplicateRequire:
   Enabled: true
 
+Lint/DuplicateRegexpCharacterClassElement:
+  Enabled: true
+
 Lint/EachWithObjectArgument:
   Enabled: true
 
@@ -67,6 +70,11 @@ Lint/DuplicateRescueException:
 
 Lint/ElseLayout:
   Enabled: true
+  AutoCorrect: true
+
+Lint/EmptyBlock:
+  Enabled: true
+  AllowComments: true
 
 Lint/EmptyConditionalBody:
   Enabled: true
@@ -163,6 +171,7 @@ Lint/MissingSuper:
 
 Lint/MultipleComparison:
   Enabled: true
+  AllowMethodComparison: true
 
 Lint/NestedMethodDefinition:
   Enabled: true
@@ -271,6 +280,9 @@ Lint/RedundantStringCoercion:
 Lint/Syntax:
   Enabled: true
 
+Lint/ToEnumArguments:
+  Enabled: false
+
 Lint/ToJSON:
   Enabled: true
 
@@ -282,6 +294,9 @@ Lint/TrailingCommaInAttributeDeclaration:
 
 Lint/UnderscorePrefixedVariableName:
   Enabled: false
+
+Lint/UnmodifiedReduceAccumulator:
+  Enabled: true
 
 Lint/UnifiedInteger:
   Enabled: true
@@ -342,6 +357,7 @@ Lint/UselessMethodDefinition:
 
 Lint/UselessSetterCall:
   Enabled: true
+  AutoCorrect: true
 
 Lint/UselessTimes:
   Enabled: true
