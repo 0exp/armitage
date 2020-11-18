@@ -1,3 +1,6 @@
+Performance/ArraySemiInfiniteRangeSlice:
+  Enabled: true
+
 Performance/AncestorsInclude:
   Enabled: true
 
@@ -7,8 +10,13 @@ Performance/BindCall:
 Performance/BigDecimalWithNumericArgument:
   Enabled: true
 
+Performance/BlockGivenWithExplicitBlock:
+  Enabled: false
+  AutoCorrect: true
+
 Performance/Caller:
   Enabled: true
+  AutoCorrect: true
 
 Performance/CaseWhenSplat:
   Enabled: true
@@ -26,6 +34,9 @@ Performance/CompareWithBlock:
 Performance/CollectionLiteralInLoop:
   Enabled: true
   MinSize: 1
+
+Performance/ConstantRegexp:
+  Enabled: true
 
 Performance/Count:
   Enabled: true
@@ -60,6 +71,9 @@ Performance/InefficientHashSearch:
   Enabled: true
 
 Performance/IoReadlines:
+  Enabled: true
+
+Performance/MethodObjectAsBlock:
   Enabled: true
 
 Performance/OpenStruct:
@@ -114,6 +128,7 @@ Performance/StringReplacement:
 
 Performance/Sum:
   Enabled: true
+  AutoCorrect: true
 
 Performance/TimesMap:
   Enabled: true
@@ -121,6 +136,7 @@ Performance/TimesMap:
 
 Performance/UnfreezeString:
   Enabled: true
+  AutoCorrect: true
 
 Performance/UriDefaultParser:
   Enabled: true

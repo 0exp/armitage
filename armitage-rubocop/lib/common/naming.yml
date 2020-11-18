@@ -75,3 +75,6 @@ Naming/VariableName:
 Naming/VariableNumber:
   Enabled: true
   EnforcedStyle: snake_case
+  CheckMethodNames: true
+  CheckSymbols: true
+  AllowedIdentifiers: []

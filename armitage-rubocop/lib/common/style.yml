@@ -262,6 +262,7 @@ Style/IdenticalConditionalBranches:
 Style/IfInsideElse:
   Enabled: true
   AllowIfModifier: true
+  AutoCorrect: true
 
 Style/IfUnlessModifier:
   Enabled: false
@@ -396,6 +397,9 @@ Style/Next:
 Style/NilComparison:
   Enabled: true
   EnforcedStyle: comparison
+
+Style/NilLambda:
+  Enabled: false
 
 Style/NonNilCheck:
   Enabled: true
@@ -555,6 +559,9 @@ Style/SlicingWithRange:
   Enabled: true
 
 Style/SpecialGlobalVars:
+  Enabled: true
+
+Style/StaticClass:
   Enabled: true
 
 Style/StabbyLambdaParentheses:

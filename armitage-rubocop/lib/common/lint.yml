@@ -25,6 +25,8 @@ Lint/CircularArgumentReference:
 
 Lint/ConstantDefinitionInBlock:
   Enabled: false
+  AllowedMethods:
+    - enums
 
 Lint/ConstantResolution:
   Enabled: false
@@ -43,6 +45,9 @@ Lint/DeprecatedOpenSSLConstant:
 Lint/DisjunctiveAssignmentInConstructor:
   Enabled: true
   AutoCorrect: false
+
+Lint/DuplicateBranch:
+  Enabled: true
 
 Lint/DuplicateCaseCondition:
   Enabled: true
@@ -74,6 +79,10 @@ Lint/ElseLayout:
 
 Lint/EmptyBlock:
   Enabled: true
+  AllowComments: true
+
+Lint/EmptyClass:
+  Enabled: false
   AllowComments: true
 
 Lint/EmptyConditionalBody:
