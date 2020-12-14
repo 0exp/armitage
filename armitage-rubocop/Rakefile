@@ -5,17 +5,17 @@ require 'rubocop/rake_task'
 require 'open3'
 require 'yaml'
 require 'rubocop'
+require 'rubocop-performance'
 require 'rubocop-rspec'
 require 'rubocop-rails'
-require 'rubocop-performance'
 require 'rubocop-rake'
 
 RuboCop::RakeTask.new(:rubocop) do |t|
   config_path = File.expand_path(File.join('.rubocop.yml'), __dir__)
   t.options = ['--config', config_path]
-  t.requires << 'rubocop-rspec'
   t.requires << 'rubocop-performance'
   t.requires << 'rubocop-rails'
+  t.requires << 'rubocop-rspec'
   t.requires << 'rubocop-rake'
 end
 
@@ -78,8 +78,16 @@ namespace :armitage_rubocop do
 
     desc 'Checks that all defined cops can be used'
     task :recognizable_cops do
+      ruboocp_config_file = Pathname.new(__FILE__).join('../.rubocop.yml')
+      rubocop_config = RuboCop::ConfigLoader.load_file(ruboocp_config_file)
+      # если какого-то копа нет - упадет с эксепшном на этот коп. перехватываем - и выводим его
+      # если все есть - то чекает автоматом аттрибуты и выводит меседж - игнорим его и смотрим в глубь
+      #   - лезем в config_validator и переделываем свои методы на юзание config_validator'а
+
       yamls = Dir[Pathname.new(__FILE__).join('../lib/**/*.yml')]
       invalid_cops = Hash.new { |h, k| h[k] = +'' }
+
+      binding.irb
 
       # NOTE: strongly rubocop-related realization
       #  - see https://github.com/rubocop-hq/rubocop/blob/master/lib/rubocop/config.rb
@@ -89,8 +97,6 @@ namespace :armitage_rubocop do
       #  - RuboCop::ConfigLoader.load_file
       #  - RuboCop::ConfigLoader.default_configuration
       yamls.each do |yaml_file|
-        rubocop_config = RuboCop::ConfigLoader.load_file(yaml_file)
-
         # NOTE: validate cop existence
         rubocop_config.each_key do |cop|
           next if RuboCop::ConfigLoader.default_configuration.key?(cop)

@@ -466,6 +466,9 @@ Style/RaiseArgs:
 Style/RandomWithOffset:
   Enabled: true
 
+Style/RedundantArgument:
+  Enabled: false
+
 Style/RedundantAssignment:
   Enabled: true
 
@@ -669,6 +672,7 @@ Style/RedundantSort:
 
 Style/SoleNestedConditional:
   Enabled: true
+  AutoCorrect: true
   AllowModifier: true
 
 Style/UnpackFirst:

@@ -1,5 +1,5 @@
 Performance/ArraySemiInfiniteRangeSlice:
-  Enabled: true
+  Enabled: false
 
 Performance/AncestorsInclude:
   Enabled: true
@@ -103,6 +103,7 @@ Performance/RegexpMatch:
 
 Performance/ReverseEach:
   Enabled: true
+  Lalala: true
 
 Performance/ReverseFirst:
   Enabled: true

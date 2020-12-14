@@ -111,6 +111,9 @@ Layout/EmptyLineBetweenDefs:
   Enabled: true
   NumberOfEmptyLines: 1
   AllowAdjacentOneLineDefs: false
+  EmptyLineBetweenMethodDefs: true
+  EmptyLineBetweenClassDefs: true
+  EmptyLineBetweenModuleDefs: true
 
 Layout/EmptyLines:
   Enabled: true

@@ -1,13 +1,16 @@
 Metrics/AbcSize:
   Enabled: true
   Max: 19
+  CountRepeatedAttributes: true
   IgnoredMethods: []
 
 Metrics/BlockLength:
   Enabled: true
   CountComments: false
+  CountAsOne: []
   Max: 25
-  ExcludedMethods: []
+  IgnoredMethods:
+    - refine
   Exclude:
     - Rakefile
     - spec/**/*
@@ -32,6 +35,8 @@ Metrics/MethodLength:
   Enabled: true
   Max: 25
   CountComments: false
+  CountAsOne: []
+  IgnoredMethods: []
 
 Metrics/ModuleLength:
   Enabled: true
@@ -41,6 +46,7 @@ Metrics/ModuleLength:
 Metrics/ParameterLists:
   Enabled: true
   Max: 5
+  MaxOptionalParameters: 3
   CountKeywordArgs: true
 
 Metrics/PerceivedComplexity:

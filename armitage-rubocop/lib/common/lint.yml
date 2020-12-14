@@ -176,7 +176,7 @@ Lint/MixedRegexpCaptureTypes:
   # NOTE: if you use named captures - numbered captures will be ignored. it is bad. validate it.
 
 Lint/MissingSuper:
-  Enabled: false
+  Enabled: true
 
 Lint/MultipleComparison:
   Enabled: true
@@ -300,6 +300,9 @@ Lint/TopLevelReturnWithArgument:
 
 Lint/TrailingCommaInAttributeDeclaration:
   Enabled: true
+
+Lint/UnexpectedBlockArity:
+  Enabled: false
 
 Lint/UnderscorePrefixedVariableName:
   Enabled: false
