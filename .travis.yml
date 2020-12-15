@@ -3,7 +3,7 @@ dist: xenial
 jobs:
   include:
   - language: ruby # armitage-rubocop
-    rvm: 2.7.1
+    rvm: 2.7.2
     cache: bundler
     before_script:
     - cd armitage-rubocop
