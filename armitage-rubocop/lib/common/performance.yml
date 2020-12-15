@@ -103,7 +103,6 @@ Performance/RegexpMatch:
 
 Performance/ReverseEach:
   Enabled: true
-  Lalala: true
 
 Performance/ReverseFirst:
   Enabled: true

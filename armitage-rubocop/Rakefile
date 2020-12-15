@@ -19,6 +19,7 @@ RuboCop::RakeTask.new(:rubocop) do |t|
   t.requires << 'rubocop-rake'
 end
 
+ARMITAGE_RUBOCOP_PATH = Pathname.new(__FILE__).join('../.rubocop.yml')
 NON_CHECKABLE_COPS = %w[Rails].freeze # NOTE: Global "Rails" cop has only `Enabled` option
 
 # rubocop:disable Rails/RakeEnvironment
@@ -78,64 +79,17 @@ namespace :armitage_rubocop do
 
     desc 'Checks that all defined cops can be used'
     task :recognizable_cops do
-      ruboocp_config_file = Pathname.new(__FILE__).join('../.rubocop.yml')
-      rubocop_config = RuboCop::ConfigLoader.load_file(ruboocp_config_file)
-      # если какого-то копа нет - упадет с эксепшном на этот коп. перехватываем - и выводим его
-      # если все есть - то чекает автоматом аттрибуты и выводит меседж - игнорим его и смотрим в глубь
-      #   - лезем в config_validator и переделываем свои методы на юзание config_validator'а
+      RuboCop::ConfigLoader.load_file(ARMITAGE_RUBOCOP_PATH)
+      # TODO: validate each configured cop individually
+      puts "[\e[32mCOP RECOGNITION CHECK\e[0m] => \e[1;33mall cops are recognizable!\e[0m"
+    rescue
+      abort "[\e[31mCOP RECOGNITION CHECK\e[0m] => some cops can not be fully recognized!\n" \
+            "Run rake validation:recognize_and_show to show which cops have incompatabilities."
+    end
 
-      yamls = Dir[Pathname.new(__FILE__).join('../lib/**/*.yml')]
-      invalid_cops = Hash.new { |h, k| h[k] = +'' }
-
-      binding.irb
-
-      # NOTE: strongly rubocop-related realization
-      #  - see https://github.com/rubocop-hq/rubocop/blob/master/lib/rubocop/config.rb
-      #  - see https://github.com/rubocop-hq/rubocop/blob/master/lib/rubocop/config_loader.rb
-      #  - RuboCop::Config#validate
-      #  - RuboCop::Config#warn_about_unrecognized_cops
-      #  - RuboCop::ConfigLoader.load_file
-      #  - RuboCop::ConfigLoader.default_configuration
-      yamls.each do |yaml_file|
-        # NOTE: validate cop existence
-        rubocop_config.each_key do |cop|
-          next if RuboCop::ConfigLoader.default_configuration.key?(cop)
-          next if RuboCop::Cop::Cop.registry.contains_cop_matching?([cop])
-          next if cop == 'inherit_mode'
-
-          invalid_cops[cop] = "\e[31mBAD COP\e[0m"
-        end
-
-        # NOTE: validate cop params
-        rubocop_config.each_key do |cop|
-          next if invalid_cops.key?(cop)
-
-          invalid_params = Set.new
-
-          rubocop_config[cop].each_key do |cop_param|
-            next if RuboCop::ConfigValidator::COMMON_PARAMS.include?(cop_param)
-            next if NON_CHECKABLE_COPS.include?(cop)
-            next if RuboCop::ConfigLoader.default_configuration[cop].key?(cop_param)
-
-            invalid_params << "\e[35m#{cop_param}\e[0m"
-          end
-
-          next if invalid_params.empty?
-
-          invalid_cops[cop] = "\e[31mBAD PARAMS\e[0m: #{invalid_params.to_a.join(', ')}"
-        end
-      end
-
-      if invalid_cops.empty?
-        puts "[\e[32mCOP RECOGNITION CHECK\e[0m] => \e[1;33mall cops are recognizable!\e[0m"
-      else
-        invalid_cops_message = invalid_cops.each_pair.map do |cop, message|
-          "[\e[32m#{cop}\e[0m]\t- #{message}"
-        end.join("\n")
-
-        abort "[\e[31mCOP RECOGNITION CHECK\e[0m] => some cops can not be fully recognized:\n" \
-              "#{invalid_cops_message}"
-      end
+    desc 'Show rubocop\'s validation result output'
+    task :recognize_and_show do
+      RuboCop::ConfigLoader.load_file(ARMITAGE_RUBOCOP_PATH) rescue nil
     end
   end
 end
