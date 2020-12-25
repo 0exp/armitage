@@ -113,6 +113,7 @@ Style/CommentAnnotation:
 
 Style/CommentedKeyword:
   Enabled: false
+  AutoCorrect: true
 
 Style/ConditionalAssignment:
   Enabled: false
@@ -237,6 +238,9 @@ Style/HashAsLastArrayItem:
   EnforcedStyle: braces
   AutoCorrect: true
 
+Style/HashExcept:
+  Enabled: true
+
 Style/HashLikeCase:
   Enabled: false
   MinBranchesCount: 4
@@ -351,6 +355,7 @@ Style/MultilineMemoization:
 
 Style/MultilineMethodSignature:
   Enabled: false
+  AutoCorrect: true
 
 Style/MultilineTernaryOperator:
   Enabled: false

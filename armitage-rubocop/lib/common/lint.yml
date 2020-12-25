@@ -1,5 +1,8 @@
-Lint/AmbiguousBlockAssociation:
+Lint/AmbiguousAssignment:
   Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: true
 
 Lint/AmbiguousOperator:
   Enabled: false
@@ -48,6 +51,8 @@ Lint/DisjunctiveAssignmentInConstructor:
 
 Lint/DuplicateBranch:
   Enabled: true
+  IgnoreLiteralBranches: false
+  IgnoreConstantBranches: false
 
 Lint/DuplicateCaseCondition:
   Enabled: true
@@ -327,6 +332,7 @@ Lint/RedundantRequireStatement:
 
 Lint/RedundantSplatExpansion:
   Enabled: true
+  AllowPercentLiteralArrayArgument: true
 
 Lint/UnreachableCode:
   Enabled: true

@@ -318,6 +318,9 @@ Layout/SpaceBeforeBlockBraces:
   EnforcedStyle: space
   EnforcedStyleForEmptyBraces: space
 
+Layout/SpaceBeforeBrackets:
+  Enabled: false
+
 Layout/SpaceBeforeComma:
   Enabled: true
 
