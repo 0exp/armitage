@@ -95,6 +95,7 @@ RSpec/FilePath:
 
 RSpec/Focus:
   Enabled: true
+  AutoCorrect: true
 
 RSpec/HookArgument:
   Enabled: false
