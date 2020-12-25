@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    armitage-rubocop (1.7.0)
+    armitage-rubocop (1.7.0.1)
       rubocop (= 1.7.0)
       rubocop-performance (= 1.9.1)
       rubocop-rails (= 2.9.1)

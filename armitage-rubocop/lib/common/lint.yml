@@ -181,7 +181,7 @@ Lint/MixedRegexpCaptureTypes:
   # NOTE: if you use named captures - numbered captures will be ignored. it is bad. validate it.
 
 Lint/MissingSuper:
-  Enabled: true
+  Enabled: false
 
 Lint/MultipleComparison:
   Enabled: true
