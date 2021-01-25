@@ -39,6 +39,9 @@ Lint/ConstantResolution:
 Lint/Debugger:
   Enabled: true
 
+Lint/DeprecatedConstants:
+  Enabled: true
+
 Lint/DeprecatedClassMethods:
   Enabled: true
 
@@ -163,6 +166,9 @@ Lint/InterpolationCheck:
   Enabled: true
   AutoCorrect: true
 
+Lint/LambdaWithoutLiteralBlock:
+  Enabled: true
+
 Lint/LiteralAsCondition:
   Enabled: true
 
@@ -228,6 +234,9 @@ Lint/RaiseException:
     - Gem
 
 Lint/RandOne:
+  Enabled: true
+
+Lint/RedundantDirGlobSort:
   Enabled: true
 
 Lint/RedundantSafeNavigation:

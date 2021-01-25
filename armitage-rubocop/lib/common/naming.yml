@@ -71,6 +71,7 @@ Naming/MethodParameterName:
 Naming/VariableName:
   Enabled: true
   EnforcedStyle: snake_case
+  AllowedIdentifiers: []
 
 Naming/VariableNumber:
   Enabled: true

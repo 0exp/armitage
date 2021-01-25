@@ -178,6 +178,10 @@ Style/EmptyMethod:
   Enabled: true
   EnforcedStyle: compact
 
+Style/EndlessMethod:
+  Enabled: true
+  EnforcedStyle: allow_single_line
+
 Style/Encoding:
   Enabled: false
 
