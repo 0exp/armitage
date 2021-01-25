@@ -70,9 +70,9 @@ PLATFORMS
 
 DEPENDENCIES
   armitage-rubocop!
-  bundler
-  pry
-  rake
+  bundler (~> 2.2)
+  pry (~> 0.13)
+  rake (~> 13.0)
 
 BUNDLED WITH
    2.2.3
