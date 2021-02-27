@@ -175,6 +175,9 @@ Lint/LiteralAsCondition:
 Lint/LiteralInInterpolation:
   Enabled: true
 
+Lint/SymbolConversion:
+  Enabled: true
+
 Lint/Loop:
   Enabled: true
   AutoCorrect: true
@@ -210,6 +213,12 @@ Lint/NonLocalExitFromIterator:
 
 Lint/NumberConversion:
   Enabled: false
+
+Lint/NumberedParameterAssignment:
+  Enabled: true
+
+Lint/OrAssignmentToConstant:
+  Enabled: true
 
 Lint/OrderedMagicComments:
   Enabled: true
@@ -314,6 +323,9 @@ Lint/TopLevelReturnWithArgument:
 
 Lint/TrailingCommaInAttributeDeclaration:
   Enabled: true
+
+Lint/TripleQuotes:
+  Enabled: false
 
 Lint/UnexpectedBlockArity:
   Enabled: false

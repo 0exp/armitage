@@ -191,6 +191,7 @@ Style/EndBlock:
 
 Style/EvalWithLocation:
   Enabled: true
+  AutoCorrect: true
 
 Style/EvenOdd:
   Enabled: true
@@ -221,6 +222,7 @@ Style/FormatStringToken:
   Enabled: true
   MaxUnannotatedPlaceholdersAllowed: 1
   EnforcedStyle: annotated
+  IgnoredMethods: []
 
 Style/FrozenStringLiteralComment:
   Enabled: true
@@ -241,6 +243,9 @@ Style/HashAsLastArrayItem:
   Enabled: true
   EnforcedStyle: braces
   AutoCorrect: true
+
+Style/HashConversion:
+  Enabled: false
 
 Style/HashExcept:
   Enabled: true
@@ -265,6 +270,9 @@ Style/HashTransformValues:
   Enabled: false
 
 Style/IdenticalConditionalBranches:
+  Enabled: true
+
+Style/IfWithBooleanLiteralBranches:
   Enabled: true
 
 Style/IfInsideElse:
