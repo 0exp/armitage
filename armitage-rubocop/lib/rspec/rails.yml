@@ -1,2 +1,5 @@
 RSpec/Rails/HttpStatus:
   Enabled: false
+
+RSpec/Rails/AvoidSetupHook:
+  Enabled: true

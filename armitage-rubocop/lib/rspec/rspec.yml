@@ -80,6 +80,9 @@ RSpec/ExampleWording:
 RSpec/ExpectActual:
   Enabled: true
 
+RSpec/ExcessiveDocstringSpacing:
+  Enabled: true
+
 RSpec/ExpectChange:
   Enabled: true
   EnforcedStyle: block
@@ -101,6 +104,9 @@ RSpec/HookArgument:
   Enabled: false
 
 RSpec/HooksBeforeExamples:
+  Enabled: true
+
+RSpec/IdenticalEqualityAssertion:
   Enabled: true
 
 RSpec/ImplicitBlockExpectation:
@@ -232,6 +238,9 @@ RSpec/SingleArgumentMessageChain:
   Enabled: true
 
 RSpec/SubjectStub:
+  Enabled: true
+
+RSpec/SubjectDeclaration:
   Enabled: true
 
 RSpec/StubbedMock:
