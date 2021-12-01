@@ -1,11 +1,18 @@
 Bundler/GemComment:
   Enabled: false
 
+Bundler/GemVersion:
+  Enabled: false
+
+Bundler/GemFilename:
+  Enabled: false
+
 Bundler/DuplicatedGem:
   Enabled: true
 
 Bundler/InsecureProtocolSource:
   Enabled: true
+  AllowHttpProtocol: false
 
 Bundler/OrderedGems:
   Enabled: false

@@ -245,6 +245,7 @@ Style/HashAsLastArrayItem:
   AutoCorrect: true
 
 Style/HashConversion:
+  AllowSplatArgument: true
   Enabled: false
 
 Style/HashExcept:
@@ -320,8 +321,13 @@ Style/LineEndConcatenation:
   Enabled: true
 
 Style/MethodCallWithArgsParentheses:
-  Enabled: false
-  IgnoredMethods: []
+  Enabled: false # NOTE: experimental!
+  EnforcedStyle: require_parentheses
+  IgnoreMacros: true
+  AllowParenthesesInMultilineCall: true
+  AllowParenthesesInChaining: true
+  AllowParenthesesInCamelCaseMethod: true
+  AllowParenthesesInStringInterpolation: true
 
 Style/MethodCallWithoutArgsParentheses:
   Enabled: true
@@ -359,6 +365,9 @@ Style/MultilineIfModifier:
   Enabled: false
 
 Style/MultilineIfThen:
+  Enabled: true
+
+Style/MultilineInPatternThen:
   Enabled: true
 
 Style/MultilineMemoization:
@@ -425,6 +434,13 @@ Style/NonNilCheck:
 Style/Not:
   Enabled: true
 
+Style/NumberedParameters:
+  Enabled: false
+
+Style/NumberedParametersLimit:
+  Max: 1_000_000
+  Enabled: true
+
 Style/NumericLiteralPrefix:
   Enabled: true
   EnforcedOctalStyle: zero_with_o
@@ -439,6 +455,9 @@ Style/NumericPredicate:
   IgnoredMethods: []
 
 Style/OneLineConditional:
+  Enabled: true
+
+Style/OpenStructUse:
   Enabled: true
 
 Style/OptionHash:
@@ -542,12 +561,18 @@ Style/RescueStandardError:
 Style/ReturnNil:
   Enabled: false
 
+Style/RedundantSelfAssignmentBranch:
+  Enabled: false # NOTE: can decrease the code readability
+
 Style/SafeNavigation:
   Enabled: true
   ConvertCodeThatCanStartToReturnNil: false
 
 Style/Sample:
   Enabled: true
+
+Style/SelectByRegexp:
+  Enabled: false
 
 Style/SelfAssignment:
   Enabled: true
@@ -593,6 +618,10 @@ Style/StderrPuts:
 
 Style/StringConcatenation:
   Enabled: true
+  Mode: aggressive
+
+Style/StringChars:
+  Enabled: true
 
 Style/StringHashKeys:
   Enabled: false
@@ -624,6 +653,10 @@ Style/SymbolLiteral:
   Enabled: true
 
 Style/SymbolProc:
+  AllowMethodsWithArguments: true
+  IgnoredMethods:
+    - respond_to
+    - define_method
   Enabled: true
 
 Style/SwapValues:
@@ -633,6 +666,9 @@ Style/TernaryParentheses:
   Enabled: true
   EnforcedStyle: require_parentheses_when_complex
   AllowSafeAssignment: true
+
+Style/TopLevelMethodDefinition:
+  Enabled: true
 
 Style/TrailingBodyOnClass:
   Enabled: true
@@ -670,6 +706,10 @@ Style/TrivialAccessors:
   Enabled: false
 
 Style/UnlessElse:
+  Enabled: false
+
+Style/UnlessLogicalOperators:
+  EnforcedStyle: forbid_mixed_logical_operators
   Enabled: false
 
 Style/RedundantCapitalW:
@@ -718,3 +758,7 @@ Style/YodaCondition:
 
 Style/ZeroLengthPredicate:
   Enabled: true
+
+Style/QuotedSymbols:
+  Enabled: true
+  EnforcedStyle: same_as_string_literals

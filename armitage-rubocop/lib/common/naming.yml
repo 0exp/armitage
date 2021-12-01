@@ -30,6 +30,9 @@ Naming/HeredocDelimiterCase:
 Naming/HeredocDelimiterNaming:
   Enabled: false
 
+Naming/InclusiveLanguage:
+  Enabled: false
+
 Naming/MemoizedInstanceVariableName:
   Enabled: false
 

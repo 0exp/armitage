@@ -13,3 +13,6 @@ Security/Open:
 
 Security/YAMLLoad:
   Enabled: false
+
+Security/IoMethods:
+  Enabled: false

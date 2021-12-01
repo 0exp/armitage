@@ -2,12 +2,20 @@ Lint/AmbiguousAssignment:
   Enabled: false
 
 Lint/AmbiguousBlockAssociation:
+  IgnoredMethods: []
   Enabled: true
 
 Lint/AmbiguousOperator:
   Enabled: false
 
 Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+
+Lint/AmbiguousRange:
+  Enabled: true
+  RequireParenthesesForMethodChains: false
+
+Lint/AmbiguousOperatorPrecedence:
   Enabled: false
 
 Lint/AssignmentInCondition:
@@ -88,8 +96,13 @@ Lint/ElseLayout:
 Lint/EmptyBlock:
   Enabled: true
   AllowComments: true
+  AllowEmptyLambdas: true
 
 Lint/EmptyClass:
+  Enabled: false
+  AllowComments: true
+
+Lint/EmptyInPattern:
   Enabled: false
   AllowComments: true
 
@@ -137,11 +150,16 @@ Lint/FormatParameterMismatch:
 Lint/SelfAssignment:
   Enabled: true
 
+Layout/SingleLineBlockChain:
+  Enabled: false
+
 Lint/StructNewOverride:
   Enabled: true
 
 Lint/SuppressedException:
-  Enabled: false
+  AllowComments: true
+  AllowNil: true
+  Enabled: true # NOTE: experimental!
 
 Lint/HashCompareByIdentity:
   Enabled: false
@@ -153,6 +171,9 @@ Lint/IdentityComparison:
   Enabled: false
 
 Lint/ImplicitStringConcatenation:
+  Enabled: true
+
+Lint/IncompatibleIoSelectWithFiberScheduler:
   Enabled: true
 
 Lint/IneffectiveAccessModifier:
@@ -194,7 +215,6 @@ Lint/MissingSuper:
 
 Lint/MultipleComparison:
   Enabled: true
-  AllowMethodComparison: true
 
 Lint/NestedMethodDefinition:
   Enabled: true
@@ -234,6 +254,9 @@ Lint/PercentStringArray:
   Enabled: true
 
 Lint/PercentSymbolArray:
+  Enabled: true
+
+Lint/UselessRuby2Keywords:
   Enabled: true
 
 Lint/RaiseException:

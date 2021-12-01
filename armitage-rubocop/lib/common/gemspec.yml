@@ -15,3 +15,6 @@ Gemspec/RequiredRubyVersion:
 
 Gemspec/RubyVersionGlobalsUsage:
   Enabled: true
+
+Gemspec/RequireMFA:
+  Enabled: false # NOTE: it is strongly relates to the chosen business practics

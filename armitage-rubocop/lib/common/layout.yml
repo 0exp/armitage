@@ -6,6 +6,7 @@ Layout/AccessModifierIndentation:
 Layout/ArgumentAlignment:
   Enabled: true
   IndentationWidth: ~
+  EnforcedStyle: with_first_argument
 
 Layout/ArrayAlignment:
   Enabled: true
@@ -28,6 +29,13 @@ Layout/BeginEndAlignment:
   Enabled: true
   EnforcedStyleAlignWith: start_of_line
   Severity: warning
+
+Lint/RequireRelativeSelfPath:
+  Enabled: true
+
+Layout/RedundantLineBreak:
+  InspectBlocks: false
+  Enabled: true
 
 Layout/BlockAlignment:
   Enabled: true
@@ -110,7 +118,7 @@ Layout/EmptyLinesAroundAttributeAccessor:
 Layout/EmptyLineBetweenDefs:
   Enabled: true
   NumberOfEmptyLines: 1
-  AllowAdjacentOneLineDefs: false
+  AllowAdjacentOneLineDefs: true
   EmptyLineBetweenMethodDefs: true
   EmptyLineBetweenClassDefs: true
   EmptyLineBetweenModuleDefs: true
