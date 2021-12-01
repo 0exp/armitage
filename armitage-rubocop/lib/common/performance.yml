@@ -28,6 +28,9 @@ Performance/Casecmp:
 Performance/ChainArrayAllocation:
   Enabled: false
 
+Performance/ConcurrentMonotonicTime:
+  Enabled: true
+
 Performance/CompareWithBlock:
   Enabled: true
 
@@ -73,6 +76,9 @@ Performance/InefficientHashSearch:
 Performance/IoReadlines:
   Enabled: true
 
+Performance/MapCompact:
+  Enabled: true
+
 Performance/MethodObjectAsBlock:
   Enabled: true
 
@@ -98,6 +104,12 @@ Performance/RedundantMerge:
   Enabled: true
   MaxKeyValuePairs: 1
 
+Performance/RedundantSplitRegexpArgument:
+  Enabled: true
+
+Performance/RedundantEqualityComparisonBlock:
+  Enabled: false
+
 Performance/RegexpMatch:
   Enabled: true
 
@@ -105,6 +117,9 @@ Performance/ReverseEach:
   Enabled: true
 
 Performance/ReverseFirst:
+  Enabled: true
+
+Performance/SelectMap:
   Enabled: true
 
 Performance/Size:
