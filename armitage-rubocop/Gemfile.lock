@@ -5,7 +5,7 @@ PATH
       rubocop (= 1.23.0)
       rubocop-performance (= 1.12.0)
       rubocop-rails (= 2.12.4)
-      rubocop-rake (= 0.5.1)
+      rubocop-rake (= 0.6.0)
       rubocop-rspec (= 2.6.0)
 
 GEM
@@ -53,8 +53,8 @@ GEM
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
-    rubocop-rake (0.5.1)
-      rubocop
+    rubocop-rake (0.6.0)
+      rubocop (~> 1.0)
     rubocop-rspec (2.6.0)
       rubocop (~> 1.19)
     ruby-progressbar (1.11.0)
