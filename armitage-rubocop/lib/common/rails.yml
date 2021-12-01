@@ -1,3 +1,6 @@
+Rails/AddColumnIndex:
+  Enabled: false # NOTE: cop works incorrectly with `Sequel` (sequel supports :index in add_column)
+
 Rails/ActionFilter:
   Enabled: true
   EnforcedStyle: action
@@ -14,6 +17,15 @@ Rails/ActiveRecordOverride:
   Enabled: true
   Include:
     - app/models/**/*.rb
+
+Rails/EagerEvaluationLogMessage:
+  Enabled: true
+
+Rails/ExpandedDateRange:
+  Enabled: true
+
+Rails/UnusedIgnoredColumns:
+  Enabled: false
 
 Rails/ActiveSupportAliases:
   Enabled: true
@@ -37,6 +49,13 @@ Rails/AttributeDefaultBlockValue:
   Enabled: true
 
 Rails/ArelStar:
+  Enabled: true
+
+Rails/RequireDependency:
+  Enabled: true
+  # NOTE: `require_dependency` is obsolete when you use `Zeitwerk`
+
+Rails/ReversibleMigrationMethodDefinition:
   Enabled: true
 
 Rails/RakeEnvironment:
@@ -65,6 +84,7 @@ Rails/ContentTag:
 Rails/Date:
   Enabled: true
   EnforcedStyle: flexible
+  AllowToTime: true
 
 Rails/DefaultScope:
   Enabled: false
@@ -89,6 +109,11 @@ Rails/EnumHash:
   Include:
     - app/models/**/*.rb
 
+Rails/EnvironmentVariableAccess:
+  Enabled: false # TODO: think about it later
+  AllowReads: true
+  AllowWrites: false
+
 Rails/EnumUniqueness:
   Enabled: true
 
@@ -104,6 +129,7 @@ Rails/FilePath:
 
 Rails/FindBy:
   Enabled: true
+  IgnoreWhereFirst: true
 
 Rails/FindById:
   Enabled: true
@@ -121,6 +147,9 @@ Rails/HttpPositionalArguments:
   Enabled: true
 
 Rails/HttpStatus:
+  Enabled: false
+
+Rails/I18nLocaleAssignment:
   Enabled: false
 
 Rails/IgnoredSkipActionFilterOption:
@@ -253,9 +282,15 @@ Rails/SkipsModelValidations:
 Rails/SquishedSQLHeredocs:
   Enabled: true
 
+Rails/RedundantTravelBack:
+  Enabled: false # NOTE: can affect the readability
+
 Rails/TimeZone:
   Enabled: true
   EnforcedStyle: flexible
+
+Rails/TimeZoneAssignment:
+  Enabled: false
 
 Rails/UniqBeforePluck:
   Enabled: true
