@@ -135,6 +135,9 @@ Performance/StartWith:
   Enabled: true
   AutoCorrect: false
 
+Performance/StringIdentifierArgument:
+  Enabled: true
+
 Performance/StringInclude:
   Enabled: true
 
@@ -144,6 +147,7 @@ Performance/StringReplacement:
 Performance/Sum:
   Enabled: true
   AutoCorrect: true
+  OnlySumOrWithInitialValue: false
 
 Performance/TimesMap:
   Enabled: true

@@ -206,6 +206,12 @@ Style/ExponentialNotation:
 Style/ExplicitBlockArgument:
   Enabled: true
 
+Style/FileRead:
+  Enabled: false
+
+Style/FileWrite:
+  Enabled: false
+
 Style/FloatDivision:
   Enabled: false
 
@@ -263,6 +269,7 @@ Style/HashSyntax:
   EnforcedStyle: ruby19
   UseHashRocketsWithSymbolValues: false
   PreferHashRocketsForNonAlnumEndingSymbols: false
+  EnforcedShorthandSyntax: either
 
 Style/HashTransformKeys:
   Enabled: false
@@ -318,6 +325,9 @@ Style/LambdaCall:
   Enabled: false
 
 Style/LineEndConcatenation:
+  Enabled: true
+
+Style/MapToHash:
   Enabled: true
 
 Style/MethodCallWithArgsParentheses:
@@ -405,6 +415,9 @@ Style/NegatedUnless:
 Style/NegatedWhile:
   Enabled: true
 
+Style/NestedFileDirname:
+  Enabled: false # NOTE: switch to "true" if you work with Ruby 3.1 or higher
+
 Style/NestedModifier:
   Enabled: true
 
@@ -446,7 +459,9 @@ Style/NumericLiteralPrefix:
   EnforcedOctalStyle: zero_with_o
 
 Style/NumericLiterals:
-  Enabled: false
+  Enabled: true
+  Strict: false
+  AllowedNumbers: []
 
 Style/NumericPredicate:
   Enabled: false # strongly situative cop

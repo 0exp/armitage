@@ -47,6 +47,11 @@ Naming/RescuedExceptionsVariableName:
   Enabled: true
   PreferredName: error
 
+Naming/BlockForwarding:
+  Enabled: true
+  EnforcedStyle: explicit
+  BlockForwardingName: block
+
 Naming/BlockParameterName:
   Enabled: true
   MinNameLength: 1

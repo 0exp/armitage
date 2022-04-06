@@ -74,6 +74,7 @@ Layout/ClosingParenthesisIndentation:
 
 Layout/CommentIndentation:
   Enabled: true
+  AllowForAlignment: true
 
 Layout/ConditionPosition:
   Enabled: true

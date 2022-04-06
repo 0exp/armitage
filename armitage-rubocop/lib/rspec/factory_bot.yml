@@ -7,3 +7,6 @@ RSpec/FactoryBot/CreateList:
 
 RSpec/FactoryBot/FactoryClassName:
   Enabled: true
+
+RSpec/FactoryBot/SyntaxMethods:
+  Enabled: true

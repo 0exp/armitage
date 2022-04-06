@@ -1,6 +1,9 @@
 Rails/AddColumnIndex:
   Enabled: false # NOTE: cop works incorrectly with `Sequel` (sequel supports :index in add_column)
 
+Rails/ActionControllerTestCase:
+  Enabled: true
+
 Rails/ActionFilter:
   Enabled: true
   EnforcedStyle: action
@@ -78,7 +81,22 @@ Rails/BulkChangeTable:
 Rails/CreateTableWithTimestamps:
   Enabled: false
 
+Rails/CompactBlank:
+  Enabled: false
+
 Rails/ContentTag:
+  Enabled: true
+
+Rails/DuplicateAssociation:
+  Enabled: true
+
+Rails/DuplicateScope:
+  Enabled: true
+
+Rails/DurationArithmetic:
+  Enabled: false
+
+Rails/DeprecatedActiveModelErrorsMethods:
   Enabled: true
 
 Rails/Date:
@@ -149,6 +167,15 @@ Rails/HttpPositionalArguments:
 Rails/HttpStatus:
   Enabled: false
 
+Rails/I18nLocaleTexts:
+  Enabled: false
+
+Rails/I18nLazyLookup:
+  Enabled: false
+
+Rails/MigrationClassName:
+  Enabled: true
+
 Rails/I18nLocaleAssignment:
   Enabled: false
 
@@ -217,6 +244,9 @@ Rails/Presence:
 Rails/Present:
   Enabled: true
 
+Rails/RootJoinChain:
+  Enabled: true
+
 Rails/ReadWriteAttribute:
   Enabled: true
 
@@ -224,6 +254,9 @@ Rails/RedundantAllowNil:
   Enabled: true
   Include:
     - app/models/**/*.rb
+
+Rails/RedundantPresenceValidationOnBelongsTo:
+  Enabled: true
 
 Rails/RedundantForeignKey:
   Enabled: false
@@ -243,7 +276,6 @@ Rails/RefuteMethods:
 
 Rails/RelativeDateConstant:
   Enabled: true
-  AutoCorrect: false
 
 Rails/RenderInline:
   Enabled: false
@@ -272,6 +304,9 @@ Rails/SaveBang:
 Rails/ScopeArgs:
   Enabled: true
 
+Rails/SchemaComment:
+  Enabled: false
+
 Rails/ShortI18n:
   Enabled: true
   EnforcedStyle: conservative
@@ -285,12 +320,18 @@ Rails/SquishedSQLHeredocs:
 Rails/RedundantTravelBack:
   Enabled: false # NOTE: can affect the readability
 
+Rails/TableNameAssignment:
+  Enabled: false
+
 Rails/TimeZone:
   Enabled: true
   EnforcedStyle: flexible
 
 Rails/TimeZoneAssignment:
   Enabled: false
+
+Rails/TransactionExitStatement:
+  Enabled: true
 
 Rails/UniqBeforePluck:
   Enabled: true
