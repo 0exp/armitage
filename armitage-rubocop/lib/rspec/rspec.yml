@@ -269,10 +269,6 @@ RSpec/VerifiedDoubles:
   IgnoreNameless: true
   IgnoreSymbolicNames: false
 
-RSpec/VerifiedDoubleReference:
-  Enabled: true
-  EnforcedStyle: constant
-
 RSpec/VoidExpect:
   Enabled: true
 
