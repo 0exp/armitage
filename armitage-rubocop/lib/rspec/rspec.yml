@@ -14,13 +14,11 @@ RSpec/Be:
   Enabled: true
 
 RSpec/BeNil:
-  Enabled: true
+  Enabled: false
+  EnforcedStyle: be
 
 RSpec/BeEql:
-  Enabled: true
-
-RSpec/BeEq:
-  Enabled: true
+  Enabled: false
 
 RSpec/BeforeAfterAll:
   Enabled: false
@@ -268,6 +266,10 @@ RSpec/VerifiedDoubles:
   Enabled: false
   IgnoreNameless: true
   IgnoreSymbolicNames: false
+
+RSpec/VerifiedDoubleReference:
+  Enabled: true
+  EnforcedStyle: constant
 
 RSpec/VoidExpect:
   Enabled: true
