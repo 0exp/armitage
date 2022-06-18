@@ -220,7 +220,7 @@ Layout/IndentationConsistency:
 Layout/IndentationWidth:
   Enabled: true
   Width: 2
-  IgnoredPatterns: []
+  AllowedPatterns: []
 
 Layout/InitialIndentation:
   Enabled: true
@@ -243,7 +243,7 @@ Layout/LineLength:
     - http
     - https
   IgnoreCopDirectives: false
-  IgnoredPatterns: []
+  AllowedPatterns: []
   Exclude:
     - Gemfile
 

@@ -1,3 +1,10 @@
+Gemspec/DependencyVersion:
+  Enabled: true
+  EnforcedStyle: required
+  Include:
+    - '**/*.gemspec'
+  AllowedGems: []
+
 Gemspec/DateAssignment:
   Enabled: true
   Include:

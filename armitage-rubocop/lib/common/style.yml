@@ -189,6 +189,9 @@ Style/EndBlock:
   Enabled: true
   AutoCorrect: true
 
+Style/EnvHome:
+  Enabled: true
+
 Style/EvalWithLocation:
   Enabled: true
   AutoCorrect: true
@@ -205,6 +208,9 @@ Style/ExponentialNotation:
 
 Style/ExplicitBlockArgument:
   Enabled: true
+
+Style/FetchEnvVar:
+  Enabled: false
 
 Style/FileRead:
   Enabled: false
@@ -244,6 +250,7 @@ Style/GlobalStdStream:
 Style/GuardClause:
   Enabled: false
   MinBodyLength: 1
+  AllowConsecutiveConditionals: false
 
 Style/HashAsLastArrayItem:
   Enabled: true
@@ -469,6 +476,10 @@ Style/NumericPredicate:
   AutoCorrect: true
   IgnoredMethods: []
 
+Style/ObjectThen:
+  Enabled: true
+  EnforcedStyle: then
+
 Style/OneLineConditional:
   Enabled: true
 
@@ -536,6 +547,10 @@ Style/RedundantFetchBlock:
   Enabled: true
   SafeForConstants: true
 
+Style/RedundantInitialize:
+  Enabled: true
+  AllowComments: true
+
 Style/RedundantRegexpCharacterClass:
   Enabled: true
 
@@ -582,6 +597,7 @@ Style/RedundantSelfAssignmentBranch:
 Style/SafeNavigation:
   Enabled: true
   ConvertCodeThatCanStartToReturnNil: false
+  MaxChainLength: 3
 
 Style/Sample:
   Enabled: true
@@ -620,6 +636,8 @@ Style/SlicingWithRange:
 
 Style/SpecialGlobalVars:
   Enabled: true
+  RequireEnglish: true
+  EnforcedStyle: use_english_names
 
 Style/StaticClass:
   Enabled: true
@@ -668,11 +686,12 @@ Style/SymbolLiteral:
   Enabled: true
 
 Style/SymbolProc:
+  Enabled: true
   AllowMethodsWithArguments: true
+  AllowComments: false
   IgnoredMethods:
     - respond_to
     - define_method
-  Enabled: true
 
 Style/SwapValues:
   Enabled: true

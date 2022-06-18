@@ -79,6 +79,7 @@ Lint/DuplicateElsifCondition:
 
 Lint/DuplicateRequire:
   Enabled: true
+  AutoCorrect: true
 
 Lint/DuplicateRegexpCharacterClassElement:
   Enabled: true
@@ -271,6 +272,9 @@ Lint/RandOne:
 Lint/RedundantDirGlobSort:
   Enabled: true
 
+Lint/RefinementImportMethods:
+  Enabled: true
+
 Lint/RedundantSafeNavigation:
   Enabled: true
   AllowedMethods:
@@ -410,12 +414,8 @@ Lint/UselessAccessModifier:
 Lint/UselessAssignment:
   Enabled: true
 
-Lint/UselessElseWithoutRescue:
-  Enabled: true
-
 Lint/UselessMethodDefinition:
   Enabled: true
-  AllowComments: true
 
 Lint/UselessSetterCall:
   Enabled: true

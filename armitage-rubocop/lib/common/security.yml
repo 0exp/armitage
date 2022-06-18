@@ -1,3 +1,6 @@
+Security/CompoundHash:
+  Enabled: false
+
 Security/Eval:
   Enabled: false
 
