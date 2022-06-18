@@ -87,6 +87,9 @@ Rails/CompactBlank:
 Rails/ContentTag:
   Enabled: true
 
+Rails/DotSeparatedKeys:
+  Enabled: true
+
 Rails/DuplicateAssociation:
   Enabled: true
 
@@ -98,6 +101,7 @@ Rails/DurationArithmetic:
 
 Rails/DeprecatedActiveModelErrorsMethods:
   Enabled: true
+  AutoCorrect: true
 
 Rails/Date:
   Enabled: true
@@ -244,6 +248,9 @@ Rails/Presence:
 Rails/Present:
   Enabled: true
 
+Rails/RootPublicPath:
+  Enabled: true
+
 Rails/RootJoinChain:
   Enabled: true
 
@@ -317,6 +324,9 @@ Rails/SkipsModelValidations:
 Rails/SquishedSQLHeredocs:
   Enabled: true
 
+Rails/StripHeredoc:
+  Enabled: true
+
 Rails/RedundantTravelBack:
   Enabled: false # NOTE: can affect the readability
 
@@ -329,6 +339,9 @@ Rails/TimeZone:
 
 Rails/TimeZoneAssignment:
   Enabled: false
+
+Rails/ToFormattedS:
+  Enabled: true
 
 Rails/TransactionExitStatement:
   Enabled: true
