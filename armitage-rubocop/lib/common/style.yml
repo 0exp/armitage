@@ -210,7 +210,7 @@ Style/ExplicitBlockArgument:
   Enabled: true
 
 Style/FetchEnvVar:
-  Enabled: false
+  Enabled: true
 
 Style/FileRead:
   Enabled: false
