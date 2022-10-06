@@ -2,7 +2,7 @@ Lint/AmbiguousAssignment:
   Enabled: false
 
 Lint/AmbiguousBlockAssociation:
-  IgnoredMethods: []
+  AllowedMethods: []
   Enabled: true
 
 Lint/AmbiguousOperator:
@@ -38,6 +38,9 @@ Lint/ConstantDefinitionInBlock:
   Enabled: false
   AllowedMethods:
     - enums
+
+Lint/ConstantOverwrittenInRescue:
+  Enabled: true
 
 Lint/ConstantResolution:
   Enabled: false
@@ -110,6 +113,7 @@ Lint/EmptyInPattern:
 Lint/EmptyConditionalBody:
   Enabled: true
   AllowComments: true
+  AutoCorrect: true
 
 Lint/EmptyEnsure:
   Enabled: true
@@ -226,6 +230,9 @@ Lint/NestedPercentLiteral:
 Lint/NextWithoutAccumulator:
   Enabled: true
 
+Lint/NonAtomicFileOperation:
+  Enabled: true
+
 Lint/NonDeterministicRequireOrder:
   Enabled: false
 
@@ -255,6 +262,9 @@ Lint/PercentStringArray:
   Enabled: true
 
 Lint/PercentSymbolArray:
+  Enabled: true
+
+Lint/UselessElseWithoutRescue:
   Enabled: true
 
 Lint/UselessRuby2Keywords:
@@ -294,6 +304,9 @@ Lint/RedundantWithObject:
 Lint/RegexpAsCondition:
   Enabled: true
   AutoCorrect: true
+
+Lint/RequireRangeParentheses:
+  Enabled: true
 
 Lint/RequireParentheses:
   Enabled: true

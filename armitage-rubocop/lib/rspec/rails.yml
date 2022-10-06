@@ -3,3 +3,6 @@ RSpec/Rails/HttpStatus:
 
 RSpec/Rails/AvoidSetupHook:
   Enabled: true
+
+RSpec/Rails/HaveHttpStatus:
+  Enabled: false

@@ -233,6 +233,16 @@ Layout/LeadingCommentSpace:
   AllowDoxygenCommentStyle: false
   AllowGemfileRubyComment: true
 
+Layout/LineContinuationLeadingSpace:
+  Enabled: true
+  AutoCorrect: true
+  EnforcedStyle: trailing
+
+Layout/LineContinuationSpacing:
+  Enabled: true
+  EnforcedStyle: space
+  AutoCorrect: true
+
 Layout/LineLength:
   Enabled: true
   AutoCorrect: true
@@ -246,6 +256,9 @@ Layout/LineLength:
   AllowedPatterns: []
   Exclude:
     - Gemfile
+
+Layout/MultilineMethodParameterLineBreaks:
+  Enabled: true
 
 Layout/MultilineArrayBraceLayout:
   Enabled: true

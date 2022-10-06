@@ -6,3 +6,9 @@ RSpec/Capybara/FeatureMethods:
 
 RSpec/Capybara/VisibilityMatcher:
   Enabled: true
+
+RSpec/Capybara/SpecificMatcher:
+  Enabled: false
+
+RSpec/Capybara/SpecificFinders:
+  Enabled: false

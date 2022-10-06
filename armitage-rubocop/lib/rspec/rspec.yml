@@ -23,6 +23,10 @@ RSpec/BeEql:
 RSpec/BeforeAfterAll:
   Enabled: false
 
+RSpec/ChangeByZero:
+  Enabled: true
+  NegatedMatcher: nil
+
 RSpec/ContextMethod:
   Enabled: false
 
@@ -52,9 +56,13 @@ RSpec/Dialect:
 
 RSpec/EmptyExampleGroup:
   Enabled: true
+  AutoCorrect: true
 
 RSpec/EmptyHook:
   Enabled: true
+
+RSpec/NoExpectationExample:
+  Enabled: false
 
 RSpec/EmptyLineAfterExampleGroup:
   Enabled: true
@@ -67,6 +75,7 @@ RSpec/EmptyLineAfterFinalLet:
 
 RSpec/EmptyLineAfterHook:
   Enabled: true
+  AllowConsecutiveOneLiners: true
 
 RSpec/EmptyLineAfterSubject:
   Enabled: true
@@ -226,6 +235,10 @@ RSpec/ReturnFromStub:
   Enabled: true
   EnforcedStyle: and_return
 
+RSpec/ClassCheck:
+  Enabled: true
+  EnforcedStyle: be_a
+
 RSpec/ScatteredLet:
   Enabled: true
 
@@ -260,7 +273,7 @@ RSpec/VariableDefinition:
 RSpec/VariableName:
   Enabled: true
   EnforcedStyle: snake_case
-  IgnoredPatterns: []
+  AllowedPatterns: []
 
 RSpec/VerifiedDoubles:
   Enabled: false

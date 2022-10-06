@@ -375,3 +375,24 @@ Rails/WhereExists:
 
 Rails/WhereNot:
   Enabled: false
+
+Rails/FreezeTime:
+  Enabled: true
+
+Rails/WhereMissing:
+  Enabled: false
+
+Rails/RootPathnameMethods:
+  Enabled: true
+
+Rails/TopLevelHashWithIndifferentAccess:
+  Enabled: true
+
+Rails/ActionControllerFlashBeforeRender:
+  Enabled: true
+
+Rails/ActiveSupportOnLoad:
+  Enabled: true
+
+Rails/ToSWithArgument:
+  Enabled: true

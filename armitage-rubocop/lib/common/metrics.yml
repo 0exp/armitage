@@ -2,14 +2,14 @@ Metrics/AbcSize:
   Enabled: true
   Max: 19
   CountRepeatedAttributes: true
-  IgnoredMethods: []
+  AllowedMethods: []
 
 Metrics/BlockLength:
   Enabled: true
   CountComments: false
   CountAsOne: []
   Max: 25
-  IgnoredMethods:
+  AllowedMethods:
     - refine
   Exclude:
     - Rakefile
@@ -29,14 +29,14 @@ Metrics/ClassLength:
 Metrics/CyclomaticComplexity:
   Enabled: true
   Max: 10
-  IgnoredMethods: []
+  AllowedMethods: []
 
 Metrics/MethodLength:
   Enabled: true
   Max: 25
   CountComments: false
   CountAsOne: []
-  IgnoredMethods: []
+  AllowedMethods: []
 
 Metrics/ModuleLength:
   Enabled: true
@@ -52,4 +52,4 @@ Metrics/ParameterLists:
 Metrics/PerceivedComplexity:
   Enabled: true
   Max: 10
-  IgnoredMethods: []
+  AllowedMethods: []

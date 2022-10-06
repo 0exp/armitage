@@ -74,6 +74,7 @@ Naming/MethodParameterName:
     - 'ip'
     - 'db'
     - 'os'
+    - 'as'
   ForbiddenNames: []
 
 Naming/VariableName:

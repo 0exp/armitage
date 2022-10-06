@@ -10,11 +10,6 @@ Gemspec/DependencyVersion:
     - '**/*.gemspec'
   AllowedGems: []
 
-Gemspec/DateAssignment:
-  Enabled: true
-  Include:
-    - '**/*.gemspec'
-
 Gemspec/DuplicatedAssignment:
   Enabled: true
 

@@ -8,6 +8,7 @@ inherit_from:
 
 AllCops:
   TargetRailsVersion: ~
+  ActiveSupportExtensionsEnabled: true
 
 Rails:
   Enabled: true

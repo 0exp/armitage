@@ -57,6 +57,7 @@ Style/BlockDelimiters:
 Style/CaseEquality:
   Enabled: true
   AllowOnConstant: false
+  AllowOnSelfClass: false
   AutoCorrect: true
 
 Style/CaseLikeIf:
@@ -75,7 +76,7 @@ Style/ClassCheck:
 
 Style/ClassEqualityComparison:
   Enabled: true
-  IgnoredMethods:
+  AllowedMethods:
     - ==
     - equal?
     - eql?
@@ -158,6 +159,9 @@ Style/EachForSimpleLoop:
 Style/EachWithObject:
   Enabled: true
 
+Style/EmptyHeredoc:
+  Enabled: true
+
 Style/EmptyBlockParameter:
   Enabled: true
 
@@ -167,6 +171,7 @@ Style/EmptyCaseCondition:
 Style/EmptyElse:
   Enabled: true
   EnforcedStyle: empty
+  AllowComments: true
 
 Style/EmptyLambdaParameter:
   Enabled: true
@@ -234,7 +239,7 @@ Style/FormatStringToken:
   Enabled: true
   MaxUnannotatedPlaceholdersAllowed: 1
   EnforcedStyle: annotated
-  IgnoredMethods: []
+  AllowedMethods: []
 
 Style/FrozenStringLiteralComment:
   Enabled: true
@@ -333,6 +338,12 @@ Style/LambdaCall:
 
 Style/LineEndConcatenation:
   Enabled: true
+
+Style/MagicCommentFormat:
+  Enabled: true
+  EnforcedStyle: snake_case
+  DirectiveCapitalization: lowercase
+  ValueCapitalization: ~
 
 Style/MapCompactWithConditionalBlock:
   Enabled: true
@@ -472,12 +483,13 @@ Style/NumericLiterals:
   Enabled: true
   Strict: false
   AllowedNumbers: []
+  AllowedPatterns: []
 
 Style/NumericPredicate:
   Enabled: false # strongly situative cop
   EnforcedStyle: comparison
   AutoCorrect: true
-  IgnoredMethods: []
+  AllowedMethods: []
 
 Style/ObjectThen:
   Enabled: true
@@ -692,7 +704,7 @@ Style/SymbolProc:
   Enabled: true
   AllowMethodsWithArguments: true
   AllowComments: false
-  IgnoredMethods:
+  AllowedMethods:
     - respond_to
     - define_method
 
