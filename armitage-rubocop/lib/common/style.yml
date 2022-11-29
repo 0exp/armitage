@@ -493,7 +493,7 @@ Style/NumericPredicate:
 
 Style/ObjectThen:
   Enabled: true
-  EnforcedStyle: then
+  EnforcedStyle: yield_self
 
 Style/OneLineConditional:
   Enabled: true
