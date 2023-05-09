@@ -75,6 +75,10 @@ Naming/MethodParameterName:
     - 'db'
     - 'os'
     - 'as'
+    - 'if'
+    - 'cc'
+    - 'of'
+    - 'pp'
   ForbiddenNames: []
 
 Naming/VariableName:
