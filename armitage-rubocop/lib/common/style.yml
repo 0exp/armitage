@@ -15,6 +15,9 @@ Style/AndOr:
   Enabled: false
   EnforcedStyle: always
 
+Style/ArrayIntersect:
+  Enabled: true
+
 Style/ArrayCoercion:
   Enabled: true
 
@@ -547,6 +550,12 @@ Style/RaiseArgs:
 Style/RandomWithOffset:
   Enabled: true
 
+Style/Style/RedundantConstantBase:
+  Enabled: true
+
+Style/RequireOrder:
+  Enabled: false
+
 Style/RedundantEach:
   Enabled: true
 
@@ -716,7 +725,6 @@ Style/SymbolProc:
   AllowMethodsWithArguments: true
   AllowComments: false
   AllowedMethods:
-    - respond_to
     - define_method
 
 Style/SwapValues:

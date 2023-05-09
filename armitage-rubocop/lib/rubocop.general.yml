@@ -18,4 +18,5 @@ AllCops:
   DisplayStyleGuide: false
   ExtraDetails: true
   UseCache: false
+  ActiveSupportExtensionsEnabled: false
   TargetRubyVersion: ~

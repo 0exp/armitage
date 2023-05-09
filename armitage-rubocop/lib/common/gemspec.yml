@@ -18,7 +18,7 @@ Gemspec/OrderedDependencies:
   TreatCommentsAsGroupSeparators: true
 
 Gemspec/RequiredRubyVersion:
-  Enabled: false
+  Enabled: true
 
 Gemspec/RubyVersionGlobalsUsage:
   Enabled: true
