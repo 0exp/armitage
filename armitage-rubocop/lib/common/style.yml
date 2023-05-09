@@ -254,6 +254,7 @@ Style/GlobalStdStream:
 
 Style/GuardClause:
   Enabled: false
+  AutoCorrect: true
   MinBodyLength: 1
   AllowConsecutiveConditionals: false
 
@@ -544,6 +545,9 @@ Style/RaiseArgs:
   AllowedCompactTypes: []
 
 Style/RandomWithOffset:
+  Enabled: true
+
+Style/RedundantEach:
   Enabled: true
 
 Style/RedundantStringEscape:
