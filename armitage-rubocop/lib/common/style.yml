@@ -501,6 +501,9 @@ Style/OneLineConditional:
 Style/OpenStructUse:
   Enabled: true
 
+Style/OperatorMethodCall:
+  Enabled: true
+
 Style/OptionHash:
   Enabled: false
 
@@ -541,6 +544,9 @@ Style/RaiseArgs:
   AllowedCompactTypes: []
 
 Style/RandomWithOffset:
+  Enabled: true
+
+Style/RedundantStringEscape:
   Enabled: true
 
 Style/RedundantArgument:
@@ -656,6 +662,7 @@ Style/SpecialGlobalVars:
 
 Style/StaticClass:
   Enabled: true
+  AutoCorrect: true
 
 Style/StabbyLambdaParentheses:
   Enabled: true
