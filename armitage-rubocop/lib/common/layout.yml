@@ -259,6 +259,7 @@ Layout/LineLength:
 
 Layout/MultilineMethodParameterLineBreaks:
   Enabled: true
+  AllowMultilineFinalElement: true
 
 Layout/MultilineArrayBraceLayout:
   Enabled: true
@@ -294,12 +295,15 @@ Layout/MultilineOperationIndentation:
 
 Layout/MultilineHashKeyLineBreaks:
   Enabled: false
+  AllowMultilineFinalElement: false
 
 Layout/MultilineMethodArgumentLineBreaks:
   Enabled: false
+  AllowMultilineFinalElement: true
 
 Layout/MultilineArrayLineBreaks:
   Enabled: false
+  AllowMultilineFinalElement: true
 
 Layout/RescueEnsureAlignment:
   Enabled: true

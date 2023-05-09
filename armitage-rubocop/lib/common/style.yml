@@ -94,6 +94,9 @@ Style/ClassMethodsDefinitions:
 Style/ClassVars:
   Enabled: true
 
+Style/ConcatArrayLiterals:
+  Enabled: false # NOTE: it is totally unsafe
+
 Style/CollectionCompact:
   Enabled: true
 
@@ -550,7 +553,8 @@ Style/RaiseArgs:
 Style/RandomWithOffset:
   Enabled: true
 
-Style/Style/RedundantConstantBase:
+
+Style/RedundantConstantBase:
   Enabled: true
 
 Style/RequireOrder:
@@ -779,6 +783,9 @@ Style/UnlessElse:
 Style/UnlessLogicalOperators:
   EnforcedStyle: forbid_mixed_logical_operators
   Enabled: false
+
+Style/RedundantDoubleSplatHashBraces:
+  Enabled: true
 
 Style/RedundantCapitalW:
   Enabled: true
