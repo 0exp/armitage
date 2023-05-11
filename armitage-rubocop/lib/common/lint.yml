@@ -64,6 +64,9 @@ Lint/DisjunctiveAssignmentInConstructor:
   Enabled: true
   AutoCorrect: false
 
+Lint/DuplicateMatchPattern:
+  Enabled: true
+
 Lint/DuplicateMagicComment:
   Enabled: true
 
