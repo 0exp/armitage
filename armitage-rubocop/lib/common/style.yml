@@ -352,6 +352,9 @@ Style/MagicCommentFormat:
   DirectiveCapitalization: lowercase
   ValueCapitalization: ~
 
+Style/MapToSet:
+  Enabled: false # NOTE: it is totally unsafe
+
 Style/MapCompactWithConditionalBlock:
   Enabled: true
 
@@ -378,6 +381,9 @@ Style/MethodDefParentheses:
   EnforcedStyle: require_parentheses
 
 Style/MinMax:
+  Enabled: true
+
+Style/MinMaxComparison:
   Enabled: true
 
 Style/MissingElse:
@@ -830,6 +836,9 @@ Style/WordArray:
 Style/YodaCondition:
   Enabled: false
   EnforcedStyle: forbid_for_all_comparison_operators
+
+Style/YodaExpression:
+  Enabled: false
 
 Style/ZeroLengthPredicate:
   Enabled: true
