@@ -566,6 +566,8 @@ Style/RaiseArgs:
 Style/RandomWithOffset:
   Enabled: true
 
+Style/RedundantHeredocDelimiterQuotes:
+  Enabled: true
 
 Style/RedundantConstantBase:
   Enabled: true
