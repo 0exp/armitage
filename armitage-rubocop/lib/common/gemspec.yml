@@ -3,6 +3,10 @@ Gemspec/DeprecatedAttributeAssignment:
   Include:
     - '**/*.gemspec'
 
+Gemspec/DevelopmentDependencies:
+  Enabled: true
+  EnforcedStyle: gemspec
+
 Gemspec/DependencyVersion:
   Enabled: true
   EnforcedStyle: required

@@ -109,6 +109,9 @@ Style/ColonMethodCall:
 Style/ColonMethodDefinition:
   Enabled: true
 
+Style/ComparableClamp:
+  Enabled: true
+
 Style/CombinableLoops:
   Enabled: false
 
@@ -319,6 +322,9 @@ Style/IfWithSemicolon:
   AutoCorrect: true
 
 Style/ImplicitRuntimeError:
+  Enabled: false
+
+Style/InvertibleUnlessCondition:
   Enabled: false
 
 Style/InfiniteLoop:
