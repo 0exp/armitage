@@ -388,6 +388,7 @@ Style/MinMaxComparison:
 
 Style/MissingElse:
   Enabled: false
+  AutoCorrect: true
 
 Style/MissingRespondToMissing:
   Enabled: true

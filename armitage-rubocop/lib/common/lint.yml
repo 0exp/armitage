@@ -274,6 +274,9 @@ Lint/UselessElseWithoutRescue:
 Lint/UselessRuby2Keywords:
   Enabled: true
 
+Lint/UselessRescue:
+  Enabled: true
+
 Lint/RaiseException:
   Enabled: true
   AutoCorrect: false
