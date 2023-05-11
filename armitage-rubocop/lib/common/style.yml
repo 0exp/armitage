@@ -65,6 +65,7 @@ Style/CaseEquality:
 
 Style/CaseLikeIf:
   Enabled: true
+  MinBranchesCount: 3
   AutoCorrect: true
 
 Style/CharacterLiteral:
@@ -143,6 +144,9 @@ Style/DefWithParentheses:
   Enabled: true
 
 Style/Dir:
+  Enabled: true
+
+Style/DirEmpty:
   Enabled: true
 
 Style/DisableCopsWithinSourceCodeDirective:
@@ -224,6 +228,9 @@ Style/ExplicitBlockArgument:
   Enabled: true
 
 Style/FetchEnvVar:
+  Enabled: true
+
+Style/FileEmpty:
   Enabled: true
 
 Style/FileRead:
