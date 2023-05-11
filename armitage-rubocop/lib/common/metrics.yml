@@ -21,6 +21,9 @@ Metrics/BlockNesting:
   CountBlocks: false
   Max: 3
 
+Metrics/CollectionLiteralLength:
+  Enabled: false
+
 Metrics/ClassLength:
   Enabled: true
   CountComments: false
