@@ -17,6 +17,9 @@ RSpec/BeNil:
   Enabled: false
   EnforcedStyle: be
 
+RSpec/BeEmpty:
+  Enabled: false
+
 RSpec/BeEql:
   Enabled: false
 
@@ -25,13 +28,19 @@ RSpec/BeforeAfterAll:
 
 RSpec/ChangeByZero:
   Enabled: true
-  NegatedMatcher: nil
+  NegatedMatcher: ~
+
+RSpec/ContainExactly:
+  Enabled: false
 
 RSpec/ContextMethod:
   Enabled: false
 
 RSpec/ContextWording:
   Enabled: false
+
+RSpec/DuplicatedMetadata:
+  Enabled: true
 
 RSpec/DescribeClass:
   Enabled: false
@@ -136,6 +145,9 @@ RSpec/ImplicitSubject:
 RSpec/InstanceSpy:
   Enabled: true
 
+RSpec/IndexedLet:
+  Enabled: false
+
 RSpec/InstanceVariable:
   Enabled: true
   AssignmentOnly: false
@@ -157,6 +169,9 @@ RSpec/LetBeforeExamples:
   Enabled: true
 
 RSpec/LetSetup:
+  Enabled: false
+
+RSpec/MatchArray:
   Enabled: false
 
 RSpec/MessageChain:
@@ -186,6 +201,7 @@ RSpec/MultipleSubjects:
 RSpec/NamedSubject:
   Enabled: true
   IgnoreSharedExamples: true
+  EnforcedStyle: always
 
 RSpec/NestedGroups:
   Enabled: false
@@ -200,6 +216,9 @@ RSpec/OverwritingSetup:
 RSpec/Pending:
   Enabled: false
 
+RSpec/PendingWithoutReason:
+  Enabled: false
+
 RSpec/PredicateMatcher:
   Enabled: true
   Strict: true
@@ -209,6 +228,9 @@ RSpec/PredicateMatcher:
     - be_empty
     - have_http_status
     - have_been_made
+
+RSpec/RedundantAround:
+  Enabled: true
 
 RSpec/ReceiveCounts:
   Enabled: false
@@ -239,11 +261,18 @@ RSpec/ClassCheck:
   Enabled: true
   EnforcedStyle: be_a
 
+ RSpec/SkipBlockInsideExample:
+  Enabled: true
+
+RSpec/SortMetadata:
+  Enabled: false
+
 RSpec/ScatteredLet:
   Enabled: true
 
 RSpec/ScatteredSetup:
   Enabled: false
+  AutoCorrect: true
 
 RSpec/SharedContext:
   Enabled: true

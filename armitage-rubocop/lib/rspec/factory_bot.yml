@@ -1,12 +1,31 @@
-RSpec/FactoryBot/AttributeDefinedStatically:
+FactoryBot/AttributeDefinedStatically:
   Enabled: false
 
-RSpec/FactoryBot/CreateList:
+FactoryBot/CreateList:
   Enabled: true
   EnforcedStyle: create_list
+  ExplicitOnly: false
 
-RSpec/FactoryBot/FactoryClassName:
+FactoryBot/FactoryClassName:
   Enabled: true
 
-RSpec/FactoryBot/SyntaxMethods:
+FactoryBot/SyntaxMethods:
   Enabled: true
+
+FactoryBot/ConsistentParenthesesStyle:
+  Enabled: true
+  ExplicitOnly: false
+
+FactoryBot/FactoryNameStyle:
+  Enabled: true
+  EnforcedStyle: symbol
+  ExplicitOnly: false
+
+FactoryAssociationWithStrategy:
+  Enabled: false
+
+FactoryBot/RedundantFactoryOption:
+  Enabled: false
+
+FactoryBot/AssociationStyle:
+  Enabled: false

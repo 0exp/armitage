@@ -6,3 +6,12 @@ RSpec/Rails/AvoidSetupHook:
 
 RSpec/Rails/HaveHttpStatus:
   Enabled: false
+
+RSpec/Rails/InferredSpecType:
+  Enabled: false
+
+RSpec/Rails/MinitestAssertions:
+  Enabled: true
+
+RSpec/Rails/TravelAround:
+  Enabled: false
