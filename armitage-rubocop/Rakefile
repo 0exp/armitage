@@ -9,6 +9,8 @@ require 'rubocop-performance'
 require 'rubocop-rspec'
 require 'rubocop-rails'
 require 'rubocop-rake'
+require 'rubocop-capybara'
+require 'rubocop-factory_bot'
 
 RuboCop::RakeTask.new(:rubocop) do |t|
   config_path = File.expand_path(File.join('.rubocop.yml'), __dir__)
@@ -17,17 +19,20 @@ RuboCop::RakeTask.new(:rubocop) do |t|
   t.requires << 'rubocop-rails'
   t.requires << 'rubocop-rspec'
   t.requires << 'rubocop-rake'
+  t.requires << 'rubocop-capybara'
+  t.requires << 'rubocop-factory_bot'
 end
 
 ARMITAGE_RUBOCOP_PATH = Pathname.new(__FILE__).join('../.rubocop.yml')
 NON_CHECKABLE_COPS = %w[Rails].freeze # NOTE: Global "Rails" cop has only `Enabled` option
 
+# rubocop:disable Rails/RakeEnvironment
 namespace :armitage_rubocop do
   desc 'Full armitage-rubocop build (code style, cops validation, yaml validation)'
   task :build do
     build_processes = {
       code_style_check:
-        Open3.popen3('bundle exec rake rubocop'),
+        Open3.popen3("bundle exec rake rubocop -c #{ARMITAGE_RUBOCOP_PATH}"),
       cops_validation:
         Open3.popen3('bundle exec rake armitage_rubocop:validation:recognizable_cops'),
       yaml_validation:
@@ -38,6 +43,8 @@ namespace :armitage_rubocop do
     results = {}.tap do |result_data|
       build_processes.each_pair do |build_type, build_process|
         # NOTE: build_process => [stdin, stdout, stderr, wtr]
+        puts build_process[1].read
+        puts build_process[2].read
         build_result = build_process[3].value.exitstatus
         result_data[build_type] = build_result
       end
@@ -92,5 +99,6 @@ namespace :armitage_rubocop do
     end
   end
 end
+# rubocop:enable Rails/RakeEnvironment
 
 task default: :rubocop
