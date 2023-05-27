@@ -261,7 +261,7 @@ RSpec/ClassCheck:
   Enabled: true
   EnforcedStyle: be_a
 
- RSpec/SkipBlockInsideExample:
+RSpec/SkipBlockInsideExample:
   Enabled: true
 
 RSpec/SortMetadata:
