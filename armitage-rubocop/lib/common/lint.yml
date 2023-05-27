@@ -3,6 +3,7 @@ Lint/AmbiguousAssignment:
 
 Lint/AmbiguousBlockAssociation:
   AllowedMethods: []
+  AutoCorrect: true
   Enabled: true
 
 Lint/AmbiguousOperator:
@@ -369,6 +370,7 @@ Lint/ToJSON:
   Enabled: true
 
 Lint/TopLevelReturnWithArgument:
+  AutoCorrect: true
   Enabled: true
 
 Lint/TrailingCommaInAttributeDeclaration:
@@ -435,6 +437,7 @@ Lint/UselessAccessModifier:
   AutoCorrect: true
 
 Lint/UselessAssignment:
+  AutoCorrect: true
   Enabled: true
 
 Lint/UselessMethodDefinition:
@@ -448,5 +451,6 @@ Lint/UselessTimes:
   Enabled: true
 
 Lint/Void:
+  AutoCorrect: true
   Enabled: true
   CheckForMethodsWithNoSideEffects: false
