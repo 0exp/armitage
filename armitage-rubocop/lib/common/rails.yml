@@ -8,6 +8,9 @@ Rails/ActionFilter:
   Enabled: true
   EnforcedStyle: action
 
+Rails/ActionOrder:
+  Enabled: false
+
 Rails/ActiveRecordAliases:
   Enabled: true
 
@@ -53,6 +56,9 @@ Rails/AttributeDefaultBlockValue:
 
 Rails/ArelStar:
   Enabled: true
+
+Rails/ResponseParsedBody:
+  Enabled: false
 
 Rails/RequireDependency:
   Enabled: true
@@ -183,6 +189,9 @@ Rails/MigrationClassName:
 Rails/I18nLocaleAssignment:
   Enabled: false
 
+Rails/IgnoredColumnsAssignment:
+  Enabled: true
+
 Rails/IgnoredSkipActionFilterOption:
   Enabled: true
 
@@ -273,6 +282,7 @@ Rails/RedundantReceiverInWithOptions:
 
 Rails/ReflectionClassName:
   Enabled: true
+  AutoCorrect: true
 
 Rails/RefuteMethods:
   Enabled: true
@@ -330,6 +340,9 @@ Rails/StripHeredoc:
 Rails/RedundantTravelBack:
   Enabled: false # NOTE: can affect the readability
 
+Rails/ThreeStateBooleanColumn:
+  Enabled: false
+
 Rails/TableNameAssignment:
   Enabled: false
 
@@ -365,6 +378,9 @@ Rails/UnknownEnv:
 
 Rails/Validation:
   Enabled: true
+
+Rails/WhereNotWithMultipleConditions:
+  Enabled: false
 
 Rails/WhereEquals:
   Enabled: true
