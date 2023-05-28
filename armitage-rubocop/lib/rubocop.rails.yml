@@ -5,6 +5,7 @@ inherit_from:
   - ./rubocop.rspec.yml
   - ./rubocop.rake.yml
   - ./common/rails.yml
+  - ./common/migration.yml
 
 AllCops:
   TargetRailsVersion: ~
