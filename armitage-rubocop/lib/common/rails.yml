@@ -4,10 +4,6 @@ Rails/AddColumnIndex:
 Rails/ActionControllerTestCase:
   Enabled: true
 
-Rails/ActionFilter:
-  Enabled: true
-  EnforcedStyle: action
-
 Rails/ActionOrder:
   Enabled: false
 
@@ -93,6 +89,9 @@ Rails/CompactBlank:
 Rails/ContentTag:
   Enabled: true
 
+Rails/DangerousColumnNames:
+  Enabled: true
+
 Rails/DotSeparatedKeys:
   Enabled: true
 
@@ -113,6 +112,7 @@ Rails/Date:
   Enabled: true
   EnforcedStyle: flexible
   AllowToTime: true
+  AutoCorrect: true
 
 Rails/DefaultScope:
   Enabled: false
@@ -137,6 +137,9 @@ Rails/EnumHash:
   Include:
     - app/models/**/*.rb
 
+Rails/EnvLocal:
+  Enabled: true
+
 Rails/EnvironmentVariableAccess:
   Enabled: false # TODO: think about it later
   AllowReads: true
@@ -154,6 +157,7 @@ Rails/Exit:
 Rails/FilePath:
   Enabled: true
   EnforcedStyle: arguments
+  AutoCorrect: true
 
 Rails/FindBy:
   Enabled: true
@@ -194,6 +198,7 @@ Rails/IgnoredColumnsAssignment:
 
 Rails/IgnoredSkipActionFilterOption:
   Enabled: true
+  AutoCorrect: true
 
 Rails/IndexBy:
   Enabled: true
@@ -271,6 +276,10 @@ Rails/RedundantAllowNil:
   Include:
     - app/models/**/*.rb
 
+Rails/RedundantActiveRecordAllMethod:
+  Enabled: true
+  AutoCorrect: false
+
 Rails/RedundantPresenceValidationOnBelongsTo:
   Enabled: true
 
@@ -306,6 +315,9 @@ Rails/RequestReferer:
   EnforcedStyle: referer
 
 Rails/ReversibleMigration:
+  Enabled: true
+
+Rails/SelectMap:
   Enabled: true
 
 Rails/SafeNavigation:
@@ -358,6 +370,10 @@ Rails/ToFormattedS:
 
 Rails/TransactionExitStatement:
   Enabled: true
+  TransactionMethods: []
+
+Rails/UnusedRenderContent:
+  Enabled: true
 
 Rails/UniqBeforePluck:
   Enabled: true
@@ -375,6 +391,7 @@ Rails/UnknownEnv:
     - test
     - staging
     - production
+    - local
 
 Rails/Validation:
   Enabled: true

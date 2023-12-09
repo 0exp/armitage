@@ -203,6 +203,9 @@ Lint/InterpolationCheck:
 Lint/LambdaWithoutLiteralBlock:
   Enabled: true
 
+Lint/LiteralAssignmentInCondition:
+  Enabled: true
+
 Lint/LiteralAsCondition:
   Enabled: true
 
@@ -217,6 +220,9 @@ Lint/Loop:
   AutoCorrect: true
 
 Lint/MissingCopEnableDirective:
+  Enabled: true
+
+Lint/MixedCaseRange:
   Enabled: true
 
 Lint/MixedRegexpCaptureTypes:
@@ -288,6 +294,9 @@ Lint/RaiseException:
     - Gem
 
 Lint/RandOne:
+  Enabled: true
+
+Lint/RedundantRegexpQuantifiers:
   Enabled: true
 
 Lint/RedundantDirGlobSort:

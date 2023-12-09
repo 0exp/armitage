@@ -1,3 +1,6 @@
+Bundler/DuplicatedGroup:
+  Enabled: true
+
 Bundler/GemComment:
   Enabled: false
 

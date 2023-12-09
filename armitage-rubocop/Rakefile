@@ -71,7 +71,7 @@ namespace :armitage_rubocop do
 
       # NOTE: try to load without Psych exceptions
       invalid_yamls = yamls.each_with_object([]) do |file_name, invalid_files|
-        YAML.safe_load(File.read(file_name)) rescue (invalid_files << "- \e[33m#{file_name}\e[0m")
+        YAML.safe_load_file(file_name) rescue (invalid_files << "- \e[33m#{file_name}\e[0m")
       end
 
       if invalid_yamls.empty?

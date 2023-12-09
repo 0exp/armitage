@@ -15,6 +15,9 @@ Style/AndOr:
   Enabled: false
   EnforcedStyle: always
 
+Style/ArrayFirstLast:
+  Enabled: false
+
 Style/ArrayIntersect:
   Enabled: true
 
@@ -23,7 +26,6 @@ Style/ArrayCoercion:
 
 Style/ArgumentsForwarding:
   Enabled: false
-  AllowOnlyRestArgument: true
 
 Style/ArrayJoin:
   Enabled: true
@@ -579,6 +581,24 @@ Style/RaiseArgs:
 Style/RandomWithOffset:
   Enabled: true
 
+Style/ReturnNilInPredicateMethodDefinition:
+  Enabled: true
+
+Style/RedundantRegexpArgument:
+  Enabled: true
+
+Style/RedundantCurrentDirectoryInPath:
+  Enabled: true
+
+Style/RedundantArrayConstructor:
+  Enabled: true
+
+Style/RedundantRegexpConstructor:
+  Enabled: true
+
+Style/RedundantFilterChain:
+  Enabled: true
+
 Style/RedundantLineContinuation:
   Enabled: true
 
@@ -663,6 +683,9 @@ Style/ReturnNil:
 Style/RedundantSelfAssignmentBranch:
   Enabled: false # NOTE: can decrease the code readability
 
+Style/SuperWithArgsParentheses:
+  Enabled: true
+
 Style/SafeNavigation:
   Enabled: true
   ConvertCodeThatCanStartToReturnNil: false
@@ -687,6 +710,9 @@ Style/Send:
 Style/SignalException:
   Enabled: true
   EnforcedStyle: only_raise
+
+Style/SingleLineDoEndBlock:
+  Enabled: true
 
 Style/SingleArgumentDig:
   Enabled: true
@@ -858,6 +884,9 @@ Style/WordArray:
   Enabled: true
   EnforcedStyle: percent
   MinSize: 2
+
+Style/YAMLFileRead:
+  Enabled: true
 
 Style/YodaCondition:
   Enabled: false

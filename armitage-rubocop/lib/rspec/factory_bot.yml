@@ -29,3 +29,6 @@ FactoryBot/RedundantFactoryOption:
 
 FactoryBot/AssociationStyle:
   Enabled: false
+
+FactoryBot/IdSequence:
+  Enabled: true

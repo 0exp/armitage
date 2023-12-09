@@ -15,3 +15,6 @@ RSpec/Rails/MinitestAssertions:
 
 RSpec/Rails/TravelAround:
   Enabled: false
+
+RSpec/Rails/NegationBeValid:
+  Enabled: false

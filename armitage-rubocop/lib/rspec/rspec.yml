@@ -63,6 +63,9 @@ RSpec/Dialect:
   Enabled: true
   PreferredMethods: {}
 
+RSpec/Eq:
+  Enabled: true
+
 RSpec/EmptyExampleGroup:
   Enabled: true
   AutoCorrect: true
@@ -116,6 +119,12 @@ RSpec/ExpectOutput:
   Enabled: true
 
 RSpec/FilePath:
+  Enabled: false
+
+RSpec/SpecFilePathSuffix:
+  Enabled: false
+
+RSpec/SpecFilePathFormat:
   Enabled: false
 
 RSpec/Focus:
@@ -174,6 +183,12 @@ RSpec/LetSetup:
 RSpec/MatchArray:
   Enabled: false
 
+RSpec/MetadataStyle:
+  Enabled: false
+
+RSpec/EmptyMetadata:
+  Enabled: false
+
 RSpec/MessageChain:
   Enabled: false
 
@@ -228,6 +243,9 @@ RSpec/PredicateMatcher:
     - be_empty
     - have_http_status
     - have_been_made
+
+RSpec/ReceiveMessages:
+  Enabled: true
 
 RSpec/RedundantAround:
   Enabled: true
