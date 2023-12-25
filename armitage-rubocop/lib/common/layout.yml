@@ -402,6 +402,9 @@ Layout/SpaceInsideStringInterpolation:
   Enabled: true
   EnforcedStyle: no_space
 
+Lint/ItWithoutArgumentsInBlock:
+  Enabled: false
+
 Layout/IndentationStyle:
   Enabled: true
   EnforcedStyle: spaces
