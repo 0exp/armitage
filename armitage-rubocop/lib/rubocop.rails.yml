@@ -9,7 +9,14 @@ inherit_from:
 
 AllCops:
   TargetRailsVersion: ~
+  TargetRubyVersion: ~
   ActiveSupportExtensionsEnabled: true
+  DefaultFormatter: progress
+  DisplayCopNames: true
+  DisplayStyleGuide: false
+  ExtraDetails: true
+  UseCache: false
+  StringLiteralsFrozenByDefault: true
 
 Rails:
   Enabled: true

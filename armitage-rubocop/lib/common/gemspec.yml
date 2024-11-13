@@ -1,3 +1,6 @@
+Gemspec/AddRuntimeDependency:
+  Enabled: true
+
 Gemspec/DeprecatedAttributeAssignment:
   Enabled: true
   Include:

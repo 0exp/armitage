@@ -19,4 +19,5 @@ AllCops:
   ExtraDetails: true
   UseCache: false
   ActiveSupportExtensionsEnabled: false
+  StringLiteralsFrozenByDefault: true
   TargetRubyVersion: ~

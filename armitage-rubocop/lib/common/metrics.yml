@@ -19,6 +19,7 @@ Metrics/BlockLength:
 Metrics/BlockNesting:
   Enabled: true
   CountBlocks: false
+  CountModifierForms: false
   Max: 3
 
 Metrics/CollectionLiteralLength:

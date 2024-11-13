@@ -132,6 +132,9 @@ Rails/DynamicFindBy:
   AllowedReceivers:
     - Gem::Specification
 
+Rails/EnumSyntax:
+  Enabled: true
+
 Rails/EnumHash:
   Enabled: true
   Include:
@@ -394,6 +397,9 @@ Rails/UnknownEnv:
     - local
 
 Rails/Validation:
+  Enabled: true
+
+Rails/WhereRange:
   Enabled: true
 
 Rails/WhereNotWithMultipleConditions:

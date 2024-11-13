@@ -1,3 +1,6 @@
+Style/AmbiguousEndlessMethodDefinition:
+  Enabled: true
+
 Style/AccessorGrouping:
   Enabled: true
   EnforcedStyle: separated
@@ -6,6 +9,7 @@ Style/AccessModifierDeclarations:
   Enabled: true
   EnforcedStyle: group
   AllowModifiersOnSymbols: true
+  AllowModifiersOnAttrs: true
 
 Style/Alias:
   Enabled: true
@@ -46,6 +50,9 @@ Style/BarePercentLiterals:
 
 Style/BeginBlock:
   Enabled: true
+
+Style/BitwisePredicate:
+  Enabled: false
 
 Style/BisectedAttrAccessor:
   Enabled: true
@@ -110,6 +117,9 @@ Style/ColonMethodCall:
   Enabled: true
 
 Style/ColonMethodDefinition:
+  Enabled: true
+
+Style/CombinableDefined:
   Enabled: true
 
 Style/ComparableClamp:
@@ -354,6 +364,9 @@ Style/InverseMethods:
 Style/IpAddresses:
   Enabled: false
 
+Style/KeywordArgumentsMerging:
+  Enabled: true
+
 Style/KeywordParametersOrder:
   Enabled: false
 
@@ -372,6 +385,9 @@ Style/MagicCommentFormat:
   EnforcedStyle: snake_case
   DirectiveCapitalization: lowercase
   ValueCapitalization: ~
+
+Style/MapIntoArray:
+  Enabled: false # NOTE: it is unsafe at the moment
 
 Style/MapToSet:
   Enabled: false # NOTE: it is totally unsafe
@@ -584,6 +600,9 @@ Style/RandomWithOffset:
 Style/ReturnNilInPredicateMethodDefinition:
   Enabled: true
 
+Style/RedundantInterpolationUnfreeze:
+  Enabled: true
+
 Style/RedundantRegexpArgument:
   Enabled: true
 
@@ -686,13 +705,24 @@ Style/RedundantSelfAssignmentBranch:
 Style/SuperWithArgsParentheses:
   Enabled: true
 
+Style/SuperArguments:
+  Enabled: true
+
 Style/SafeNavigation:
   Enabled: true
   ConvertCodeThatCanStartToReturnNil: false
-  MaxChainLength: 3
+  MaxChainLength: 4
+
+Style/SafeNavigationChainLength:
+  Enabled: true
+  Max: 4
 
 Style/Sample:
   Enabled: true
+
+Style/SendWithLiteralMethodName:
+  Enabled: true
+  AllowSend: true
 
 Style/SelectByRegexp:
   Enabled: false
@@ -784,6 +814,7 @@ Style/SymbolLiteral:
 Style/SymbolProc:
   Enabled: true
   AllowMethodsWithArguments: true
+  AllowedPatterns: []
   AllowComments: false
   AllowedMethods:
     - define_method

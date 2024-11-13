@@ -232,6 +232,8 @@ Layout/LeadingCommentSpace:
   Enabled: true
   AllowDoxygenCommentStyle: false
   AllowGemfileRubyComment: true
+  AllowRBSInlineAnnotation: true
+  AllowSteepAnnotation: true
 
 Layout/LineContinuationLeadingSpace:
   Enabled: true

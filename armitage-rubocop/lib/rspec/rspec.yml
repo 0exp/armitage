@@ -55,6 +55,7 @@ RSpec/DescribedClass:
   Enabled: true
   SkipBlocks: false
   EnforcedStyle: described_class
+  OnlyStaticConstants: true
 
 RSpec/DescribedClassModuleWrapping:
   Enabled: true
@@ -64,6 +65,9 @@ RSpec/Dialect:
   PreferredMethods: {}
 
 RSpec/Eq:
+  Enabled: true
+
+RSpec/EmptyOutput:
   Enabled: true
 
 RSpec/EmptyExampleGroup:
@@ -100,9 +104,12 @@ RSpec/ExampleWithoutDescription:
   EnforcedStyle: always_allow
 
 RSpec/ExampleWording:
-  Enabled: false
+  Enabled: true
 
 RSpec/ExpectActual:
+  Enabled: true
+
+RSpec/ExpectInLet:
   Enabled: true
 
 RSpec/ExcessiveDocstringSpacing:
@@ -118,9 +125,6 @@ RSpec/ExpectInHook:
 RSpec/ExpectOutput:
   Enabled: true
 
-RSpec/FilePath:
-  Enabled: false
-
 RSpec/SpecFilePathSuffix:
   Enabled: false
 
@@ -135,6 +139,9 @@ RSpec/HookArgument:
   Enabled: false
 
 RSpec/HooksBeforeExamples:
+  Enabled: true
+
+RSpec/IsExpectedSpecify:
   Enabled: true
 
 RSpec/IdenticalEqualityAssertion:
@@ -201,6 +208,9 @@ RSpec/MessageSpies:
 RSpec/MissingExampleGroupArgument:
   Enabled: true
 
+RSpec/MissingExpectationTargetMethod:
+  Enabled: true
+
 RSpec/MultipleDescribes:
   Enabled: true
 
@@ -244,10 +254,16 @@ RSpec/PredicateMatcher:
     - have_http_status
     - have_been_made
 
+RSpec/RemoveConst:
+  Enabled: true
+
 RSpec/ReceiveMessages:
   Enabled: true
 
 RSpec/RedundantAround:
+  Enabled: true
+
+RSpec/RedundantPredicateMatcher:
   Enabled: true
 
 RSpec/ReceiveCounts:
@@ -270,6 +286,9 @@ RSpec/RepeatedExampleGroupDescription:
 
 RSpec/RepeatedIncludeExample:
   Enabled: true
+
+RSpec/RepeatedSubjectCall:
+  Enabled: false
 
 RSpec/ReturnFromStub:
   Enabled: true
@@ -308,6 +327,12 @@ RSpec/SubjectDeclaration:
   Enabled: true
 
 RSpec/StubbedMock:
+  Enabled: true
+
+RSpec/StringAsInstanceDoubleConstant:
+  Enabled: false
+
+RSpec/UndescriptiveLiteralsDescription:
   Enabled: true
 
 RSpec/UnspecifiedException:

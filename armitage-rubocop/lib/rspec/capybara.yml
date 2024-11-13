@@ -1,11 +1,11 @@
+Capybara/RedundantWithinFind:
+  Enabled: true
+
 Capybara/CurrentPathExpectation:
   Enabled: true
 
 Capybara/ClickLinkOrButtonStyle:
   Enabled: true
-
-RSpec/Capybara/FeatureMethods:
-  Enabled: false
 
 Capybara/RSpec/PredicateMatcher:
   Enabled: true

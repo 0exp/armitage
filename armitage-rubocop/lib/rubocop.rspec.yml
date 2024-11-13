@@ -1,5 +1,6 @@
 require:
   - rubocop-rspec
+  - rubocop-rspec_rails
   - rubocop-capybara
   - rubocop-factory_bot
 
@@ -13,7 +14,7 @@ RSpec:
   Include:
     - _spec.rb
     - "(?:^|/)spec/"
-  
+
 RSpec/FactoryBot:
   Include:
     - spec/factories.rb

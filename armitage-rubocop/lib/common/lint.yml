@@ -65,6 +65,9 @@ Lint/DisjunctiveAssignmentInConstructor:
   Enabled: true
   AutoCorrect: false
 
+Lint/DuplicateSetElement:
+  Enabled: true
+
 Lint/DuplicateMatchPattern:
   Enabled: true
 
@@ -75,6 +78,7 @@ Lint/DuplicateBranch:
   Enabled: true
   IgnoreLiteralBranches: false
   IgnoreConstantBranches: false
+  IgnoreDuplicateElseBranch: true
 
 Lint/DuplicateCaseCondition:
   Enabled: true
@@ -185,6 +189,7 @@ Lint/IdentityComparison:
 
 Lint/ImplicitStringConcatenation:
   Enabled: true
+  AutoCorrect: true
 
 Lint/IncompatibleIoSelectWithFiberScheduler:
   Enabled: true
@@ -276,6 +281,9 @@ Lint/PercentStringArray:
   Enabled: true
 
 Lint/PercentSymbolArray:
+  Enabled: true
+
+Lint/UselessNumericOperation:
   Enabled: true
 
 Lint/UselessElseWithoutRescue:
@@ -387,6 +395,9 @@ Lint/TrailingCommaInAttributeDeclaration:
 
 Lint/TripleQuotes:
   Enabled: false
+
+Lint/UnescapedBracketInRegexp:
+  Enabled: true
 
 Lint/UnexpectedBlockArity:
   Enabled: false
