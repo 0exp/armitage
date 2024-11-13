@@ -1,4 +1,4 @@
-# Armitage [![Build Status](https://travis-ci.org/0exp/armitage.svg?branch=master)](https://travis-ci.org/0exp/armitage)
+# Armitage
 
 `Armitage` - A set of linter settings. My own code style.
 
