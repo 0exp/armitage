@@ -138,6 +138,9 @@ Performance/StartWith:
   Enabled: true
   AutoCorrect: false
 
+Performance/StringBytesize:
+  Enabled: true
+
 Performance/StringIdentifierArgument:
   Enabled: true
 
