@@ -15,7 +15,7 @@ RSpec:
     - _spec.rb
     - "(?:^|/)spec/"
 
-RSpec/FactoryBot:
+FactoryBot:
   Include:
     - spec/factories.rb
     - spec/factories/**/*.rb
