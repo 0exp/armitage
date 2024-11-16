@@ -1,20 +1,20 @@
-RSpec/Rails/HttpStatus:
+RSpecRails/HttpStatus:
   Enabled: false
 
-RSpec/Rails/AvoidSetupHook:
+RSpecRails/AvoidSetupHook:
   Enabled: true
 
-RSpec/Rails/HaveHttpStatus:
+RSpecRails/HaveHttpStatus:
   Enabled: false
 
-RSpec/Rails/InferredSpecType:
+RSpecRails/InferredSpecType:
   Enabled: false
 
-RSpec/Rails/MinitestAssertions:
+RSpecRails/MinitestAssertions:
   Enabled: true
 
-RSpec/Rails/TravelAround:
+RSpecRails/TravelAround:
   Enabled: false
 
-RSpec/Rails/NegationBeValid:
+RSpecRails/NegationBeValid:
   Enabled: false
