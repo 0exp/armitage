@@ -19,6 +19,10 @@ Lint/AmbiguousRange:
 Lint/AmbiguousOperatorPrecedence:
   Enabled: false
 
+Lint/ArrayLiteralInRegexp:
+  Enabled: true
+  AutoCorrect: false
+
 Lint/AssignmentInCondition:
   Enabled: false
   AutoCorrect: true
@@ -36,12 +40,18 @@ Lint/BooleanSymbol:
 Lint/CircularArgumentReference:
   Enabled: true
 
+Lint/CopDirectiveSyntax:
+  Enabled: true
+
 Lint/ConstantDefinitionInBlock:
   Enabled: false
   AllowedMethods:
     - enums
 
 Lint/ConstantOverwrittenInRescue:
+  Enabled: true
+
+Lint/ConstantReassignment:
   Enabled: true
 
 Lint/ConstantResolution:
@@ -178,8 +188,15 @@ Lint/SuppressedException:
   AllowNil: true
   Enabled: true # NOTE: experimental!
 
+Lint/SuppressedExceptionInNumberConversion:
+  Enabled: true # NOTE: truely experimental
+  AutoCorrect: true # NOTE: absolutely unsafe
+
 Lint/HashCompareByIdentity:
   Enabled: false
+
+Lint/HashNewWithKeywordArgumentsAsDefault:
+  Enabled: true
 
 Lint/HeredocMethodCallPosition:
   Enabled: true
@@ -261,6 +278,9 @@ Lint/NonLocalExitFromIterator:
 Lint/NumberConversion:
   Enabled: false
 
+Lint/NumericOperationWithConstantResult:
+  Enabled: true
+
 Lint/NumberedParameterAssignment:
   Enabled: true
 
@@ -283,6 +303,9 @@ Lint/PercentStringArray:
 Lint/PercentSymbolArray:
   Enabled: true
 
+Lint/UselessDefined:
+  Enabled: true
+
 Lint/UselessNumericOperation:
   Enabled: true
 
@@ -302,6 +325,9 @@ Lint/RaiseException:
     - Gem
 
 Lint/RandOne:
+  Enabled: true
+
+Lint/RedundantTypeConversion:
   Enabled: true
 
 Lint/RedundantRegexpQuantifiers:
@@ -362,6 +388,9 @@ Lint/ScriptPermission:
   Enabled: true
 
 Lint/SendWithMixinArgument:
+  Enabled: true
+
+Lint/SharedMutableDefault
   Enabled: true
 
 Lint/ShadowedArgument:
@@ -458,6 +487,9 @@ Lint/UselessAccessModifier:
 
 Lint/UselessAssignment:
   AutoCorrect: true
+  Enabled: true
+
+Lint/UselessConstantScoping:
   Enabled: true
 
 Lint/UselessMethodDefinition:

@@ -10,6 +10,7 @@ Style/AccessModifierDeclarations:
   EnforcedStyle: group
   AllowModifiersOnSymbols: true
   AllowModifiersOnAttrs: true
+  AllowModifiersOnAliasMethod: true
 
 Style/Alias:
   Enabled: true
@@ -122,6 +123,9 @@ Style/ColonMethodDefinition:
 Style/CombinableDefined:
   Enabled: true
 
+Style/ComparableBetween:
+  Enabled: false
+
 Style/ComparableClamp:
   Enabled: true
 
@@ -162,6 +166,9 @@ Style/Dir:
   Enabled: true
 
 Style/DirEmpty:
+  Enabled: true
+
+Style/DigChain:
   Enabled: true
 
 Style/DisableCopsWithinSourceCodeDirective:
@@ -251,6 +258,13 @@ Style/FetchEnvVar:
 Style/FileEmpty:
   Enabled: true
 
+Style/FileNull:
+  Enabled: true
+
+Style/FileTouch:
+  Enabled: true
+  AutoCorrect: false
+
 Style/FileRead:
   Enabled: false
 
@@ -274,6 +288,7 @@ Style/FormatStringToken:
   MaxUnannotatedPlaceholdersAllowed: 1
   EnforcedStyle: annotated
   AllowedMethods: []
+  Mode: aggressive
 
 Style/FrozenStringLiteralComment:
   Enabled: true
@@ -301,6 +316,10 @@ Style/HashConversion:
   AllowSplatArgument: true
   Enabled: false
 
+Style/HashFetchChain:
+  Enabled: true
+  AutoCorrect: false
+
 Style/HashExcept:
   Enabled: true
 
@@ -309,6 +328,9 @@ Style/HashLikeCase:
   MinBranchesCount: 4
 
 Style/HashEachMethods:
+  Enabled: true
+
+Style/HashSlice:
   Enabled: true
 
 Style/HashSyntax:
@@ -363,6 +385,12 @@ Style/InverseMethods:
 
 Style/IpAddresses:
   Enabled: false
+
+Style/ItAssignment:
+  Enabled: true
+
+Style/ItBlockParameter:
+  Enabled: false # TODO: change to true in future
 
 Style/KeywordArgumentsMerging:
   Enabled: true
@@ -504,6 +532,7 @@ Style/Next:
   Enabled: true
   EnforcedStyle: skip_modifier_ifs
   MinBodyLength: 3
+  AllowConsecutiveConditionals: true
 
 Style/NilComparison:
   Enabled: true
@@ -617,6 +646,10 @@ Style/RedundantRegexpConstructor:
 
 Style/RedundantFilterChain:
   Enabled: true
+
+Style/RedundantFormat:
+  Enabled: true
+  AutoCorrect: false
 
 Style/RedundantLineContinuation:
   Enabled: true

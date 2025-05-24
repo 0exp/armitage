@@ -1,11 +1,21 @@
+Capybara/AmbiguousClick:
+  Enabled: true
+
 Capybara/RedundantWithinFind:
   Enabled: true
 
 Capybara/CurrentPathExpectation:
   Enabled: true
 
+# NOTE: deprecated cop (will be dropped with 3.0 release)
 Capybara/ClickLinkOrButtonStyle:
   Enabled: true
+
+Capybara/FindAllFirst:
+  Enabled: true
+
+Capybara/NegationMatcherAfterVisit:
+  Enabled: false
 
 Capybara/RSpec/PredicateMatcher:
   Enabled: true

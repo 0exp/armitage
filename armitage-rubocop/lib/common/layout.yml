@@ -258,6 +258,7 @@ Layout/LineLength:
   AllowedPatterns: []
   Exclude:
     - Gemfile
+  SplitStrings: false
 
 Layout/MultilineMethodParameterLineBreaks:
   Enabled: true

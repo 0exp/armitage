@@ -10,6 +10,7 @@ inherit_from:
 AllCops:
   TargetRailsVersion: ~
   TargetRubyVersion: ~
+  MigratedSchemaVersion: ~ # NOTE: prevents inspecting schema settings added before this version
   ActiveSupportExtensionsEnabled: true
   DefaultFormatter: progress
   DisplayCopNames: true

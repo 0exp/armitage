@@ -158,6 +158,9 @@ RSpec/ImplicitSubject:
   Enabled: true
   EnforcedStyle: single_line_only
 
+RSpec/IncludeExamples:
+  Enabled: false
+
 RSpec/InstanceSpy:
   Enabled: true
 
@@ -328,9 +331,6 @@ RSpec/SubjectDeclaration:
 
 RSpec/StubbedMock:
   Enabled: true
-
-RSpec/StringAsInstanceDoubleConstant:
-  Enabled: false
 
 RSpec/UndescriptiveLiteralsDescription:
   Enabled: true

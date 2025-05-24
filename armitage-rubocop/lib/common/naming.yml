@@ -39,6 +39,11 @@ Naming/MemoizedInstanceVariableName:
 Naming/MethodName:
   Enabled: true
   EnforcedStyle: snake_case
+  AllowedPatterns: []
+  ForbiddenPatterns: []
+  ForbiddenIdentifiers:
+    - def
+    - super
 
 Naming/PredicateName:
   Enabled: false
@@ -85,10 +90,22 @@ Naming/VariableName:
   Enabled: true
   EnforcedStyle: snake_case
   AllowedIdentifiers: []
+  AllowedPatterns: []
+  ForbiddenIdentifiers: []
+  ForbiddenPatterns: []
 
 Naming/VariableNumber:
   Enabled: true
   EnforcedStyle: normalcase
   CheckMethodNames: true
   CheckSymbols: true
-  AllowedIdentifiers: []
+  AllowedIdentifiers:
+    - TLS1_1
+    - TLS1_2
+    - capture3
+    - iso8601
+    - rfc1123_date
+    - rfc822
+    - rfc2822
+    - rfc3339
+    - x86_64

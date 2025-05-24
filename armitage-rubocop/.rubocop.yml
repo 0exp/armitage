@@ -4,5 +4,5 @@ inherit_from:
 
 AllCops:
   NewCops: enable
-  TargetRubyVersion: 3.3
+  TargetRubyVersion: 3.4
   StringLiteralsFrozenByDefault: true

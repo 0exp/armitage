@@ -165,3 +165,6 @@ Performance/UnfreezeString:
 
 Performance/UriDefaultParser:
   Enabled: true
+
+Performance/ZipWithoutBlock:
+  Enabled: true
