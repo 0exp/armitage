@@ -18,10 +18,3 @@ RSpecRails/TravelAround:
 
 RSpecRails/NegationBeValid:
   Enabled: false
-
-Rails/MultipleRoutePaths:
-  Enabled: true
-
-Rails/StrongParametersExpect:
-  Enabled: true
-  AutoCorrect: false
