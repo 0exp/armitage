@@ -390,7 +390,7 @@ Lint/ScriptPermission:
 Lint/SendWithMixinArgument:
   Enabled: true
 
-Lint/SharedMutableDefault
+Lint/SharedMutableDefault:
   Enabled: true
 
 Lint/ShadowedArgument:

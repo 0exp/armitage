@@ -15,14 +15,16 @@ require 'rubocop-factory_bot'
 
 RuboCop::RakeTask.new(:rubocop) do |t|
   config_path = File.expand_path(File.join('.rubocop.yml'), __dir__)
-  t.options = ['--config', config_path]
-  t.requires << 'rubocop-performance'
-  t.requires << 'rubocop-rails'
-  t.requires << 'rubocop-rspec'
-  t.requires << 'rubocop-rspec_rails'
-  t.requires << 'rubocop-rake'
-  t.requires << 'rubocop-capybara'
-  t.requires << 'rubocop-factory_bot'
+  t.options = [
+    '--config', config_path,
+    '--plugin', 'rubocop-performance',
+    '--plugin', 'rubocop-rails',
+    '--plugin', 'rubocop-rspec',
+    '--plugin', 'rubocop-rspec_rails',
+    '--plugin', 'rubocop-rake',
+    '--plugin', 'rubocop-capybara',
+    '--plugin', 'rubocop-factory_bot'
+  ]
 end
 
 ARMITAGE_RUBOCOP_PATH = Pathname.new(__FILE__).join('../.rubocop.yml')

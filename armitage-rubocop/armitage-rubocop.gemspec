@@ -4,9 +4,9 @@ lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.required_ruby_version = '>= 3.3'
+  spec.required_ruby_version = '>= 3.4'
 
-  spec.version     = '1.75.7'
+  spec.version     = '1.75.7.1'
   spec.name        = 'armitage-rubocop'
   spec.license     = 'MIT'
   spec.authors     = ['Rustam Ibragimov']

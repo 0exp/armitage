@@ -1,4 +1,4 @@
-require: rubocop-rake
+plugins: rubocop-rake
 
 inherit_from:
   - ./common/rake.yml
