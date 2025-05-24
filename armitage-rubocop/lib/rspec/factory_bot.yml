@@ -24,7 +24,7 @@ FactoryBot/FactoryNameStyle:
   EnforcedStyle: symbol
   ExplicitOnly: false
 
-FactoryAssociationWithStrategy:
+FactoryBot/FactoryAssociationWithStrategy:
   Enabled: false
 
 FactoryBot/RedundantFactoryOption:

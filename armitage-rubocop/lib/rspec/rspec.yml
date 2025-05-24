@@ -354,7 +354,6 @@ RSpec/VerifiedDoubles:
 
 RSpec/VerifiedDoubleReference:
   Enabled: true
-  EnforcedStyle: constant
 
 RSpec/VoidExpect:
   Enabled: true
