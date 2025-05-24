@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    armitage-rubocop (1.75.7.5)
+    armitage-rubocop (1.75.7.6)
       rubocop (= 1.75.7)
       rubocop-capybara (= 2.22.1)
       rubocop-factory_bot (= 2.27.1)

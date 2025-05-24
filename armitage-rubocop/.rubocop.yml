@@ -3,6 +3,7 @@ inherit_from:
   - ./lib/rubocop.rake.yml
   - ./lib/rubocop.rspec.yml
   - ./lib/rubocop.rails.yml
+  - ./lib/rubocop.rbs.yml
 
 AllCops:
   NewCops: enable

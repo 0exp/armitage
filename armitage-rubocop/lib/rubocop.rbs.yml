@@ -1,5 +1,5 @@
 plugins:
-  - rubocop-rbs
+  - rubocop-on-rbs
 
 inherit_from:
   - ./rbs/style.yml
