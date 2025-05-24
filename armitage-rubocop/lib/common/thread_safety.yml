@@ -1,0 +1,47 @@
+ThreadSafety/ClassAndModuleAttributes:
+  # NOTE:
+  #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
+  #   - i write a lot of DSL and architecture frameworks;
+  #   - so i manage this vua blocking privitives;
+  Enabled: false
+  ActiveSupportClassAttributeAllowed: false
+
+ThreadSafety/ClassInstanceVariable:
+  # NOTE:
+  #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
+  #   - i write a lot of DSL and architecture frameworks;
+  #   - so i manage this vua blocking privitives;
+  Enabled: false
+
+ThreadSafety/DirChdir:
+  # NOTE:
+  #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
+  #   - i write a lot of DSL and architecture frameworks;
+  #   - so i manage this vua blocking privitives;
+  Enabled: false
+  AllowCallWithBlock: true
+
+ThreadSafety/MutableClassInstanceVariable:
+  # NOTE:
+  #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
+  #   - i write a lot of DSL and architecture frameworks;
+  #   - so i manage this vua blocking privitives;
+  Enabled: false
+  EnforcedStyle: literals
+
+# NOTE: wat?
+ThreadSafety/NewThread:
+  Enabled: false
+
+ThreadSafety/RackMiddlewareInstanceVariable:
+  # NOTE:
+  #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
+  #   - i write a lot of DSL and architecture frameworks;
+  #   - so i manage this vua blocking privitives;
+  Enabled: false
+  Include:
+    - app/middleware/**/*.rb
+    - lib/middleware/**/*.rb
+    - app/middlewares/**/*.rb
+    - lib/middlewares/**/*.rb
+  AllowedIdentifiers: []
