@@ -1,0 +1,12 @@
+plugins:
+  - rubocop-rbs
+
+inherit_from:
+  - ./rbs/style.yml
+  - ./rbs/lint.yml
+  - ./rbs/layout.yml
+
+RBS:
+  Enabled: true
+  Include:
+    - "**/*.rbs"

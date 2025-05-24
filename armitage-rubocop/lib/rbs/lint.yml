@@ -1,0 +1,40 @@
+RBS/Lint/AmbiguousKeywordArgumentKey:
+  Enabled: true
+
+RBS/Lint/AmbiguousOperatorPrecedence:
+  Enabled: true
+
+RBS/Lint/DuplicateOverload:
+  Enabled: true
+
+RBS/Lint/LiteralIntersection:
+  Enabled: true
+
+RBS/Lint/NewReturnsVoid:
+  Enabled: true
+
+RBS/Lint/RestKeywordHash:
+  Enabled: true
+
+RBS/Lint/Syntax:
+  Enabled: true
+
+RBS/Lint/TopLevelInterface:
+  # NOTE: i want top level interfaces and it is ok.
+  Enabled: false
+
+RBS/Lint/TopLevelTypeAlias:
+  # NOTE: i want top level aliases and it is ok.
+  Enabled: false
+
+RBS/Lint/UnusedOverloadTypeParams:
+  Enabled: true
+
+RBS/Lint/UnusedTypeAliasTypeParams:
+  Enabled: true
+
+RBS/Lint/UselessAccessModifier:
+  Enabled: true
+
+RBS/Lint/WillSyntaxError:
+  Enabled: true

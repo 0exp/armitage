@@ -1,10 +1,11 @@
 PATH
   remote: .
   specs:
-    armitage-rubocop (1.75.7.4)
+    armitage-rubocop (1.75.7.5)
       rubocop (= 1.75.7)
       rubocop-capybara (= 2.22.1)
       rubocop-factory_bot (= 2.27.1)
+      rubocop-on-rbs (= 1.7.0)
       rubocop-performance (= 1.25.0)
       rubocop-rails (= 2.32.0)
       rubocop-rake (= 0.7.1)
@@ -55,6 +56,8 @@ GEM
     rack (3.1.15)
     rainbow (3.1.1)
     rake (13.2.1)
+    rbs (3.9.4)
+      logger
     regexp_parser (2.10.0)
     rubocop (1.75.7)
       json (~> 2.3)
@@ -76,6 +79,11 @@ GEM
     rubocop-factory_bot (2.27.1)
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
+    rubocop-on-rbs (1.7.0)
+      lint_roller (~> 1.1)
+      rbs (~> 3.5)
+      rubocop (>= 1.72.1, < 2.0)
+      zlib
     rubocop-performance (1.25.0)
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
@@ -104,6 +112,7 @@ GEM
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
     uri (1.0.3)
+    zlib (3.2.1)
 
 PLATFORMS
   arm64-darwin-24

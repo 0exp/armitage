@@ -27,6 +27,10 @@ Configured rules:
   - FactoryBot
   - Rails
   - RSpec
+- **RBS** (`.rubocop.rbs.yml`)
+  - Style
+  - Lint
+  - Layout
 
 ---
 
@@ -58,13 +62,16 @@ inherit_gem:
     - lib/rubocop.general.yml
     - lib/rubocop.rspec.yml
     - lib/rubocop.rake.yml
+    - lib/rubocop.rbs.yml # NOTE: if you use RBS
 ```
 
 ```yaml
 # --- rails ---
 inherit_gem:
   # rails-specific cops + general + rspec
-  armitage-rubocop: lib/rubocop.rails.yml
+  armitage-rubocop:
+    - lib/rubocop.rails.yml
+    - lib/rubocop.rbs.yml # NOTE: if you use RBS
 ```
 
 ---

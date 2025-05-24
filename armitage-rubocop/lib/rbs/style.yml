@@ -1,0 +1,31 @@
+RBS/Style/BlockReturnBoolish:
+  # NOTE: block can return bool too. confused cop.
+  Enabled: false
+
+RBS/Style/ClassWithSingleton:
+  Enabled: true
+
+RBS/Style/ClassicType:
+  # NOTE: i want TrueClass, FalseClass, NilClass and it is ok to define.
+  Enabled: false
+
+RBS/Style/DuplicatedType:
+  Enabled: true
+
+RBS/Style/EmptyArgument:
+  Enabled: true
+
+RBS/Style/InitializeReturnType:
+  Enabled: true
+
+RBS/Style/InstanceWithInstance:
+  Enabled: true
+
+RBS/Style/OptionalNil:
+  Enabled: true
+
+RBS/Style/RedundantParentheses:
+  Enabled: true
+
+RBS/Style/TrueFalse:
+  Enabled: true

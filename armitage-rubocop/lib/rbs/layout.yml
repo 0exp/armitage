@@ -1,0 +1,67 @@
+RBS/Layout/CommentIndentation:
+  Enabled: true
+
+RBS/Layout/EmptyLineBetweenDeclarations:
+  Enabled: true
+  Class: true
+  Module: true
+  Interface: true
+
+RBS/Layout/EmptyLines:
+  Enabled: true
+
+RBS/Layout/EmptyLinesAroundAccessModifier:
+  Enabled: true
+
+RBS/Layout/EmptyLinesAroundClassBody:
+  Enabled: true
+
+RBS/Layout/EmptyLinesAroundInterfaceBody:
+  Enabled: true
+
+RBS/Layout/EmptyLinesAroundModuleBody:
+  Enabled: true
+
+RBS/Layout/EmptyLinesAroundOverloads:
+  Enabled: true
+
+RBS/Layout/EndAlignment:
+  Enabled: true
+
+RBS/Layout/ExtraSpacing:
+  Enabled: true
+
+RBS/Layout/IndentationWidth:
+  Enabled: true
+
+RBS/Layout/OverloadIndentation:
+  Enabled: true
+
+RBS/Layout/SpaceAfterComma:
+  # NOTE:
+  #   - (<eanabled:false> reason) hard to read complex code;
+  #   - (what i want (but it is not realized at all in this cop)):
+  #     - an option like `EnforcedStyle: "no_space" / "need_space"`;
+  Enabled: false
+
+RBS/Layout/SpaceAroundArrow:
+  Enabled: true
+
+RBS/Layout/SpaceAroundBraces:
+  Enabled: true
+
+RBS/Layout/SpaceAroundOperators:
+  # NOTE:
+  #   - (<eanabled:false> reason) hard to read complex code;
+  #   - (what i want (but it is not realized at all in this cop)):
+  #     - an option like `EnforcedStyle: "no_space" / "need_space"`;
+  Enabled: false
+
+RBS/Layout/SpaceBeforeColon:
+  Enabled: true
+
+RBS/Layout/SpaceBeforeOverload:
+  Enabled: true
+
+RBS/Layout/TrailingWhitespace:
+  Enabled: true

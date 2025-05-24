@@ -293,6 +293,12 @@ Style/FormatStringToken:
 Style/FrozenStringLiteralComment:
   Enabled: true
   EnforcedStyle: always
+  # NOTE:
+  #   - this cop trying to lint .rbs files too;
+  #   - and the global exclusion in department config does not work correctly at the mmoment;
+  #   - so we need to exclude rbs files directly from this cop;
+  Exclude:
+    - sig/**/*.rbs
 
 Style/GlobalVars:
   Enabled: true
