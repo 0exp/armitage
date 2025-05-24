@@ -63,6 +63,13 @@ inherit_gem:
     - lib/rubocop.rspec.yml
     - lib/rubocop.rake.yml
     - lib/rubocop.rbs.yml # NOTE: if you use RBS
+
+# NOTE: (!for RBS file inclusion!)
+#   - add your rbs files location to <AllCops:Include:> directly
+#     cuz `RBS` department has no working `Include` option at the moment :dunno-why:
+AllCops:
+  Include:
+    - "**/*.rbs" # add your path our use this global default
 ```
 
 ```yaml

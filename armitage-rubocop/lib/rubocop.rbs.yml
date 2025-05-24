@@ -8,5 +8,6 @@ inherit_from:
 
 RBS:
   Enabled: true
+  # NOTE: include option does not work at the moment but we have prepared in advance;
   Include:
     - "**/*.rbs"
