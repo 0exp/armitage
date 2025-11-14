@@ -45,7 +45,14 @@ Naming/MethodName:
     - def
     - super
 
-Naming/PredicateName:
+Naming/PredicateMethod:
+  Enabled: true
+  Mode: conservative
+  AllowedMethods: call
+  AllowBangMethods: false
+  AllowedPatterns: []
+
+Naming/PredicatePrefix:
   Enabled: false
 
 Naming/RescuedExceptionsVariableName:

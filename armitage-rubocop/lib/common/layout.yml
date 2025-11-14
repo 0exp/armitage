@@ -93,6 +93,9 @@ Layout/DotPosition:
 Layout/ElseAlignment:
   Enabled: true
 
+Layout/EmptyLinesAfterModuleInclusion:
+  Enabled: true
+
 Layout/EmptyComment:
   Enabled: true
   AllowBorderComment: true

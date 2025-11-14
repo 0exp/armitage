@@ -7,6 +7,9 @@ RSpecRails/AvoidSetupHook:
 RSpecRails/HaveHttpStatus:
   Enabled: false
 
+RSpecRails/HttpStatusNameConsistency:
+  Enabled: true
+
 RSpecRails/InferredSpecType:
   Enabled: false
 

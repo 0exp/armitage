@@ -157,6 +157,9 @@ Rails/EnvironmentComparison:
 Rails/Exit:
   Enabled: true
 
+Rails/FindByOrAssignmentMemoization:
+  Enabled: false
+
 Rails/FilePath:
   Enabled: true
   EnforcedStyle: arguments
@@ -235,6 +238,9 @@ Rails/NotNullColumn:
   Enabled: true
 
 Rails/OrderById:
+  Enabled: false
+
+Rails/OrderArguments:
   Enabled: false
 
 Rails/Output:

@@ -7,6 +7,12 @@ RBS/Lint/AmbiguousOperatorPrecedence:
 RBS/Lint/DuplicateOverload:
   Enabled: true
 
+RBS/Lint/DuplicateAnnotation:
+  Enabled: true
+
+RBS/Lint/ImplicitlyReturnsNil:
+  Enabled: true
+
 RBS/Lint/LiteralIntersection:
   Enabled: true
 

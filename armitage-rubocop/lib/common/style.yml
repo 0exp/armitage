@@ -20,6 +20,9 @@ Style/AndOr:
   Enabled: false
   EnforcedStyle: always
 
+Style/ArrayIntersectWithSingleElement:
+  Enabled: true
+
 Style/ArrayFirstLast:
   Enabled: false
 
@@ -107,6 +110,9 @@ Style/ClassVars:
 
 Style/ConcatArrayLiterals:
   Enabled: false # NOTE: it is totally unsafe
+
+Style/CollectionQuerying:
+  Enabled: false # TODO: may be set to true
 
 Style/CollectionCompact:
   Enabled: true
@@ -218,6 +224,10 @@ Style/EmptyMethod:
   Enabled: true
   EnforcedStyle: compact
 
+Style/EmptyStringInsideInterpolation:
+  Enabled: true
+  EnforcedStyle: trailing_conditional
+
 Style/EndlessMethod:
   Enabled: true
   EnforcedStyle: allow_single_line
@@ -254,6 +264,7 @@ Style/ExplicitBlockArgument:
 
 Style/FetchEnvVar:
   Enabled: true
+  DefaultToNil: true
 
 Style/FileEmpty:
   Enabled: true
@@ -555,11 +566,12 @@ Style/Not:
   Enabled: true
 
 Style/NumberedParameters:
-  Enabled: false
+  Enabled: true
+  EnforcedStyle: allow_single_line
 
 Style/NumberedParametersLimit:
-  Max: 1_000_000
   Enabled: true
+  Max: 1_000_000
 
 Style/NumericLiteralPrefix:
   Enabled: true
@@ -633,6 +645,9 @@ Style/RandomWithOffset:
   Enabled: true
 
 Style/ReturnNilInPredicateMethodDefinition:
+  Enabled: true
+
+Style/RedundantArrayFlatten:
   Enabled: true
 
 Style/RedundantInterpolationUnfreeze:

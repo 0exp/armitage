@@ -184,6 +184,9 @@ RSpec/LeadingSubject:
 RSpec/LeakyConstantDeclaration:
   Enabled: true
 
+RSpec/LeakyLocalVariable:
+  Enabled: true
+
 RSpec/LetBeforeExamples:
   Enabled: true
 

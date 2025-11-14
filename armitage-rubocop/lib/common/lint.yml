@@ -303,6 +303,13 @@ Lint/PercentStringArray:
 Lint/PercentSymbolArray:
   Enabled: true
 
+Lint/UselessOr:
+  Enabled: true
+
+Lint/UselessDefaultValueArgument:
+  Enabled: true
+  AllowedReceivers: ['Rails.cache']
+
 Lint/UselessDefined:
   Enabled: true
 
@@ -341,6 +348,12 @@ Lint/RefinementImportMethods:
 
 Lint/RedundantSafeNavigation:
   Enabled: true
+  InferNonNilReceiver: false
+  AdditionalNilMethods:
+    - present?
+    - blank?
+    - try
+    - try!
   AllowedMethods:
     - instance_of?
     - kind_of?
