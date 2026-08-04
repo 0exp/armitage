@@ -4,18 +4,8 @@ Capybara/AmbiguousClick:
 Capybara/RedundantWithinFind:
   Enabled: true
 
-Capybara/CurrentPathExpectation:
-  Enabled: true
-
-# NOTE: deprecated cop (will be dropped with 3.0 release)
-Capybara/ClickLinkOrButtonStyle:
-  Enabled: true
-
 Capybara/FindAllFirst:
   Enabled: true
-
-Capybara/NegationMatcherAfterVisit:
-  Enabled: false
 
 Capybara/RSpec/PredicateMatcher:
   Enabled: true
@@ -25,20 +15,32 @@ Capybara/RSpec/PredicateMatcher:
 Capybara/RSpec/HaveSelector:
   Enabled: false
 
-Capybara/VisibilityMatcher:
-  Enabled: true
-
-Capybara/SpecificMatcher:
-  Enabled: false
-
 Capybara/SpecificFinders:
-  Enabled: false
-
-Capybara/NegationMatcher:
   Enabled: false
 
 Capybara/SpecificActions:
   Enabled: true
 
-Capybara/MatchStyle:
+Capybara/RSpec/HaveContent:
+  Enabled: true
+
+Capybara/RSpec/CurrentPathExpectation:
+  Enabled: true
+
+Capybara/RSpec/SpecificMatcher:
+  Enabled: false
+
+Capybara/RSpec/NegationMatcher:
+  Enabled: false
+
+Capybara/RSpec/NegationMatcherAfterVisit:
+  Enabled: false
+
+Capybara/RSpec/VisibilityMatcher:
+  Enabled: true
+
+Capybara/AssertStyle:
+  Enabled: true
+
+Capybara/RSpec/MatchStyle:
   Enabled: true

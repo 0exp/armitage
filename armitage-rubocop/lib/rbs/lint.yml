@@ -41,6 +41,3 @@ RBS/Lint/UnusedTypeAliasTypeParams:
 
 RBS/Lint/UselessAccessModifier:
   Enabled: true
-
-RBS/Lint/WillSyntaxError:
-  Enabled: true

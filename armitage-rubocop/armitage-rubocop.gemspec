@@ -4,9 +4,9 @@ lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.required_ruby_version = '>= 3.3'
+  spec.required_ruby_version = '>= 4.0'
 
-  spec.version = '1.81.7.0'
+  spec.version = '1.89.0.0'
 
   spec.name = 'armitage-rubocop'
   spec.license = 'MIT'
@@ -24,16 +24,17 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
 
-  spec.add_dependency 'rubocop',               '= 1.81.7'
+  spec.add_dependency 'rubocop',               '= 1.89.0'
   spec.add_dependency 'rubocop-performance',   '= 1.26.1'
-  spec.add_dependency 'rubocop-rails',         '= 2.33.4'
-  spec.add_dependency 'rubocop-rspec',         '= 3.8.0'
+  spec.add_dependency 'rubocop-rails',         '= 2.36.0'
+  spec.add_dependency 'rubocop-rspec',         '= 3.10.2'
   spec.add_dependency 'rubocop-rspec_rails',   '= 2.32.0'
   spec.add_dependency 'rubocop-rake',          '= 0.7.1'
-  spec.add_dependency 'rubocop-capybara',      '= 2.22.1'
+  spec.add_dependency 'rubocop-capybara',      '= 3.0.0'
   spec.add_dependency 'rubocop-factory_bot',   '= 2.28.0'
-  spec.add_dependency 'rubocop-on-rbs',        '= 1.8.0'
+  spec.add_dependency 'rubocop-on-rbs',        '= 2.0.0'
   spec.add_dependency 'rubocop-thread_safety', '= 0.7.3'
+  spec.add_dependency 'rubydex',               '= 0.3.0'
 
   spec.add_development_dependency 'bundler', '~> 2.3'
   spec.add_development_dependency 'rake',    '~> 13.1'

@@ -39,6 +39,9 @@ RSpec/ContextMethod:
 RSpec/ContextWording:
   Enabled: false
 
+RSpec/DiscardedMatcher:
+  Enabled: true
+
 RSpec/DuplicatedMetadata:
   Enabled: true
 
@@ -193,6 +196,9 @@ RSpec/LetBeforeExamples:
 RSpec/LetSetup:
   Enabled: false
 
+RSpec/MatchWithSimpleRegex:
+  Enabled: true
+
 RSpec/MatchArray:
   Enabled: false
 
@@ -243,6 +249,9 @@ RSpec/NotToNot:
 
 RSpec/OverwritingSetup:
   Enabled: true
+
+RSpec/Output:
+  Enabled: false
 
 RSpec/Pending:
   Enabled: false

@@ -59,6 +59,9 @@ Lint/ConstantResolution:
   Only: []
   Ignore: []
 
+Lint/DataDefineOverride:
+  Enabled: true
+
 Lint/Debugger:
   Enabled: true
 
@@ -257,6 +260,9 @@ Lint/MissingSuper:
 Lint/MultipleComparison:
   Enabled: true
 
+Lint/NameTypo:
+  Enabled: true
+
 Lint/NestedMethodDefinition:
   Enabled: true
 
@@ -453,6 +459,9 @@ Lint/UnmodifiedReduceAccumulator:
 Lint/UnifiedInteger:
   Enabled: true
 
+Lint/UnreachablePatternBranch:
+  Enabled: true
+
 Lint/UnreachableLoop:
   Enabled: true
 
@@ -470,6 +479,9 @@ Lint/RedundantSplatExpansion:
   AllowPercentLiteralArrayArgument: true
 
 Lint/UnreachableCode:
+  Enabled: true
+
+Lint/UnusedPrivateMethod:
   Enabled: true
 
 Lint/UnusedBlockArgument:

@@ -140,6 +140,9 @@ Rails/EnumHash:
   Include:
     - app/models/**/*.rb
 
+Rails/Env:
+  Enabled: false
+
 Rails/EnvLocal:
   Enabled: true
 
@@ -186,6 +189,9 @@ Rails/HttpPositionalArguments:
 
 Rails/HttpStatus:
   Enabled: false
+
+Rails/HttpStatusNameConsistency:
+  Enabled: true
 
 Rails/I18nLocaleTexts:
   Enabled: false
@@ -275,6 +281,9 @@ Rails/RootPublicPath:
   Enabled: true
 
 Rails/RootJoinChain:
+  Enabled: true
+
+Rails/RedirectBackOrTo:
   Enabled: true
 
 Rails/ReadWriteAttribute:

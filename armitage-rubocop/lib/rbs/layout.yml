@@ -1,3 +1,6 @@
+RBS/Layout/AnnotationIndentation:
+  Enabled: true
+
 RBS/Layout/CommentIndentation:
   Enabled: true
 

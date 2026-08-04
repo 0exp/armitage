@@ -200,6 +200,45 @@ Style/EachForSimpleLoop:
 Style/EachWithObject:
   Enabled: true
 
+Style/EmptyClassDefinition:
+  Enabled: false
+  EnforcedStyle: class_keyword
+  AllowedParentClasses:
+    - NoMemoryError
+    - ScriptError
+    - LoadError
+    - NotImplementedError
+    - SyntaxError
+    - SecurityError
+    - SignalException
+    - Interrupt
+    - StandardError
+    - ArgumentError
+    - UncaughtThrowError
+    - EncodingError
+    - FiberError
+    - IOError
+    - EOFError
+    - IndexError
+    - KeyError
+    - StopIteration
+    - ClosedQueueError
+    - LocalJumpError
+    - NameError
+    - NoMethodError
+    - RangeError
+    - FloatDomainError
+    - RegexpError
+    - RuntimeError
+    - FrozenError
+    - SystemCallError
+    - Errno
+    - ThreadError
+    - TypeError
+    - ZeroDivisionError
+    - SystemExit
+    - SystemStackError
+
 Style/EmptyHeredoc:
   Enabled: true
 
@@ -266,6 +305,9 @@ Style/FetchEnvVar:
   Enabled: true
   DefaultToNil: true
 
+Style/FileOpen:
+  Enabled: true
+
 Style/FileEmpty:
   Enabled: true
 
@@ -323,6 +365,9 @@ Style/GuardClause:
   AutoCorrect: true
   MinBodyLength: 1
   AllowConsecutiveConditionals: false
+
+Style/HashLookupMethod:
+  Enabled: false
 
 Style/HashAsLastArrayItem:
   Enabled: true
@@ -431,6 +476,9 @@ Style/MagicCommentFormat:
   DirectiveCapitalization: lowercase
   ValueCapitalization: ~
 
+Style/MapJoin:
+  Enabled: false # NOTE: unsafe for non-array objects
+
 Style/MapIntoArray:
   Enabled: false # NOTE: it is unsafe at the moment
 
@@ -482,6 +530,9 @@ Style/MixinGrouping:
 Style/MixinUsage:
   Enabled: true
 
+Style/ModuleMemberExistenceCheck:
+  Enabled: true
+
 Style/ModuleFunction:
   Enabled: false
 
@@ -516,6 +567,9 @@ Style/MultipleComparison:
   Enabled: false
 
 Style/MutableConstant:
+  Enabled: true
+
+Style/NegativeArrayIndex:
   Enabled: true
 
 Style/NegatedIf:
@@ -593,6 +647,9 @@ Style/ObjectThen:
   Enabled: true
   EnforcedStyle: yield_self
 
+Style/OneClassPerFile:
+  Enabled: true
+
 Style/OneLineConditional:
   Enabled: true
 
@@ -613,6 +670,9 @@ Style/OptionalBooleanParameter:
   AllowedMethods:
     - respond_to_missing?
 
+Style/PartitionInsteadOfDoubleSelect:
+  Enabled: false # NOTE: unsafe method names
+
 Style/ParallelAssignment:
   Enabled: false
 
@@ -629,6 +689,9 @@ Style/PercentQLiterals:
 Style/PerlBackrefs:
   Enabled: true
 
+Style/PredicateWithKind:
+  Enabled: false
+
 Style/PreferredHashMethods:
   Enabled: true
   EnforcedStyle: short
@@ -644,7 +707,19 @@ Style/RaiseArgs:
 Style/RandomWithOffset:
   Enabled: true
 
+Style/ReverseFind:
+  Enabled: true
+
 Style/ReturnNilInPredicateMethodDefinition:
+  Enabled: true
+
+Style/ReduceToHash:
+  Enabled: false
+
+Style/RedundantStructKeywordInit:
+  Enabled: true
+
+Style/RedundantMinMaxBy:
   Enabled: true
 
 Style/RedundantArrayFlatten:
@@ -777,6 +852,15 @@ Style/Sample:
 Style/SendWithLiteralMethodName:
   Enabled: true
   AllowSend: true
+
+Style/SelectByKind:
+  Enabled: false # NOTE: unsafe (receiver can be not an array/enumerable)
+
+Style/SelectByRange:
+  Enabled: false # NOTE: unsafe (receiver can be not an array/enumerable)
+
+Style/TallyMethod:
+  Enabled: false # NOTE: unsafe (receiver can be not an array/enumerable)
 
 Style/SelectByRegexp:
   Enabled: false

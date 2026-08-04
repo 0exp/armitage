@@ -28,7 +28,6 @@ Layout/ParameterAlignment:
 Layout/BeginEndAlignment:
   Enabled: true
   EnforcedStyleAlignWith: start_of_line
-  Severity: warning
 
 Lint/RequireRelativeSelfPath:
   Enabled: true
@@ -57,13 +56,23 @@ Layout/ClassStructure:
       - include
       - prepend
       - extend
+    attribute_macros:
+      - attr_reader
+      - attr_writer
+      - attr_accessor
   ExpectedOrder:
     - module_inclusion
     - constants
+    - public_attribute_macros
+    - public_delegate
+    - macros
     - public_class_methods
     - initializer
     - public_methods
+    - protected_attribute_macros
     - protected_methods
+    - private_attribute_macros
+    - private_delegate
     - private_methods
 
 Layout/ClosingHeredocIndentation:
@@ -80,11 +89,13 @@ Layout/ConditionPosition:
   Enabled: true
   AutoCorrect: true
 
+Lint/DeprecatedReference:
+  Enabled: true
+
 Layout/DefEndAlignment:
   Enabled: true
   EnforcedStyleAlignWith: start_of_line
   AutoCorrect: false
-  Severity: warning
 
 Layout/DotPosition:
   Enabled: true
@@ -162,7 +173,6 @@ Layout/EndAlignment:
   Enabled: true
   EnforcedStyleAlignWith: keyword
   AutoCorrect: false
-  Severity: warning
 
 Layout/EndOfLine:
   Enabled: true
@@ -233,6 +243,7 @@ Layout/LeadingEmptyLines:
 
 Layout/LeadingCommentSpace:
   Enabled: true
+  AllowYARDCommentBlockSeparator: true
   AllowDoxygenCommentStyle: false
   AllowGemfileRubyComment: true
   AllowRBSInlineAnnotation: true
@@ -252,16 +263,18 @@ Layout/LineLength:
   Enabled: true
   AutoCorrect: true
   Max: 100
-  AllowHeredoc: true
-  AllowURI: true
   URISchemes:
     - http
     - https
-  IgnoreCopDirectives: false
-  AllowedPatterns: []
   Exclude:
     - Gemfile
   SplitStrings: false
+  AllowedPatterns: []
+  AllowRBSInlineAnnotation: true
+  AllowCopDirectives: true
+  AllowQualifiedName: true
+  AllowHeredoc: true
+  AllowURI: true
 
 Layout/MultilineMethodParameterLineBreaks:
   Enabled: true
