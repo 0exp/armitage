@@ -1,0 +1,29 @@
+RBSInline/Style/BlockReturnBoolish:
+  Enabled: true
+
+RBSInline/Style/ClassWithSingleton:
+  Enabled: true
+
+RBSInline/Style/ClassicType:
+  Enabled: true
+
+RBSInline/Style/DuplicatedType:
+  Enabled: true
+
+RBSInline/Style/EmptyArgument:
+  Enabled: true
+
+RBSInline/Style/InitializeReturnType:
+  Enabled: true
+
+RBSInline/Style/InstanceWithInstance:
+  Enabled: true
+
+RBSInline/Style/OptionalNil:
+  Enabled: true
+
+RBSInline/Style/RedundantParentheses:
+  Enabled: true
+
+RBSInline/Style/TrueFalse:
+  Enabled: true

@@ -1,8 +1,40 @@
+ThreadSafety/MethodRedefinition:
+  Enabled: true
+
+ThreadSafety/ActiveSupportCallbacks:
+  # NOTE:
+  #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
+  #   - i write a lot of DSL and architecture frameworks;
+  #   - so i manage this via blocking privitives;
+  # TODO:
+  #   - enable in future;
+  Enabled: false
+
+ThreadSafety/LazySynchronizationPrimitive:
+  # NOTE:
+  #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
+  #   - i write a lot of DSL and architecture frameworks;
+  #   - so i manage this via blocking privitives;
+  # TODO:
+  #   - enable in future;
+  Enabled: false
+
+ThreadSafety/EnvMutation:
+  # NOTE:
+  #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
+  #   - i write a lot of DSL and architecture frameworks;
+  #   - so i manage this via blocking privitives;
+  # TODO:
+  #   - enable in future
+  Enabled: false
+
 ThreadSafety/ClassAndModuleAttributes:
   # NOTE:
   #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
   #   - i write a lot of DSL and architecture frameworks;
-  #   - so i manage this vua blocking privitives;
+  #   - so i manage this via blocking privitives;
+  # TODO:
+  #   - enable in future
   Enabled: false
   ActiveSupportClassAttributeAllowed: false
 
@@ -10,14 +42,18 @@ ThreadSafety/ClassInstanceVariable:
   # NOTE:
   #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
   #   - i write a lot of DSL and architecture frameworks;
-  #   - so i manage this vua blocking privitives;
+  #   - so i manage this via blocking privitives;
+  # TODO:
+  #   - enable in future
   Enabled: false
 
 ThreadSafety/DirChdir:
   # NOTE:
   #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
   #   - i write a lot of DSL and architecture frameworks;
-  #   - so i manage this vua blocking privitives;
+  #   - so i manage this via blocking privitives;
+  # TODO:
+  #   - enable in future
   Enabled: false
   AllowCallWithBlock: true
 
@@ -25,7 +61,9 @@ ThreadSafety/MutableClassInstanceVariable:
   # NOTE:
   #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
   #   - i write a lot of DSL and architecture frameworks;
-  #   - so i manage this vua blocking privitives;
+  #   - so i manage this via blocking privitives;
+  # TODO:
+  #   - enable in future
   Enabled: false
   EnforcedStyle: literals
 
@@ -37,7 +75,9 @@ ThreadSafety/RackMiddlewareInstanceVariable:
   # NOTE:
   #   - we should not "block" this behaviour if we have a lot of expirinece with async programming;
   #   - i write a lot of DSL and architecture frameworks;
-  #   - so i manage this vua blocking privitives;
+  #   - so i manage this via blocking privitives;
+  # TODO:
+  #   - enable in future
   Enabled: false
   Include:
     - app/middleware/**/*.rb

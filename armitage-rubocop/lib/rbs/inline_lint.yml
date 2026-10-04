@@ -1,0 +1,23 @@
+RBSInline/Lint/AmbiguousKeywordArgumentKey:
+  Enabled: true
+
+RBSInline/Lint/DuplicateOverload:
+  Enabled: true
+
+RBSInline/Lint/LiteralIntersection:
+  Enabled: true
+
+RBSInline/Lint/NewReturnsVoid:
+  Enabled: true
+
+RBSInline/Lint/RestKeywordHash:
+  Enabled: true
+
+RBSInline/Lint/Syntax:
+  Enabled: true
+
+RBSInline/Lint/UnusedAnnotation:
+  Enabled: true
+
+RBSInline/Lint/UnusedOverloadTypeParams:
+  Enabled: true

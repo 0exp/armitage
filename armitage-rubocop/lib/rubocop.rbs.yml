@@ -5,6 +5,8 @@ inherit_from:
   - ./rbs/style.yml
   - ./rbs/lint.yml
   - ./rbs/layout.yml
+  - ./rbs/inline_lint.yml
+  - ./rbs/inline_style.yml
 
 RBS:
   Enabled: true

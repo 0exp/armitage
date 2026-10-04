@@ -6,6 +6,12 @@
 
 ---
 
+### Useful links:
+
+- [rubocop-on-rbs docs](https://github.com/ksss/rubocop-on-rbs/blob/main/docs/modules/ROOT/pages/cops_rbs_layout.adoc#rbslayoutspaceaftercomma)
+
+---
+
 Configured rules:
 
 - **Common** (`.rubocop.general.yml`) (`.rubocop.rails.yml`) (`.rubocop.rake.yml`)
@@ -31,6 +37,7 @@ Configured rules:
   - Style
   - Lint
   - Layout
+  - Inline
 
 ---
 

@@ -36,6 +36,7 @@ RBS/Layout/ExtraSpacing:
 
 RBS/Layout/IndentationWidth:
   Enabled: true
+  Width: 2
 
 RBS/Layout/OverloadIndentation:
   Enabled: true

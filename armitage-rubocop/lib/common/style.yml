@@ -168,6 +168,9 @@ Style/DateTime:
 Style/DefWithParentheses:
   Enabled: true
 
+Style/DirectiveScope:
+  Enabled: false # TODO: true and use the push/pop disable-next and others actively;
+
 Style/Dir:
   Enabled: true
 
@@ -861,6 +864,9 @@ Style/SelectByRange:
 
 Style/TallyMethod:
   Enabled: false # NOTE: unsafe (receiver can be not an array/enumerable)
+
+Style/TimeNow:
+  Enabled: true
 
 Style/SelectByRegexp:
   Enabled: false

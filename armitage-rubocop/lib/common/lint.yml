@@ -1,3 +1,9 @@
+Lint/ArgumentMismatch:
+  Enabled: true
+
+Lint/SuperArgumentMismatch:
+  Enabled: true
+
 Lint/AmbiguousAssignment:
   Enabled: false
 
@@ -98,6 +104,7 @@ Lint/DuplicateCaseCondition:
 
 Lint/DuplicateMethods:
   Enabled: true
+  AllowedCrossFilePaths: []
 
 Lint/DuplicateHashKey:
   Enabled: true
@@ -243,6 +250,9 @@ Lint/SymbolConversion:
 Lint/Loop:
   Enabled: true
   AutoCorrect: true
+
+Lint/MisplacedMagicComment:
+  Enabled: true
 
 Lint/MissingCopEnableDirective:
   Enabled: true
@@ -483,6 +493,8 @@ Lint/UnreachableCode:
 
 Lint/UnusedPrivateMethod:
   Enabled: true
+  AllowedNames: []
+  AllowedPatterns: []
 
 Lint/UnusedBlockArgument:
   Enabled: false

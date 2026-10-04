@@ -117,6 +117,7 @@ Layout/EmptyLineAfterGuardClause:
 
 Layout/EmptyLineAfterMagicComment:
   Enabled: true
+  NumberOfEmptyLines: 1
 
 Layout/EmptyLineAfterMultilineCondition:
   Enabled: false
