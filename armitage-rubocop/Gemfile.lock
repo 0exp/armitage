@@ -141,9 +141,9 @@ PLATFORMS
 
 DEPENDENCIES
   armitage-rubocop!
-  bundler
-  pry
-  rake
+  bundler (= 4.0.22)
+  pry (= 0.16.0)
+  rake (= 13.4.2)
 
 CHECKSUMS
   activesupport (8.1.4) sha256=891dd3fe43c4fc8391934b237b1189bb1f661c932a84a840043db9d46a4e80df
